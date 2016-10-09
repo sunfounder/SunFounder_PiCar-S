@@ -34,5 +34,5 @@ else
 	echo 'dtparam=i2c_arm=on' >> /boot/config.txt
 fi
 rm config.txt.bak 	
-echo "complete\n"
-
+echo "\n complete, now reboot to take effect\n"
+sudo reboot
