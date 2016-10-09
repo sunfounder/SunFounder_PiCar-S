@@ -16,9 +16,9 @@ import filedb
 class Front_Wheels(object):
 	''' Front wheels control class '''
 	FRONT_WHEEL_CHANNEL = 0
-	LEFT_ANGLE = 70
+	LEFT_ANGLE = 30
 	STRAIGHT_ANGLE = 90
-	RIGHT_ANGLE = 110
+	RIGHT_ANGLE = 150
 
 	_DEBUG = False
 	_DEBUG_INFO = 'DEBUG "front_wheels.py":'

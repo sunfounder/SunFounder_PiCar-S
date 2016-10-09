@@ -86,7 +86,7 @@ class Servo(object):
 def test():
 	'''Servo driver test on channel 1'''
 	import time
-	a = Servo(1, debug=True)
+	a = Servo(0)
 	for i in range(0, 180, 5):
 		print i
 		a.turn(i)
