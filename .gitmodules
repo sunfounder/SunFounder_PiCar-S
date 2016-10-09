@@ -1,0 +1,3 @@
+[submodule "driver/SunFounder_UltraSonic_Avoidance"]
+	path = driver/SunFounder_UltraSonic_Avoidance
+	url = https://github.com/sunfounder/SunFounder_UltraSonic_Avoidance.git
