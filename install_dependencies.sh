@@ -27,8 +27,8 @@ sudo apt-get update
 ###################################
 # Add lines to /boot/config.txt
 echo "\n    Enalbe I2C \n"
-egrep -v "^#|^$" /boot/config.txt > config.txt.bak
-if grep -q 'dtparam=i2c_arm=on' config.txt.bak; then
+egrep -v "^#|^$" /boot/config.txt > config.txt.bak  # pick up all uncomment configrations
+if grep -q 'dtparam=i2c_arm=on' config.txt.bak; then  # whether i2c_arm in uncomment configrations or not
 	echo 'Seem i2c_arm parameter already set, skip this step'
 else
 	echo 'dtparam=i2c_arm=on' >> /boot/config.txt
