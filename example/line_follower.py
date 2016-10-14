@@ -11,9 +11,9 @@
 **********************************************************************
 '''
 
-import line_follower_module
-import front_wheels
-import back_wheels
+from SunFounder_Line_Follower import Line_Follower
+from Drivers import front_wheels
+from Drivers import back_wheels
 import time
 
 
@@ -28,7 +28,7 @@ max_off_track_count = 40
 
 fw = front_wheels.Front_Wheels()
 bw = back_wheels.Back_Wheels()
-lf = line_follower_module.Line_Follower(references=REFERENCES)
+lf = Line_Follower.Line_Follower(references=REFERENCES)
 
 fw.ready()
 bw.ready()

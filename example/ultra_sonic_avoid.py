@@ -11,9 +11,9 @@
 **********************************************************************
 '''
 
-import ultra_sonic_module
-import front_wheels
-import back_wheels
+from SunFounder_Ultrasonic_Avoidance import Ultrasonic_Avoidance
+from Drivers import front_wheels
+from Drivers import back_wheels
 import time
 
 # D0~D7 to BCM number
@@ -26,7 +26,7 @@ D5 = 24
 D6 = 25
 D7 = 4
 
-ua = ultra_sonic_module.UltraSonic_Avoidance(D0)
+ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(D0)
 fw = front_wheels.Front_Wheels()
 bw = back_wheels.Back_Wheels()
 

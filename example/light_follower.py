@@ -11,12 +11,12 @@
 **********************************************************************
 '''
 
-import light_follower_module
-import front_wheels
-import back_wheels
+from SunFounder_Light_Follower import Light_Follower
+from Drivers import front_wheels
+from Drivers import back_wheels
 import time
 
-lf = light_follower_module.Light_Follower()
+lf = Light_Follower.Light_Follower()
 fw = front_wheels.Front_Wheels()
 bw = back_wheels.Back_Wheels()
 
