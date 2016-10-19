@@ -1,0 +1,9 @@
+[submodule "example/SunFounder_Ultrasonic_Avoidance"]
+	path = example/SunFounder_Ultrasonic_Avoidance
+	url = https://github.com/sunfounder/SunFounder_Ultrasonic_Avoidance.git
+[submodule "example/SunFounder_Line_Follower"]
+	path = example/SunFounder_Line_Follower
+	url = https://github.com/sunfounder/SunFounder_Line_Follower.git
+[submodule "example/SunFounder_Light_Follower"]
+	path = example/SunFounder_Light_Follower
+	url = https://github.com/sunfounder/SunFounder_Light_Follower.git
