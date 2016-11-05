@@ -19,21 +19,8 @@ sudo apt-get update
 		echo "Successfully installed i2c-tools python-smbus \n"
 	else
 		echo "Failed to installed i2c-tools python-smbus"
-        exit
-    fi
-
-###################################
-# Install RPi Car V2 Module
-###################################
-
-echo "Cloning repo \n"
-git clone https://github.com/SunFounder_Raspberry_Pi_Car_V2.0.git
-cd SunFounder_Raspberry_Pi_Car_V2.0
-echo "    Installing RPi Car module \n"
-python setup.py install
-cd ..
-sudo rm -rf SunFounder_Raspberry_Pi_Car_V2.0
-echo "complete\n"
+	exit
+	fi
 
 ###################################
 # Enable I2C1 #
@@ -49,3 +36,4 @@ fi
 rm config.txt.bak 	
 echo "\n complete, now reboot to take effect\n"
 sudo reboot
+
