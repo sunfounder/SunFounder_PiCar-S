@@ -23,19 +23,6 @@ sudo apt-get update
     fi
 
 ###################################
-# Install RPi Car V2 Module
-###################################
-
-echo "Cloning repo \n"
-git clone https://github.com/SunFounder_Raspberry_Pi_Car_V2.0.git
-cd SunFounder_Raspberry_Pi_Car_V2.0
-echo "    Installing RPi Car module \n"
-python setup.py install
-cd ..
-sudo rm -rf SunFounder_Raspberry_Pi_Car_V2.0
-echo "complete\n"
-
-###################################
 # Enable I2C1 #
 ###################################
 # Add lines to /boot/config.txt
