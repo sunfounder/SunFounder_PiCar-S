@@ -1,26 +1,28 @@
-## SunFounder Smart Sensor Car Kit for Raspberry Pi
-SunFounder Smart Sensor Car Kit
+## SunFounder PiCar-S
+SunFounder PiCar Kit 成员之一：PiCar-S(S mean sensors)
 
 Quick Links:
 
- * [About SunFounder Smart Sensor Car Kit](#about_this_thing)
+ * [About SunFounder PiCar-S](#about_this_thing)
  * [Update](#update)
  * [About SunFounder](#about_sunfounder)
  * [License](#license)
  * [Contact us](#contact_us)
 
 <a id="about_this_thing"></a>
-### About SunFounder Smart Sensor Car Kit:
-这是传感器小车套件的代码，balabala.....
+### About SunFounder PiCar-S :
+树莓派小车系列，传感器小车
 
 <a id="update"></a>
 ### Update:
 2016-09-19:
- - creat this repository
+ - Creat this repository
 2016-10-09:
- - add 3 module drivers and 4 examples
+ - Add 3 module drivers and 4 examples
 2016-10-12:
  - Clean up and organize files
+2016-11-17:
+ - Change name to PiCar-S
 
 ----------------------------------------------
 <a id="about_sunfounder"></a>
