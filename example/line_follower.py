@@ -12,8 +12,8 @@
 '''
 
 from SunFounder_Line_Follower import Line_Follower
-from Drivers import front_wheels
-from Drivers import back_wheels
+from picar import front_wheels
+from picar import back_wheels
 import time
 
 
@@ -35,7 +35,7 @@ bw.ready()
 
 def straight_run():
 	while True:
-		bw.set_speed(70)
+		bw.speed = 70
 		bw.forward()
 		fw.turn_straight()
 
@@ -46,7 +46,7 @@ def setup():
 def main():
 	global turning_angle
 	off_track_count = 0
-	bw.set_speed(forward_speed)
+	bw.speed = forward_speed
 
 	a_step = 3
 	b_step = 15
@@ -85,7 +85,7 @@ def main():
 			off_track_count += 1
 			if off_track_count > max_off_track_count:
 				tmp_angle = -(turning_angle - 90) + 90
-				bw.set_speed(backward_speed)
+				bw.speed = backward_speed
 				bw.backward()
 				fw.turn(tmp_angle)
 				
@@ -94,7 +94,7 @@ def main():
 
 				fw.turn(turning_angle)
 				time.sleep(0.2)
-				bw.set_speed(forward_speed)
+				bw.speed = forward_speed
 				bw.forward()
 
 				

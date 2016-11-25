@@ -12,17 +12,21 @@
 '''
 
 from SunFounder_Light_Follower import Light_Follower
-from Drivers import front_wheels
-from Drivers import back_wheels
+from picar import front_wheels
+from picar import back_wheels
+from picar import ADC
 import time
 
 lf = Light_Follower.Light_Follower()
 fw = front_wheels.Front_Wheels()
 bw = back_wheels.Back_Wheels()
+adc = ADC()
+
+lf.read_analog = adc.read
 
 gate_value = 50		# less then the normal, will act
 forward_speed = 90
-bw.set_speed(forward_speed)
+bw.speed = forward_speed
 lt_status_last = [0,0,0]
 
 a_step = 20
@@ -42,9 +46,9 @@ def calibration():
 	bw.forward()
 	for times in xrange(1,10):
 		print "calibrate %d "%times
-		A0 = lf.read_analog()[0]
-		A1 = lf.read_analog()[1]
-		A2 = lf.read_analog()[2]
+		A0 = lf.read_analogs()[0]
+		A1 = lf.read_analogs()[1]
+		A2 = lf.read_analogs()[2]
 
 		env0_list.append(A0)
 		env1_list.append(A1)
@@ -66,7 +70,7 @@ def calibration():
 
 def start_follower():
 	print "start_follow"
-	bw.set_speed(forward_speed)
+	bw.speed = forward_speed
 
 	while True:
 		lt_status_now = lf.read_flashlight()
@@ -83,22 +87,22 @@ def start_follower():
 		if	lt_status_now in ([0,1,0],[1,1,1]):
 			fw.turn(90)
 			bw.forward()
-			bw.set_speed(forward_speed)
+			bw.speed = forward_speed
 		# turn right
 		elif lt_status_now in ([1,1,0],[1,0,0]):
 			fw.turn(90 - step)
 			bw.forward()
-			bw.set_speed(forward_speed)
+			bw.speed = forward_speed
 		# turn left
 		elif lt_status_now in ([0,1,1],[0,0,1]):
 			fw.turn(90 + step)
 			bw.forward()
-			bw.set_speed(forward_speed)
+			bw.speed = forward_speed
 		# backward
 		elif lt_status_now == [1,0,1]:
 			fw.turn(90)
 			bw.backward()
-			bw.set_speed(forward_speed)
+			bw.speed = forward_speed
 		# none of all above
 		elif lt_status_now == [0,0,0]:
 			fw.turn(90)

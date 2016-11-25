@@ -1,7 +1,8 @@
 from SunFounder_Ultrasonic_Avoidance import Ultrasonic_Avoidance
+import time
 
 UA = Ultrasonic_Avoidance.Ultrasonic_Avoidance(17)
-treshold = 10
+threshold = 10
 
 def main():
 	distance = UA.get_distance()

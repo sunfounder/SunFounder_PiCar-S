@@ -13,8 +13,9 @@
 
 from SunFounder_Light_Follower import Light_Follower
 from SunFounder_Ultrasonic_Avoidance import Ultrasonic_Avoidance
-from Drivers import front_wheels
-from Drivers import back_wheels
+from picar import front_wheels
+from picar import back_wheels
+from picar import ADC
 import time
 
 # D0~D7 to BCM number
@@ -31,6 +32,9 @@ ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(D0)
 lf = Light_Follower.Light_Follower()
 fw = front_wheels.Front_Wheels()
 bw = back_wheels.Back_Wheels()
+adc = ADC()
+
+lf.read_analog = adc.read
 
 gate_value = 50		# less then the normal, will act
 forward_speed = 90
@@ -58,13 +62,13 @@ def calibration():	# measure 10 times then use the minimal as reference
 	env2_list = []
 	fw.turn(70)
 	bw.forward()
-	bw.set_speed(forward_speed)
+	bw.speed = forward_speed
 
 	for times in xrange(1,10):
 		print "calibrate %d "%times
-		A0 = lf.read_analog()[0]
-		A1 = lf.read_analog()[1]
-		A2 = lf.read_analog()[2]
+		A0 = lf.read_analogs()[0]
+		A1 = lf.read_analogs()[1]
+		A2 = lf.read_analogs()[2]
 
 		env0_list.append(A0)
 		env1_list.append(A1)
@@ -143,7 +147,7 @@ def main():
 		# touch obstruction, backward
 		if avoid_flag == 2:	
 			bw.backward()
-			bw.set_speed(backward_speed)
+			bw.speed = backward_speed
 			print " touch obstruction"
 			time.sleep(1)
 			bw.stop()
@@ -152,7 +156,7 @@ def main():
 		elif avoid_flag == 1: 
 			fw.turn(90 + turning_angle)
 			bw.forward()
-			bw.set_speed(forward_speed)
+			bw.speed = forward_speed
 			print "  near obstruction"
 			time.sleep(1)
 			bw.stop()
@@ -163,19 +167,19 @@ def main():
 			if light_flag == 0:		# direction
 				fw.turn(90)
 				bw.forward()
-				bw.set_speed(forward_speed)
+				bw.speed = forward_speed
 			elif light_flag == 1:	# turn right
 				fw.turn(90 - step)
 				bw.forward()
-				bw.set_speed(forward_speed)
+				bw.speed = forward_speed
 			elif light_flag == 2:	# turn left
 				fw.turn(90 + step)
 				bw.forward()
-				bw.set_speed(forward_speed)
+				bw.speed = forward_speed
 			elif light_flag == 3:	# backward
 				fw.turn(90)
 				bw.backward()
-				bw.set_speed(forward_speed)
+				bw.speed = forward_speed
 			elif light_flag == 4:	# stop to wait light
 				fw.turn(90)
 				bw.stop()

@@ -12,8 +12,8 @@
 '''
 
 from SunFounder_Ultrasonic_Avoidance import Ultrasonic_Avoidance
-from Drivers import front_wheels
-from Drivers import back_wheels
+from picar import front_wheels
+from picar import back_wheels
 import time
 
 # D0~D7 to BCM number
@@ -40,24 +40,24 @@ turn_distance = 20
 def start_avoidance():
 	print 'start_avoidance'
 	fw.turn(90)
-	#bw.set_speed(forward_speed)
+	#bw.speed = forward_speed
 	bw.forward()
 
 	while True:
 		distance = ua.get_distance()
 		if 0<=distance<back_distance: # backward
 			bw.backward()
-			bw.set_speed(backward_speed)
+			bw.speed = backward_speed
 			time.sleep(1)
 		elif back_distance<distance<turn_distance : # turn
 			fw.turn(90 + turning_angle)
 			bw.forward()
-			bw.set_speed(forward_speed)
+			bw.speed = forward_speed
 			time.sleep(1)
 		else:						# forward
 			fw.turn_straight()
 			bw.forward()
-			bw.set_speed(forward_speed)
+			bw.speed = forward_speed
 
 		print 'distance = ',distance
 
