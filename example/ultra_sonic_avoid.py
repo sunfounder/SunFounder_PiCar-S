@@ -16,19 +16,9 @@ from picar import front_wheels
 from picar import back_wheels
 import time
 
-# D0~D7 to BCM number
-D0 = 17
-D1 = 18
-D2 = 27
-D3 = 22
-D4 = 23
-D5 = 24
-D6 = 25
-D7 = 4
-
-ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(D0)
-fw = front_wheels.Front_Wheels()
-bw = back_wheels.Back_Wheels()
+ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(17)
+fw = front_wheels.Front_Wheels(db='config')
+bw = back_wheels.Back_Wheels(db='config')
 
 turning_angle = 40
 forward_speed = 70

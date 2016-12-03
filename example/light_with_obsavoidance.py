@@ -30,8 +30,8 @@ D7 = 4
 
 ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(D0)
 lf = Light_Follower.Light_Follower()
-fw = front_wheels.Front_Wheels()
-bw = back_wheels.Back_Wheels()
+fw = front_wheels.Front_Wheels(db='config')
+bw = back_wheels.Back_Wheels(db='config')
 adc = ADC()
 
 lf.read_analog = adc.read

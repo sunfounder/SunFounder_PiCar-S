@@ -18,8 +18,8 @@ from picar import ADC
 import time
 
 lf = Light_Follower.Light_Follower()
-fw = front_wheels.Front_Wheels()
-bw = back_wheels.Back_Wheels()
+fw = front_wheels.Front_Wheels(db='config')
+bw = back_wheels.Back_Wheels(db='config')
 adc = ADC()
 
 lf.read_analog = adc.read

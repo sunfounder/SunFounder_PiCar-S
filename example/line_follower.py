@@ -26,8 +26,8 @@ turning_angle = 90
 max_off_track_count = 40
 
 
-fw = front_wheels.Front_Wheels()
-bw = back_wheels.Back_Wheels()
+fw = front_wheels.Front_Wheels(db='config')
+bw = back_wheels.Back_Wheels(db='config')
 lf = Line_Follower.Line_Follower(references=REFERENCES)
 
 fw.ready()
