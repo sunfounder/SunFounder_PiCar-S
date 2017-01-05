@@ -29,9 +29,6 @@ turn_distance = 20
 
 def start_avoidance():
 	print 'start_avoidance'
-	fw.turn(90)
-	#bw.speed = forward_speed
-	bw.forward()
 
 	while True:
 		distance = ua.get_distance()
