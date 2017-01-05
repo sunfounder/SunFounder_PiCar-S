@@ -27,24 +27,37 @@ backward_speed = 60
 back_distance = 10
 turn_distance = 20
 
+timeout = 10
+
 def start_avoidance():
 	print 'start_avoidance'
 
 	while True:
 		distance = ua.get_distance()
-		if 0<=distance<back_distance: # backward
-			bw.backward()
-			bw.speed = backward_speed
-			time.sleep(1)
-		elif back_distance<distance<turn_distance : # turn
-			fw.turn(90 + turning_angle)
-			bw.forward()
-			bw.speed = forward_speed
-			time.sleep(1)
+		if distance > 0:
+			count = 0
+			if distance<back_distance: # backward
+				bw.backward()
+				bw.speed = backward_speed
+				time.sleep(1)
+			elif distance < turn_distance:                     # turn
+				fw.turn(90 + turning_angle)
+				bw.forward()
+				bw.speed = forward_speed
+				time.sleep(1)
+			else:
+				fw.turn_straight()
+				bw.forward()
+				bw.speed = forward_speed
+
 		else:						# forward
 			fw.turn_straight()
-			bw.forward()
-			bw.speed = forward_speed
+			if count > timeout:  # timeout, stop;
+				bw.stop()
+			else:
+				bw.forward()
+				bw.speed = forward_speed
+				count += 1
 
 		print 'distance = ',distance
 
