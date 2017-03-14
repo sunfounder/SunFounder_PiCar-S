@@ -16,6 +16,9 @@ from picar import front_wheels
 from picar import back_wheels
 from picar import ADC
 import time
+import picar
+
+picar.setup()
 
 lf = Light_Follower.Light_Follower()
 fw = front_wheels.Front_Wheels(db='config')
@@ -44,7 +47,7 @@ def calibration():
 	env2_list = []
 	fw.turn(70)
 	bw.forward()
-	for times in xrange(1,10):
+	for times in xrange(1,20):
 		print "calibrate %d "%times
 		A0 = lf.read_analogs()[0]
 		A1 = lf.read_analogs()[1]

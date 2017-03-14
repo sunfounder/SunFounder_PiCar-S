@@ -15,7 +15,9 @@ from SunFounder_Line_Follower import Line_Follower
 from picar import front_wheels
 from picar import back_wheels
 import time
+import picar
 
+picar.setup()
 
 REFERENCES = [117, 113, 120, 120, 116]
 
@@ -28,8 +30,9 @@ max_off_track_count = 40
 
 fw = front_wheels.Front_Wheels(db='config')
 bw = back_wheels.Back_Wheels(db='config')
-lf = Line_Follower.Line_Follower(references=REFERENCES)
+lf = Line_Follower.Line_Follower()
 
+lf.references = REFERENCES
 fw.ready()
 bw.ready()
 

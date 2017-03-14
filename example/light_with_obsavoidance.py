@@ -17,6 +17,9 @@ from picar import front_wheels
 from picar import back_wheels
 from picar import ADC
 import time
+import picar
+
+picar.setup()
 
 # D0~D7 to BCM number
 D0 = 17

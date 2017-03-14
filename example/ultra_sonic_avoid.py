@@ -15,33 +15,59 @@ from SunFounder_Ultrasonic_Avoidance import Ultrasonic_Avoidance
 from picar import front_wheels
 from picar import back_wheels
 import time
+import picar
+import random
+
+picar.setup()
 
 ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(17)
 fw = front_wheels.Front_Wheels(db='config')
 bw = back_wheels.Back_Wheels(db='config')
+fw.turning_max = 45
 
-turning_angle = 40
 forward_speed = 70
-backward_speed = 60
+backward_speed = 70
 
 back_distance = 10
 turn_distance = 20
 
 timeout = 10
+last_angle = 90
+
+def rand_dir():
+	global last_angle
+	_dir = random.randint(0, 1)
+	angle = (90 - fw.turning_max) + (_dir * 2* fw.turning_max)
+	last_angle = angle
+	return angle
+
+def opposite_angle():
+	global last_angle
+	if last_angle < 90:
+		angle = last_angle + 2* fw.turning_max
+	else:
+		angle = last_angle - 2* fw.turning_max
+	last_angle = angle
+	return angle
 
 def start_avoidance():
 	print 'start_avoidance'
 
+	count = 0
 	while True:
 		distance = ua.get_distance()
 		if distance > 0:
 			count = 0
-			if distance<back_distance: # backward
+			if distance < back_distance: # backward
+				fw.turn(opposite_angle())
 				bw.backward()
 				bw.speed = backward_speed
 				time.sleep(1)
-			elif distance < turn_distance:                     # turn
-				fw.turn(90 + turning_angle)
+				fw.turn(opposite_angle())
+				bw.forward()
+				time.sleep(1)
+			elif distance < turn_distance: # turn
+				fw.turn(rand_dir())
 				bw.forward()
 				bw.speed = forward_speed
 				time.sleep(1)
@@ -55,7 +81,7 @@ def start_avoidance():
 			if count > timeout:  # timeout, stop;
 				bw.stop()
 			else:
-				bw.forward()
+				bw.backward()
 				bw.speed = forward_speed
 				count += 1
 
