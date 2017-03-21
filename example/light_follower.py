@@ -27,7 +27,7 @@ adc = ADC()
 
 lf.read_analog = adc.read
 
-gate_value = 50		# less then the normal, will act
+gate_value = 30		# less then the normal, will act
 forward_speed = 90
 bw.speed = forward_speed
 lt_status_last = [0,0,0]

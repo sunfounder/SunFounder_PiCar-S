@@ -18,9 +18,11 @@ import time
 import picar
 import random
 
+force_turning = -1    # 0 = left, 1 = right, -1 = random
+
 picar.setup()
 
-ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(17)
+ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(20)
 fw = front_wheels.Front_Wheels(db='config')
 bw = back_wheels.Back_Wheels(db='config')
 fw.turning_max = 45
@@ -36,7 +38,10 @@ last_angle = 90
 
 def rand_dir():
 	global last_angle
-	_dir = random.randint(0, 1)
+	if force_turning == -1:
+		_dir = random.randint(0, 1)
+	else:
+		_dir = force_turning
 	angle = (90 - fw.turning_max) + (_dir * 2* fw.turning_max)
 	last_angle = angle
 	return angle
@@ -56,9 +61,11 @@ def start_avoidance():
 	count = 0
 	while True:
 		distance = ua.get_distance()
+		print "distance: %scm" % distance
 		if distance > 0:
 			count = 0
 			if distance < back_distance: # backward
+				print  "backward"
 				fw.turn(opposite_angle())
 				bw.backward()
 				bw.speed = backward_speed
@@ -67,6 +74,7 @@ def start_avoidance():
 				bw.forward()
 				time.sleep(1)
 			elif distance < turn_distance: # turn
+				print "turn"
 				fw.turn(rand_dir())
 				bw.forward()
 				bw.speed = forward_speed
@@ -84,8 +92,6 @@ def start_avoidance():
 				bw.backward()
 				bw.speed = forward_speed
 				count += 1
-
-		print 'distance = ',distance
 
 def stop():
 	bw.stop()

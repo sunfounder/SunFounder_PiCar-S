@@ -1,7 +1,7 @@
 from SunFounder_Ultrasonic_Avoidance import Ultrasonic_Avoidance
 import time
 
-UA = Ultrasonic_Avoidance.Ultrasonic_Avoidance(17)
+UA = Ultrasonic_Avoidance.Ultrasonic_Avoidance(20)
 threshold = 10
 
 def main():

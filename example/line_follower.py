@@ -19,14 +19,16 @@ import picar
 
 picar.setup()
 
-REFERENCES = [117, 113, 120, 120, 116]
-
-forward_speed = 100
-backward_speed = 70
+REFERENCES = [200, 200, 200, 200, 200]
+#calibrate = True
+calibrate = False
+forward_speed = 80
+backward_speed = 50
 turning_angle = 90
 
 max_off_track_count = 40
 
+delay = 0.0005
 
 fw = front_wheels.Front_Wheels(db='config')
 bw = back_wheels.Back_Wheels(db='config')
@@ -35,6 +37,7 @@ lf = Line_Follower.Line_Follower()
 lf.references = REFERENCES
 fw.ready()
 bw.ready()
+fw.turning_max = 45
 
 def straight_run():
 	while True:
@@ -43,8 +46,8 @@ def straight_run():
 		fw.turn_straight()
 
 def setup():
-
-	cali()
+	if calibrate:
+		cali()
 
 def main():
 	global turning_angle
@@ -52,9 +55,9 @@ def main():
 	bw.speed = forward_speed
 
 	a_step = 3
-	b_step = 15
+	b_step = 10
 	c_step = 30
-	d_step = 50
+	d_step = 45
 	bw.forward()
 	while True:
 		lt_status_now = lf.read_digital()
@@ -83,7 +86,6 @@ def main():
 		elif lt_status_now in ([0,0,1,1,0],[0,0,0,1,0],[0,0,0,1,1],[0,0,0,0,1]):
 			off_track_count = 0
 			turning_angle = int(90 + step)
-			
 		elif lt_status_now == [0,0,0,0,0]:
 			off_track_count += 1
 			if off_track_count > max_off_track_count:
@@ -99,6 +101,7 @@ def main():
 				time.sleep(0.2)
 				bw.speed = forward_speed
 				bw.forward()
+				time.sleep(0.2)
 
 				
 
@@ -106,6 +109,7 @@ def main():
 			off_track_count = 0
 	
 		fw.turn(turning_angle)
+		time.sleep(delay)
 
 def cali():
 	references = [0, 0, 0, 0, 0]
@@ -147,7 +151,7 @@ def destroy():
 
 if __name__ == '__main__':
 	try:
-		#setup()
+		setup()
 		main()
 		#straight_run()
 	except KeyboardInterrupt:
