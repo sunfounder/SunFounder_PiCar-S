@@ -18,7 +18,7 @@ import time
 import picar
 import random
 
-force_turning = -1    # 0 = left, 1 = right, -1 = random
+force_turning = 0    # 0 = random direction, 1 = force left, 2 = force right, 3 = orderdly
 
 picar.setup()
 
@@ -35,13 +35,17 @@ turn_distance = 20
 
 timeout = 10
 last_angle = 90
-
+last_dir = 0
 def rand_dir():
-	global last_angle
-	if force_turning == -1:
+	global last_angle, last_dir
+	if force_turning == 0:
 		_dir = random.randint(0, 1)
+	elif force_turning == 3:
+		_dir = not last_dir
+		last_dir = _dir
+		print 'last dir  %s' % last_dir
 	else:
-		_dir = force_turning
+		_dir = force_turning - 1
 	angle = (90 - fw.turning_max) + (_dir * 2* fw.turning_max)
 	last_angle = angle
 	return angle
