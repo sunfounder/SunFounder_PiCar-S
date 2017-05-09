@@ -23,8 +23,8 @@ REFERENCES = [200, 200, 200, 200, 200]
 #calibrate = True
 calibrate = False
 forward_speed = 80
-backward_speed = 50
-turning_angle = 90
+backward_speed = 70
+turning_angle = 40
 
 max_off_track_count = 40
 
@@ -89,7 +89,9 @@ def main():
 		elif lt_status_now == [0,0,0,0,0]:
 			off_track_count += 1
 			if off_track_count > max_off_track_count:
-				tmp_angle = -(turning_angle - 90) + 90
+				#tmp_angle = -(turning_angle - 90) + 90
+				tmp_angle = (turning_angle-90)/abs(90-turning_angle)
+				tmp_angle *= fw.turning_max
 				bw.speed = backward_speed
 				bw.backward()
 				fw.turn(tmp_angle)
@@ -151,9 +153,16 @@ def destroy():
 
 if __name__ == '__main__':
 	try:
-		setup()
-		main()
-		#straight_run()
+		try:
+			while True:
+				setup()
+				main()
+				#straight_run()
+		except Exception,e:
+			print e
+			print 'error try again in 5'
+			destroy()
+			time.sleep(5)
 	except KeyboardInterrupt:
 		destroy()
 
