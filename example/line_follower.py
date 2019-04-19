@@ -61,10 +61,10 @@ def main():
 	bw.forward()
 	while True:
 		lt_status_now = lf.read_digital()
-		print lt_status_now
+		print(lt_status_now)
 		# Angle calculate
 		if	lt_status_now == [0,0,1,0,0]:
-			step = 0
+			step = 0	
 		elif lt_status_now == [0,1,1,0,0] or lt_status_now == [0,0,1,1,0]:
 			step = a_step
 		elif lt_status_now == [0,1,0,0,0] or lt_status_now == [0,0,0,1,0]:
@@ -115,10 +115,10 @@ def main():
 
 def cali():
 	references = [0, 0, 0, 0, 0]
-	print "cali for module:\n  first put all sensors on white, then put all sensors on black"
+	print("cali for module:\n  first put all sensors on white, then put all sensors on black")
 	mount = 100
 	fw.turn(70)
-	print "\n cali white"
+	print("\n cali white")
 	time.sleep(4)
 	fw.turn(90)
 	white_references = lf.get_average(mount)
@@ -130,7 +130,7 @@ def cali():
 	time.sleep(1)
 
 	fw.turn(110)
-	print "\n cali black"
+	print("\n cali black")
 	time.sleep(4)
 	fw.turn(90)
 	black_references = lf.get_average(mount)
@@ -144,7 +144,7 @@ def cali():
 	for i in range(0, 5):
 		references[i] = (white_references[i] + black_references[i]) / 2
 	lf.references = references
-	print "Middle references =", references
+	print("Middle references =", references)
 	time.sleep(1)
 
 def destroy():
@@ -158,9 +158,9 @@ if __name__ == '__main__':
 				setup()
 				main()
 				#straight_run()
-		except Exception,e:
-			print e
-			print 'error try again in 5'
+		except Exception as e:
+			print(e)
+			print('error try again in 5')
 			destroy()
 			time.sleep(5)
 	except KeyboardInterrupt:

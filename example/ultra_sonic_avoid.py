@@ -43,7 +43,7 @@ def rand_dir():
 	elif force_turning == 3:
 		_dir = not last_dir
 		last_dir = _dir
-		print 'last dir  %s' % last_dir
+		print('last dir  %s' % last_dir)
 	else:
 		_dir = force_turning - 1
 	angle = (90 - fw.turning_max) + (_dir * 2* fw.turning_max)
@@ -60,16 +60,16 @@ def opposite_angle():
 	return angle
 
 def start_avoidance():
-	print 'start_avoidance'
+	print('start_avoidance')
 
 	count = 0
 	while True:
 		distance = ua.get_distance()
-		print "distance: %scm" % distance
+		print("distance: %scm" % distance)
 		if distance > 0:
 			count = 0
 			if distance < back_distance: # backward
-				print  "backward"
+				print( "backward")
 				fw.turn(opposite_angle())
 				bw.backward()
 				bw.speed = backward_speed
@@ -78,7 +78,7 @@ def start_avoidance():
 				bw.forward()
 				time.sleep(1)
 			elif distance < turn_distance: # turn
-				print "turn"
+				print("turn")
 				fw.turn(rand_dir())
 				bw.forward()
 				bw.speed = forward_speed

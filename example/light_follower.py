@@ -38,7 +38,7 @@ b_step = 40
 FLASH_LIGHT_DELAY = 50
 
 def calibration():
-	print "calibrating....."
+	print("calibrating.....")
 	references = [0, 0, 0]
 	global gate_value
 
@@ -48,7 +48,7 @@ def calibration():
 	fw.turn(70)
 	bw.forward()
 	for times in xrange(1,20):
-		print "calibrate %d "%times
+		print("calibrate %d "%times)
 		A0 = lf.read_analogs()[0]
 		A1 = lf.read_analogs()[1]
 		A2 = lf.read_analogs()[2]
@@ -68,16 +68,16 @@ def calibration():
 
 	fw.turn(90)
 	bw.stop()
-	print "calibration finished"
-	print "Minimal references =", references
+	print("calibration finished")
+	print("Minimal references =", references)
 
 def start_follower():
-	print "start_follow"
+	print("start_follow")
 	bw.speed = forward_speed
 
 	while True:
 		lt_status_now = lf.read_flashlight()
-		print lt_status_now
+		print(lt_status_now)
 		# Angle calculate
 		if	lt_status_now == [0,1,0]:
 			step = 0

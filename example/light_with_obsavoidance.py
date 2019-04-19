@@ -56,7 +56,7 @@ back_distance = 10
 turn_distance = 20
 
 def calibration():	# measure 10 times then use the minimal as reference
-	print "calibrating....."
+	print("calibrating.....")
 	references = [0, 0, 0]
 	global gate_value
 
@@ -68,7 +68,7 @@ def calibration():	# measure 10 times then use the minimal as reference
 	bw.speed = forward_speed
 
 	for times in xrange(1,10):
-		print "calibrate %d "%times
+		print("calibrate %d "%times)
 		A0 = lf.read_analogs()[0]
 		A1 = lf.read_analogs()[1]
 		A2 = lf.read_analogs()[2]
@@ -88,16 +88,16 @@ def calibration():	# measure 10 times then use the minimal as reference
 
 	fw.turn(90)
 	bw.stop()
-	print "calibration finished"
-	print "Minimal references =", references
+	print("calibration finished")
+	print("Minimal references =", references)
 
 def state_light():
-	#print "start_follow"
+	#print("start_follow")
 	global step
 
 	while True:
 		lt_status_now = lf.read_flashlight()
-		print lt_status_now
+		print(lt_status_now)
 		# Angle calculate
 		if	lt_status_now == [0,1,0]:
 			step = 0
@@ -125,7 +125,7 @@ def state_light():
 		return light_flag
 
 def state_sonic():
-	#print "start_avoidance"
+	#print("start_avoidance")
 	distance = ua.get_distance()
 	if 0<=distance<back_distance: # backward
 		avoid_flag = 2
@@ -134,7 +134,7 @@ def state_sonic():
 	else:						# forward
 		avoid_flag = 0
 
-	print 'distance = ',distance
+	print('distance = ',distance)
 	return avoid_flag
 
 def stop():
@@ -151,7 +151,7 @@ def main():
 		if avoid_flag == 2:	
 			bw.backward()
 			bw.speed = backward_speed
-			print " touch obstruction"
+			print(" touch obstruction")
 			time.sleep(1)
 			bw.stop()
 
@@ -160,13 +160,13 @@ def main():
 			fw.turn(90 + turning_angle)
 			bw.forward()
 			bw.speed = forward_speed
-			print "  near obstruction"
+			print("  near obstruction")
 			time.sleep(1)
 			bw.stop()
 
 		# no obstruction, track light
 		else:	
-			print "   no obstruction, light_flag = ",light_flag
+			print("   no obstruction, light_flag = ",light_flag)
 			if light_flag == 0:		# direction
 				fw.turn(90)
 				bw.forward()

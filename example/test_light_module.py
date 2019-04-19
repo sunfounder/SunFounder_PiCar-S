@@ -16,7 +16,7 @@ def main():
 	#a1 = lf.analog_read(1)
 	#a2 = lf.analog_read(2)
 
-	print "a0 = %s	a1 = %s	a2 = %s"%(a0, a1, a2)
+	print("a0 = %s	a1 = %s	a2 = %s"%(a0, a1, a2))
 
 if __name__ == '__main__':
 	while True:
