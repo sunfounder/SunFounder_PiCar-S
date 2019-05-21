@@ -67,7 +67,7 @@ def calibration():	# measure 10 times then use the minimal as reference
 	bw.forward()
 	bw.speed = forward_speed
 
-	for times in xrange(1,10):
+	for times in range(1,10):
 		print("calibrate %d "%times)
 		A0 = lf.read_analogs()[0]
 		A1 = lf.read_analogs()[1]
@@ -83,7 +83,7 @@ def calibration():	# measure 10 times then use the minimal as reference
 	references[1] = min(env1_list)
 	references[2] = min(env2_list)
 
-	for i in xrange(0,3):
+	for i in range(0,3):
 		lf.references[i] = references[i] - gate_value
 
 	fw.turn(90)
