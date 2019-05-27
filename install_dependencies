@@ -76,6 +76,7 @@ sudo apt-get update
 	cd SunFounder_PiCar
 	echo -e "    Installing PiCar module \n"
 	sudo python3 setup.py install
+	sudo python setup.py install
 	cd $repo_dir
 	echo -e "complete\n"
 
