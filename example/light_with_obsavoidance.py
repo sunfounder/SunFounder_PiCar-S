@@ -22,16 +22,16 @@ import picar
 picar.setup()
 
 # D0~D7 to BCM number
-D0 = 17
-D1 = 18
-D2 = 27
-D3 = 22
-D4 = 23
-D5 = 24
-D6 = 25
-D7 = 4
+# D0 = 17
+# D1 = 18
+# D2 = 27
+# D3 = 22
+# D4 = 23
+# D5 = 24
+# D6 = 25
+# D7 = 4
 
-ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(D0)
+ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(20)
 lf = Light_Follower.Light_Follower()
 fw = front_wheels.Front_Wheels(db='config')
 bw = back_wheels.Back_Wheels(db='config')
