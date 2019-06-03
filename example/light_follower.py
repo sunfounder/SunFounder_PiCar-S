@@ -47,7 +47,7 @@ def calibration():
 	env2_list = []
 	fw.turn(70)
 	bw.forward()
-	for times in xrange(1,20):
+	for times in range(1,20):
 		print("calibrate %d "%times)
 		A0 = lf.read_analogs()[0]
 		A1 = lf.read_analogs()[1]
@@ -63,7 +63,7 @@ def calibration():
 	references[1] = min(env1_list)
 	references[2] = min(env2_list)
 
-	for i in xrange(0,3):
+	for i in range(0,3):
 		lf.references[i] = references[i] - gate_value
 
 	fw.turn(90)
