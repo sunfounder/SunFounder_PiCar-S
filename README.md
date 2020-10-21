@@ -1,17 +1,17 @@
 ## SunFounder PiCar-S
-SunFounder PiCar Kit 成员之一：PiCar-S(S mean sensors)
+SunFounder PiCar Kit Series：PiCar-S(S for sensors)
 
 Quick Links:
 
- * [About SunFounder PiCar-S](#about_this_thing)
+ * [About SunFounder PiCar-S](#about_this_kit)
  * [Update](#update)
  * [About SunFounder](#about_sunfounder)
  * [License](#license)
  * [Contact us](#contact_us)
 
-<a id="about_this_thing"></a>
+<a id="about_this_kit"></a>
 ### About SunFounder PiCar-S :
-树莓派小车系列，传感器小车
+Raspberry Pi Robot, Sensor Robot
 
 <a id="update"></a>
 ### Update:
