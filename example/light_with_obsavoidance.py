@@ -12,7 +12,7 @@
 '''
 
 from SunFounder_Light_Follower import Light_Follower
-from SunFounder_Ultrasonic_Avoidance import Ultrasonic_Avoidance
+from ultrasonic_module import Ultrasonic_Avoidance
 from picar import front_wheels
 from picar import back_wheels
 from picar import ADC
@@ -31,7 +31,7 @@ picar.setup()
 # D6 = 25
 # D7 = 4
 
-ua = Ultrasonic_Avoidance.Ultrasonic_Avoidance(20)
+ua = Ultrasonic_Avoidance()
 lf = Light_Follower.Light_Follower()
 fw = front_wheels.Front_Wheels(db='config')
 bw = back_wheels.Back_Wheels(db='config')
