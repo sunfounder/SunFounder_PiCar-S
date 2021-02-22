@@ -15,14 +15,21 @@ Raspberry Pi Robot, Sensor Robot
 
 <a id="update"></a>
 ### Update:
-2016-09-19:
- - Creat this repository
+
+2021-02-20:
+Update the user manual
+
 2016-10-09:
  - Add 3 module drivers and 4 examples
-2016-10-12:
+
+ 2016-10-12:
  - Clean up and organize files
-2016-11-17:
+
+ 2016-11-17:
  - Change name to PiCar-S
+
+2016-09-19:
+ - Creat this repository
 
 ----------------------------------------------
 <a id="about_sunfounder"></a>
