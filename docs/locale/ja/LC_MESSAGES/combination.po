@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, SunFounder
+# This file is distributed under the same license as the SunFounder PiCar-S
+# Kit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder PiCar-S Kit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-20 18:43+0800\n"
+"PO-Revision-Date: 2021-05-28 16:17+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.3\n"
+
+#: ../combination.rst:2
+msgid "Combination"
+msgstr "組合せ"
+
+#: ../combination.rst:4
+msgid ""
+"So, this smart car now is smart in three separate features. But, you think "
+"only one sensor module is not enough? Try to combine those sensor modules in "
+"one! Here we can show you an experiment - light following with obstacle "
+"avoidance for reference."
+msgstr ""
+"したがって、このスマートカーは3つの異なる機能でスマートになる。しかし、1つのセ"
+"ンサーモジュールだけでは十分ではないと思っているか？それらのセンサーモジュール"
+"を1つに組み合わせてみてください！ここでは、実験を示す-参照用の障害物回避による"
+"ライトフォロー。"
+
+#: ../combination.rst:9
+msgid ""
+"When the car runs with the light follower, sometimes it may crash into "
+"obstacles when following the light, and it’s not quite convenient to let the "
+"car move back (though we've set the car to move backward if the array is "
+"[1,0,1], it’s hard to acquire these values since the the car is moving and the "
+"light cannot be exactly as required sometimes). So we consider Also, you can "
+"let the car move backwards by a paper board or your foot, which is quite easy."
+msgstr ""
+"ライトフォロアを使用して車を走行させると、ライトを追うときに障害物にぶつかる場"
+"合がある。また、車を後退させるのはあまり便利ではない（ただし、配列が[1,0,1]であ"
+"る場合、車を後退させると設定したが、車が動いていて、ライトが時々正確にできない"
+"場合があるため、これらの値を取得することは難しい）。だから、板紙や足で車を後退"
+"させることもできるので、それがとても簡単である。"
+
+#: ../combination.rst:17
+msgid "Check below the program of this example."
+msgstr "この例のプログラムを以下で確認してください。"
+
+#: ../combination.rst:19
+msgid ""
+"Assemble the light follower module and ultrasonic obstacle avoidance module on "
+"the car first."
+msgstr ""
+"まず、車のライトフォロアモジュールと超音波障害物回避モジュールを組み立てる。"
+
+#: ../combination.rst:22
+msgid ""
+"Log into the Raspberry Pi on your computer via ssh, and get into the directory"
+msgstr "ssh経由でコンピューターのRaspberry Piにログインし、ディレクトリに入る"
+
+#: ../combination.rst:29
+msgid "Run the code."
+msgstr "コードを実行する。"
+
+#: ../combination.rst:36
+msgid "How it works"
+msgstr "動作原理"
+
+#: ../combination.rst:38
+msgid ""
+"Set the obstacle avoidance as a superior priority than light following: if "
+"there is an obstacle in front of the car, it walk away from the obstacle and "
+"back to the track; if not, then the car will keep follow light."
+msgstr ""
+"障害物回避をライトフォローよりも優先順位を高く設定する。車の前に障害物がある場"
+"合、障害物から離れて軌道に戻る。そうでない場合、車はライトを追従する。"
+
+#: ../combination.rst:43
+msgid ""
+"Since the light following and obstacle avoidance of the car depend on the "
+"sensor modules, we set two functions to read the status of two sensors "
+"separately, and assign values to flags to be returned from the functions: "
+"**state_light()**, and **state_sonic()**."
+msgstr ""
+"車のライトフォローと障害物回避はセンサーモジュールに依存するため、2つのセンサー"
+"のステータスを個別に読み取る2つの関数を設定し、それらの関数から返されるフラグに"
+"値を割り当てる：**state_light()**と**state_sonic()**。"
+
+#: ../combination.rst:48
+msgid "In the function **state_sonic()**, the return value is **avoid_flag**."
+msgstr "関数**state_sonic()**は、戻り値は**avoid_flag**である。"
+
+#: ../combination.rst:50
+msgid "If the car is **close to** an obstacle, it will return **avoid_flag =2**;"
+msgstr "車が障害物に**接近している**場合は、**avoid_flag=2**を返す；"
+
+#: ../combination.rst:52
+msgid "if it is **too close to** the obstacle, it will return **avoid_flag =1**;"
+msgstr "障害物に**近すぎる**場合は、**avoid_flag = 1**を返す；"
+
+#: ../combination.rst:54
+msgid ""
+"if ahead **no obstacle** is detected near, it will return **avoid_flag =0**."
+msgstr "前方に障害物が**検出されない**場合は、**avoid_flag = 0**を返す。"
+
+#: ../combination.rst:56
+msgid "In the function **state_light()**, the return value is **light_flag**."
+msgstr "関数**state_light()**では、戻り値は**light_flag**である。"
+
+#: ../combination.rst:58
+msgid ""
+"If the light spot is **in front of** the car, it will return **light_flag = "
+"0**;"
+msgstr "ライトスポットが車の**前にある**場合、**light_flag = 0**を返す；"
+
+#: ../combination.rst:60
+msgid "if the spot is **at the right side**, it will return **light_flag = 1**;"
+msgstr "スポットが**右側にある**場合、**light_flag = 1**を返す；"
+
+#: ../combination.rst:62
+msgid "if the spot is **at the left side**, it will return **light_flag = 2**;"
+msgstr "スポットが**左側にある**場合、**light_flag = 2**を返す；"
+
+#: ../combination.rst:64
+msgid "if the spot is **at the back**, it will return **light_flag = 3**;"
+msgstr "スポットが**後ろにある**場合、**light_flag = 3**を返す；"
+
+#: ../combination.rst:66
+msgid "if **no light spot** is detected, it will return **light_flag = 4**."
+msgstr "**光点が検出されない**場合、**light_flag = 4**を返す。"
+
+#: ../combination.rst:68
+msgid ""
+"The main program **main()** will run the corresponding program according to "
+"**avoid_flag** and **light_flag**, and the **avoid_flag** is superior in "
+"priority."
+msgstr ""
+"メインプログラム**main() **は、*8avoid_flag**と**light_flag**に従って対応するプ"
+"ログラムを実行し、**avoid_flag**は優先順位となっている。"

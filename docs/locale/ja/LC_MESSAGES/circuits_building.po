@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, SunFounder
+# This file is distributed under the same license as the SunFounder PiCar-S
+# Kit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder PiCar-S Kit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-20 18:43+0800\n"
+"PO-Revision-Date: 2021-05-28 16:10+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.3\n"
+
+#: ../circuits_building.rst:2
+msgid "Circuits Building"
+msgstr "回路構築"
+
+#: ../circuits_building.rst:5
+msgid "Connect the Power"
+msgstr "電源を接続する"
+
+msgid "connect-power_bb"
+msgstr "connect-power_bb"
+
+#: ../circuits_building.rst:13
+msgid "Connect the Modules"
+msgstr "モジュールを接続する"
+
+msgid "connect-modules_bb"
+msgstr "connect-modules_bb"
+
+#: ../circuits_building.rst:21
+msgid "Connect the Servo"
+msgstr "サーボを接続する"
+
+msgid "connect-servo_bb"
+msgstr "connect-servo_bb"
+
+#: ../circuits_building.rst:29
+msgid "Connect the Motor"
+msgstr "モーターを接続する"
+
+msgid "connect-motor_bb"
+msgstr "connect-motor_bb"
+
+#: ../circuits_building.rst:36
+msgid "The complete connection is shown as follows."
+msgstr "完全な接続は次のように表示される。"
+
+msgid "circuit_bb"
+msgstr "circuit_bb"
+
+#: ../circuits_building.rst:43
+msgid ""
+"So now the circuit boards are all installed onto the car and the wiring "
+"is done. But still you're not ready to adjust the servo yet. First you "
+"need to complete some software installation."
+msgstr ""
+"これで、回路基板がすべて車に取り付けられ、配線が完了した。しかし、それで"
+"もまだサーボを調整する準備ができていない。まず、いくつかのソフトウェアの"
+"インストールを完了しなければならない。"

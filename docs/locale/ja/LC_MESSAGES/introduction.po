@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, SunFounder
+# This file is distributed under the same license as the SunFounder PiCar-S
+# Kit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder PiCar-S Kit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-20 18:43+0800\n"
+"PO-Revision-Date: 2021-05-28 16:44+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.3\n"
+
+#: ../introduction.rst:2
+msgid "Introduction"
+msgstr "前書き"
+
+#: ../introduction.rst:4
+msgid ""
+"The PiCar-S is a **SMART SENSOR** car robot based on Raspberry Pi, which "
+"comes with three sensor modules, including the light follower, line "
+"follower and ultrasonic obstacle avoidance. With these modules, this "
+"smart car is capable of some simple automatic actions. Thus, you can "
+"learn some basics of programming in Python to control the car with these "
+"sensors. Let’s start with building this smart car!"
+msgstr ""
+"**PiCar-S**はRaspberry Piに基づく**スマートセンサー**カーロボットで、ライ"
+"トフォロワー、ラインフォロワー、超音波障害物回避を含む3つのセンサーモ"
+"ジュールを搭載している。これらのモジュールにより、このスマートカーはいく"
+"つかの簡単な自動動作が可能になる。したがって、これらのセンサーで車を制御"
+"するために、Pythonでのプログラミングについての基本知識を学ぶことができ"
+"る。このスマートカーを作ろう！"
+
+msgid "图片1008"
+msgstr "图片1008"
