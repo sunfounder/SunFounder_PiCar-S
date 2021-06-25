@@ -1,0 +1,411 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, SunFounder
+# This file is distributed under the same license as the SunFounder PiCar-S
+# Kit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder PiCar-S Kit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-20 18:43+0800\n"
+"PO-Revision-Date: 2021-06-08 20:29+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.3\n"
+"Language: ja\n"
+
+#: ../light_following.rst:2
+msgid "Light Following"
+msgstr "ライトフォロワー"
+
+#: ../light_following.rst:5
+msgid "How It Works"
+msgstr "動作原理"
+
+#: ../light_following.rst:7
+msgid ""
+"The light follower module detects light sources in the surroundings, and "
+"transfers the data to the processor. The processor analyzes the data and "
+"finds the direction of the light resource, so it will send a command to "
+"control the movement of the front and rear wheels to approach the resource."
+msgstr ""
+"ライトフォロアモジュールは周囲の光源を検出し、データをプロセッサに転送する。"
+"プロセッサはデータを分析し、光源の方向を見つけるため、前輪と後輪の動きを制御"
+"してリソースにアプローチするコマンドを送信する。"
+
+#: ../light_following.rst:14
+msgid "Procedures"
+msgstr "手順"
+
+#: ../light_following.rst:16
+msgid "**Step 1 Assembly**"
+msgstr "**ステップ1 組み立て**"
+
+#: ../light_following.rst:18
+msgid ""
+"Connect the light follower to the Sensor Connector with **M3*10 screws** and "
+"**M3 nuts**, and then assemble them to the car with two **M3*10 screws** and "
+"two **M3 nuts**. You're suggested to hold the nuts underneath with your "
+"fingers."
+msgstr ""
+"**M3*10ネジ**と**M3ナット**を使用してライトフォロアをセンサーコネクタに接続"
+"し、2つの**M3*10ネジ**と2つの**M3ナット**を使ってそれらを車に組み立てる。指で"
+"ナットを下に持ってください。"
+
+#: ../light_following.rst:26
+msgid "**Step 2 Wiring**"
+msgstr "**ステップ2 配線**"
+
+#: ../light_following.rst:28
+msgid ""
+"Connect the light follower to the Robot HATS with a 5-pin anti-reverse cable "
+"as shown below."
+msgstr ""
+"以下に示すように、5ピンのアンチリバースケーブルでライトフォロアをロボットHATS"
+"に接続する。"
+
+#: ../light_following.rst:35
+msgid ""
+"You may wonder why we connect 5V to 3.3. Well, since the working voltage of "
+"the STM8 chip on the light follower is 2.7-5.5V, we can connect it to 3.3V "
+"here. **DO NOT** connect 5V to 5V! All the analog ports on the Robot HATS "
+"are led from the PCA8591, which is powerd by 3.3V. Therefore, if the voltage "
+"is between 3.3V-5V, the output value will always be 255, thus the PCA8591 "
+"may be damaged if connected to 5V. Remember to connect to **3.3V**."
+msgstr ""
+"なぜ5Vを3.3に接続するのか質問を持っているかもしれない。さて、ライトフォロア上"
+"のSTM8チップの動作電圧は2.7-5.5Vなので、ここで3.3Vに接続できる。5Vを5Vに**接"
+"続しない**でください！Robot HATSのすべてのアナログポートは3.3Vで動作する"
+"PCA8591から導かれる。したがって、電圧が3.3V〜5Vの場合、出力値は常に255になる"
+"ため、5Aに接続するとPCA8591が損傷する恐れがある。必ず**3.3V**に接続してくださ"
+"い。"
+
+#: ../light_following.rst:43
+msgid "The wiring is shown as below:"
+msgstr "配線は次の通りである："
+
+#: ../light_following.rst:48
+msgid "**Step 3 Test**"
+msgstr "**ステップ3 テスト**"
+
+#: ../light_following.rst:50
+msgid "Let’s test the light follower first."
+msgstr "まずライトフォロワーをテストしよう。"
+
+#: ../light_following.rst:63
+msgid ""
+"Expose the phototransistors to the light spot of the flashlight. When you "
+"increase the light intensity, more LEDs light up, and the output values "
+"decrease."
+msgstr ""
+"フォトトランジスタを懐中電灯の光点に当てる。光量を増やすと、より多くのLEDが点"
+"灯し、出力値が減少する。"
+
+#: ../light_following.rst:67
+msgid ""
+"Here we can rotate the blue adjustable resistor to change the values under "
+"the same light luminance. The best status is as follows:"
+msgstr ""
+"ここで、青色の調整可能な抵抗器を回転させて、同じ光の輝度で値を変更できる。最"
+"良のステータスは次のとおりである："
+
+#: ../light_following.rst:73
+msgid "When there is only one LED lights up, the output value is 255"
+msgstr "LEDが1つしか点灯していない場合、出力値は255である。"
+
+#: ../light_following.rst:75
+msgid ""
+"When the light is the brightest and all the LED light up, the output value "
+"is about 10-25."
+msgstr ""
+"ライトが最も明るく、すべてのLEDが点灯する場合、出力値は約10〜25である。"
+
+#: ../light_following.rst:78
+msgid "**Step 4. Get on the road!**"
+msgstr "**ステップ4 旅に出よう！**"
+
+#: ../light_following.rst:88
+msgid ""
+"The car will enter the light following configuration mode when we run the "
+"code above. It will keep turning to the right in a circle to gather the "
+"information of light condition in different directions. So just place the "
+"car in an open field and wait."
+msgstr ""
+"上記のコードを実行すると、車は次の light followingモードに入る。円を描くよう"
+"に右に曲がり続け、さまざまな方向の光の状態に関する情報を収集する。車をより広"
+"い場所に置いて待ってください。"
+
+#: ../light_following.rst:93
+msgid ""
+"When the calibration is done, the car will stop temporarily. Shine a "
+"flashlight on the light follower module, and the car will just follow the "
+"light spot as you moves it."
+msgstr ""
+"補正が完了すると、車は一時停止する。ライトフォロアモジュールの電灯を照らす"
+"と、車は移動するときにライトスポットに追従する。"
+
+#: ../light_following.rst:101
+msgid "Code Explanation for light_follower.py"
+msgstr "－\tlight_follower.pyのコードの説明"
+
+#: ../light_following.rst:103
+msgid "**Whole Work Flow**"
+msgstr "**ワークフロー全体**"
+
+#: ../light_following.rst:105
+msgid ""
+"Light-sensitive sensors need to be calibrated before actual use because of "
+"complex light conditions in the environment. It gathers the information of "
+"the ambient light luminance. The car can follow light only when the light "
+"source is brighter than the surroundings."
+msgstr ""
+"環境の光条件が複雑なので、感光センサーは実際に使用する前に補正する必要があ"
+"る。環境光の輝度の情報を収集する。光源が周囲より明るい場合のみ、車は光に追従"
+"できる。"
+
+#: ../light_following.rst:113
+msgid ""
+"Here write two main functions/modules including light following calibration "
+"and light following in the main program."
+msgstr ""
+"ここでは、補正後のライトとメインプログラム内のライトフォローを含む2つの主要な"
+"関数/モジュールを書き込む。"
+
+#: ../light_following.rst:116
+msgid "**Subflow of Light Follower Calibration Function**"
+msgstr "**ライトフォロア補正機能のサブフロー**"
+
+#: ../light_following.rst:118
+msgid ""
+"We need to configure three light-sensitive components separately, so we set "
+"three lists to store the values in A0, A1, and A2 collected for multiple "
+"times. Then pick out the minimum values, which are the output analog values "
+"in the brightest conditions."
+msgstr ""
+"3つの感光性コンポーネントを個別に構成する必要があるため、何回に収集されたA0、"
+"A1、とA2に値を保存する3つのリストを設定する。次に、最も明るい条件での出力アナ"
+"ログ値である最小値を選ぶ。"
+
+#: ../light_following.rst:123
+msgid ""
+"Since the light source we use is much brighter than the ambient light, we "
+"should take the output values in the brightest conditions as reference."
+msgstr ""
+"使用する光源は環境光よりもはるかに明るいため、最も明るい条件での出力値を参照"
+"として使用してください。"
+
+#: ../light_following.rst:127
+msgid ""
+"Besides, we should set a threshold value - when the gap between the "
+"collected value of the light source and that of the environment is beyond "
+"the threshold, trigger the value switching to 0 or 1. Here we use [0,0,0] to "
+"represent the three photoresistors’ status when they are not triggered. "
+"\"0\" will become \"1\" when the value detected of the corresponding "
+"photoresistor is higher than the threshold. Thus we can set the related "
+"action of the car according to the three-element list."
+msgstr ""
+"さらに、しきい値を設定する必要がある-収集された光源の値と環境の値のギャップが"
+"しきい値を超えた場合、値を0または1に設定する。ここでは、[0,0,0]を使用して、ト"
+"リガーされていないときの3つのフォトレジスターのステータスを表す。対応するフォ"
+"トレジスタの検出値がしきい値よりも高い場合、「0」は「1」になる。したがって、3"
+"つの要素のリストに従って車の関連アクションを設定できる。"
+
+#: ../light_following.rst:135
+msgid ""
+"If there is light detected, the car will move and follow it; if there is no "
+"light detected, the car will stop temporarily and keep turning to detect in "
+"a circle."
+msgstr ""
+"光が検出された場合、車は動き、それに追跡する。光が検出されない場合、車は一時"
+"的に停止し、旋回を続けて円を検出する。"
+
+#: ../light_following.rst:139
+msgid "**Subflow of Light Following Function**"
+msgstr "**ライトフォロアー機能のサブフロー**"
+
+#: ../light_following.rst:144
+msgid ""
+"The light follower includes three phototransistors, thus its status list is "
+"composed of three elements which represent 8 statuses (based on permutation "
+"and combination). And here we need to set related responses to these "
+"statuses."
+msgstr ""
+"ライトフォロワーには3つのフォトトランジスターが含まれるため、そのステータスリ"
+"ストは8つのステータスを表す3つの要素で構成される（順列と組み合わせに基づ"
+"く）。ここでは、これらのステータスに関連する応答を設定する必要がある。"
+
+#: ../light_following.rst:149
+msgid ""
+"The three elements show the status of the three probes: 1 represents light "
+"detected, and 0, for none. For example, [1,0,0] shows that light is detected "
+"only by the left probe, meaning th light source is at the left of the car, "
+"thus setting the car’s response action as turning left; [1,1,0] means that "
+"light is detected on the left and central probes, thus its response action "
+"should be set turning left too; and set it as turning right the same way "
+"according to the corresponding status. When there is no light detected, the "
+"status is [0,0,0], so we set the response action to stop and return to the "
+"standby mode."
+msgstr ""
+"3つの要素は3つのプローブのステータスを示す：1は検出された光を表し、0は検出さ"
+"れなかったことを表す。たとえば、[1,0,0]は光が左側のプローブによってのみ検出さ"
+"れることを示し、つまり、光源が車の左側にあり、車の応答アクションを左折として"
+"設定する。 [1,1,0]は光が左側と中央のプローブで検出されることを意味するため、"
+"その応答アクションも左折に設定する必要がある。対応するステータスに従って同様"
+"に右折するように設定する。光が検出されない場合、ステータスは[0,0,0]であるた"
+"め、応答アクションを停止してスタンバイモードに戻るように設定する。"
+
+#: ../light_following.rst:162
+msgid ""
+"Here, we need to set another variable – the steering angle – to distinguish "
+"between the large-angle and small-angle turning. If the light is at the "
+"central left side (status [1,1,0]), we should apply a small-angle turning; "
+"if the light is at the edge of the left side (status [1,0,0]), we should "
+"apply a large-angle turning."
+msgstr ""
+"ここでは、大角度と小角度の回転を区別するために、別の変数（ステアリング角度）"
+"を設定してください。ライトが左側の中心にある場合（ステータス[1,1,0]）、小角度"
+"の回転を適用する必要がある。ライトが左側の端にある場合（ステータス[1,0,0]）、"
+"大きな角度の回転を適用する。"
+
+#: ../light_following.rst:168
+msgid "**Functions Explanation**"
+msgstr "**機能説明**"
+
+#: ../light_following.rst:170
+msgid "To understand the code, take the software subflows above for reference."
+msgstr ""
+"コードを理解するには、上記のソフトウェアサブフローを参考にしてください。"
+
+#: ../light_following.rst:172
+msgid ""
+"Three Python modules are used in the code including the imported "
+"**light_follower_module**, **front_wheels**, and **back_wheel** previously. "
+"They are drivers for this kit, respectively for light following, front "
+"wheels and rear wheels."
+msgstr ""
+"以前にインポートされた**light_follower_module**、**front_wheels**、と"
+"**back_wheel**を含む3つのPythonモジュールがコードに使われる。これらはこのキッ"
+"トのドライバーであり、それぞれライトフォロー、前輪と後輪となっている。"
+
+#: ../light_following.rst:177
+msgid ""
+"The related classes have been defined here. When the modules are applied to "
+"use, objects will be created for related classes, and different parts of "
+"hardware will be driven by calling a function by the class object."
+msgstr ""
+"関連クラスはここで定義されている。モジュールを適用して使用すると、関連するク"
+"ラスのオブジェクトが作成され、ハードウェアのさまざまな部分がクラスオブジェク"
+"トによる関数を呼び出すことによって駆動される。"
+
+#: ../light_following.rst:181
+msgid ""
+"For example, for the light following module, we create an object named "
+"**lf**:"
+msgstr ""
+"たとえば、ライトフォローモジュールの場合、**lf**という名前のオブジェクトを作"
+"成する："
+
+#: ../light_following.rst:184
+msgid "**lf = Light_Follower.Light_Follower()**"
+msgstr "**lf = Light_Follower.Light_Follower()**"
+
+#: ../light_following.rst:186
+msgid "Then we can call the function by a class object."
+msgstr "それからクラスオブジェクトによって関数を呼び出す。"
+
+#: ../light_following.rst:188
+msgid "**A0 = lf.read_analog()[0]**"
+msgstr "**A0 = lf.read_analog()[0]**"
+
+#: ../light_following.rst:190
+msgid ""
+"This function **read_analog()** will return a list with three elements, "
+"which stores the detected analog values of three probes. Here we use **A0 = "
+"lf.read_analog()[0]**, **A1 = lf.read_analog()[1]**, and **A2 = lf."
+"read_analog()[2]** to store three elements of returned value separately into "
+"the variables A0-A2."
+msgstr ""
+"この関数**read_analog() **は、3つのプローブの検出されたアナログ値を保存する3"
+"つの要素のリストを返す。ここでは、**A0 = lf.read_analog()[0]**,** A1 = lf."
+"read_analog()[1]**と**A2 = lf.read_analog()[2]**を使用して、戻り値の3つの要素"
+"を変数A0-A2に個別に保存する 。"
+
+#: ../light_following.rst:196
+msgid ""
+"A **for()** loop is used here cycling 10 times, that is the car will acquire "
+"the analog values ten times when the car drives in a circle under the "
+"calibration mode. The minimum values will be taken as reference here. If you "
+"need more samples, just increase the times of the loop."
+msgstr ""
+"ここでは**for()**ループを10回使用する。つまり、補正モードで車が円を描くように"
+"走行すると、車はアナログ値を10回取得する。ここでは、最小値を参考している。よ"
+"り多くのサンプルが必要な場合は、ループの回数を増やしてください。"
+
+#: ../light_following.rst:202
+msgid ""
+"Store the detected values to a list in each loop by the **env0_list."
+"append(A0)** function. When the loop ends, the built-in list function "
+"**reference[0] = min(env0_list)** in Python will pick out the minimum in the "
+"list."
+msgstr ""
+"**env0_list.append(A0)**関数によって、検出された値を各ループのリストに保存す"
+"る。ループが終了すると、Pythonの組み込みリスト関数**reference[0] = "
+"min(env0_list)** がリストの最小値を選ぶ。"
+
+#: ../light_following.rst:207
+msgid "**lt_status_now = lf.read_flashlight()**"
+msgstr "**lt_status_now = lf.read_flashlight()**"
+
+#: ../light_following.rst:209
+msgid ""
+"This is to read the status of the module, which will return a 3-element "
+"list. This function is used to solve the possible problem caused by "
+"brightness-adjustable flashlights. They blink repeatedly due to brightness "
+"change by PWM method, so we add this function to the driver library to "
+"prevent the car from moving and stopping repeatedly when the light source "
+"lights up and goes out quickly or changes luminance by ON/OFF ratio."
+msgstr ""
+"この目的は3要素のリストを返すモジュールのステータスを読み取ることである。この"
+"機能は輝度が調節可能な懐中電灯によって引き起こされる問題を解決するために使用"
+"される。PWM方式による輝度変化で繰り返し点滅するので、この機能をドライバーライ"
+"ブラリーに追加し、光源が急に消灯したり、ON/OFFの比率で輝度が変化したりして"
+"も、車が何度も動いたり止まったりしないようにする。"
+
+#: ../light_following.rst:217
+msgid "**fw.turn(turning_angle)**"
+msgstr "**fw.turn(turning_angle)**"
+
+#: ../light_following.rst:219
+msgid ""
+"Function for front wheels steering. The main program will call this function "
+"if the front wheels are applied for steering. The parameter is the turning "
+"angle."
+msgstr ""
+"前輪ステアリング機能。前輪がステアリングに適用されている場合、メインプログラ"
+"ムはこの関数を呼び出す。パラメータは回転角度となっている。"
+
+#: ../light_following.rst:223
+msgid "**bw.forward()**"
+msgstr "**bw.forward()**"
+
+#: ../light_following.rst:225
+msgid "**bw.set_speed(forward_speed)**"
+msgstr "**bw.set_speed(forward_speed)**"
+
+#: ../light_following.rst:227
+msgid ""
+"Here we need two functions for rear wheels. The first function is to control "
+"the rotating direction as forward (the function for backwards is **bw."
+"backward()**). The second one is to set the rotating speed of the wheels; "
+"the parameter is the speed value (range: 0-100). The bigger the parameter "
+"is, the faster the wheel rotates."
+msgstr ""
+"後輪には2つの機能が必要である。最初の関数は回転方向を順方向に制御する（逆方向"
+"の関数は**bw.backward()**である）。2つ目は車輪の回転速度を設定すること。パラ"
+"メータは速度の値である（範囲：0-100）。パラメータが大きければ大きいほど、ホ"
+"イールの回転が速くなる。"

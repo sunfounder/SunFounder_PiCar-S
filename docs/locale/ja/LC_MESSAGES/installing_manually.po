@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, SunFounder
+# This file is distributed under the same license as the SunFounder PiCar-S
+# Kit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder PiCar-S Kit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-20 18:43+0800\n"
+"PO-Revision-Date: 2021-05-28 16:43+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.3\n"
+
+#: ../installing_manually.rst:2
+msgid "Installing Manually"
+msgstr "手動でインストールする"
+
+#: ../installing_manually.rst:4
+msgid "Update the apt list."
+msgstr "aptリストを更新する。"
+
+#: ../installing_manually.rst:10
+msgid "Install python-smbus."
+msgstr "python-smbusをインストールする。"
+
+#: ../installing_manually.rst:16
+msgid "Install the PiCar module."
+msgstr "PiCarモジュールをインストールする。"
+
+#: ../installing_manually.rst:31
+msgid "Enable I2C."
+msgstr "I2Cを作動させる。"
+
+#: ../installing_manually.rst:33
+msgid "Edit the file /boot/config.txt"
+msgstr "/boot/config.txtファイルを編集する"
+
+#: ../installing_manually.rst:39
+msgid ""
+"The **\"#\"** in front of each line is to comment the following contents "
+"which does not take effect in a sketch. The I2C configuration part is "
+"commented by default too. Add the following code at the end of the file, "
+"or delete the pound mark \"#\" at the beginning of related line; either "
+"way will do."
+msgstr ""
+"各行の前の**#**は、スケッチでは有効にならない以下の内容をコメント化するた"
+"めのものである。I2C構成部分もデフォルトでコメント化されている。ファイルの"
+"最後に次のコードを追加するか、または関連する行の先頭にあるポンド記号\"#"
+"\"を削除する。どちらもいい。"
+
+#: ../installing_manually.rst:49
+msgid "Reboot."
+msgstr "再起動する。"

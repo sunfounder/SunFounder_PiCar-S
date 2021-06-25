@@ -1,0 +1,421 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, SunFounder
+# This file is distributed under the same license as the SunFounder PiCar-S
+# Kit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder PiCar-S Kit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-20 18:43+0800\n"
+"PO-Revision-Date: 2021-05-28 17:56+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.3\n"
+
+#: ../line_following.rst:2
+msgid "Line Following"
+msgstr "ラインフォロー"
+
+#: ../line_following.rst:5
+msgid "How it works"
+msgstr "動作原理"
+
+#: ../line_following.rst:7
+msgid ""
+"The line follower detects lines in the surrounding environment, and "
+"transfers the data to the processor. The processor analyzes the data, and "
+"sends a command to control the movement of front wheels and rear wheels."
+msgstr ""
+"ラインフォロワーは周囲の環境でラインを検出し、データをプロセッサーに転送す"
+"る。プロセッサはデータを分析し、前輪と後輪の動きを制御するコマンドを送信す"
+"る。"
+
+#: ../line_following.rst:13
+msgid "Procedures"
+msgstr "手順"
+
+#: ../line_following.rst:15
+msgid "**Step 1 Assembly**"
+msgstr "**ステップ1 組み立て**"
+
+#: ../line_following.rst:17
+msgid ""
+"Connect the light follower to the Sensor Connector with **M3*10 screws** and "
+"**M3 nuts**, and then assemble them to the car with two **M3*10 screws** and "
+"two **M3 nuts**. You're suggested to hold the nuts underneath with your "
+"fingers."
+msgstr ""
+"**M3*10ネジ*8と**M3ナット**を使用してライトフォロアをセンサーコネクタに接続"
+"し、2つの**M3*10ネジ**と2つの**M3ナット**を使ってそれらを車に組み立てる。指で"
+"ナットを下に持ってください。"
+
+#: ../line_following.rst:25
+msgid "**Step 2 Wiring**"
+msgstr "**ステップ2 配線**"
+
+#: ../line_following.rst:27
+msgid ""
+"Connect the light follower to the Robot HATS with a 5-pin anti-reverse cable "
+"as shown below."
+msgstr ""
+"以下に示すように、4ピンのアンチリバースケーブルでラインフォロアモジュールをロ"
+"ボットHATSに接続する。"
+
+#: ../line_following.rst:32
+msgid "**Step 3 Test**"
+msgstr "**ステップ3 テスト**"
+
+#: ../line_following.rst:34
+msgid "Get into the directory example:"
+msgstr "ディレクトリの例をチェックする："
+
+#: ../line_following.rst:40
+msgid "Check whether any i2c device is recognized or not via i2c-tools"
+msgstr "i2c-toolsを介してi2cデバイスが認識されているかどうかを確認する"
+
+#: ../line_following.rst:49
+msgid ""
+"We can see 11 is the line follower’s i2c address. If it is not shown, it "
+"proves your wiring is not correct and the i2c communication with Raspberry "
+"Pi fails too. You need to check the wiring before the next step."
+msgstr ""
+"11がラインフォロワーのi2cアドレスであることが判明した。表示されない場合は、配"
+"線が正しくなく、Raspberry Piとのi2c通信も失敗したことを示す。次のステップの前"
+"に配線を確認する必要がある。"
+
+#: ../line_following.rst:54
+msgid "Run the test code."
+msgstr "テストコードを実行する。"
+
+#: ../line_following.rst:64
+msgid ""
+"For the better working of line following module, we should adjust its "
+"sensitivity. The steps are as follows:"
+msgstr ""
+"ラインフォローモジュールをより適切に機能させるために、感度を調整してくださ"
+"い。手順は次のとおりである："
+
+#: ../line_following.rst:67
+msgid ""
+"Place the module on the white surface, read the value ; place it on balck "
+"surface, and read value."
+msgstr ""
+"モジュールを白い表面に置き、値を読み取る。白い表面に置き、値を読み取る。"
+
+#: ../line_following.rst:70
+msgid ""
+"Calculate the difference, rotate potentiometer on the line following module "
+"toward the clockwise and anticlockwise till the diffence reaches up to the "
+"maximum. Now the debugging is finished."
+msgstr ""
+"差を計算し、最大値になるまで、次のモジュールのポテンショメーターを時計回りと"
+"反時計回りに回転させる。これでデバッグは完了した。"
+
+#: ../line_following.rst:74
+msgid "**Step 4 Starts Running!**"
+msgstr "**ステップ4 実行を開始する！**"
+
+#: ../line_following.rst:76
+msgid "Run the line follower code"
+msgstr "ラインフォロワーコードを実行する"
+
+#: ../line_following.rst:82
+msgid ""
+"A prompt of calibration will be printed on the screen when the program "
+"starts to run. We will calibrate the module on a white surface first: place "
+"all the five probes of the line follower above a white board. The prompt of "
+"completed calibration will be printed on the screen a few seconds later. "
+"Then let’s move on to calibration on black line. Also the prompt of starting "
+"is printed on the screen, and then place all the probes above the black "
+"lines. And the prompt of calibration completed will be printed on the screen "
+"a few seconds later."
+msgstr ""
+"プログラムの実行が開始されると、補正のヒントが画面に表示される。まずは白い表"
+"面でモジュールを補正する。ラインフォロアの5つのプローブすべてを白いボードの上"
+"に配置する。完了した補正のプロンプトが数秒後に画面に表示される。次に、黒い線"
+"の補正に進む。また、開始のプロンプトが画面に表示され、すべてのプローブが黒い"
+"線の上に配置される。完了した補正のプロンプトが数秒後に画面に表示される。"
+
+#: ../line_following.rst:91
+msgid ""
+"When the module calibration is all completed, we can run the car then. Place "
+"the PiCar-S with probes above the black line on the white board, and then it "
+"will go forward following the line itself."
+msgstr ""
+"モジュールの補正がすべて完了すると、車を走らせることができる。プローブ付きの"
+"PiCar-Sをホワイトボードの黒い線の上に置くと、線自体に従って進む。"
+
+#: ../line_following.rst:96
+msgid "How to make a track for line following"
+msgstr "ラインフォローの追跡を作る方法"
+
+#: ../line_following.rst:98
+msgid ""
+"To make a track for the car to follow a black line, you need to prepare the "
+"following materials:"
+msgstr ""
+"車が黒い線をたどるように追跡を作成するには、次の材料を準備しなければならな"
+"い："
+
+#: ../line_following.rst:101
+msgid ""
+"A large sheet of paper, a roll of black tape (as black lines), a hard card "
+"board (the size depending on the size of the track) or a flat surface like "
+"the floor or desk."
+msgstr ""
+"大きな紙、黒いテープのロール（黒い線）、ハードカードボード（サイズはトラック"
+"のサイズによって異なる）、または床や机などの平らな面。"
+
+#: ../line_following.rst:105
+msgid ""
+"1. Spread the paper out smoothly on the hard board, and paste on the board "
+"or flat surface."
+msgstr "1. 硬い板の上で紙を滑らかに広げ、板または平らな面に貼り付ける。"
+
+#: ../line_following.rst:108
+msgid "Paste the tape on the paper."
+msgstr "テープを紙に貼り付ける。"
+
+#: ../line_following.rst:110
+msgid "Rules for making:"
+msgstr "作成のルール："
+
+#: ../line_following.rst:114
+msgid "Width of the black line: about 18-30mm, nearly the distance between"
+msgstr ""
+"黒い線の幅：約18〜30mm、2つのプローブ間の距離、2つの隣接していないプローブ"
+
+#: ../line_following.rst:113
+msgid "two probes, no more than the minimum distance of two nonadjacent probes"
+msgstr "の最小距離以下"
+
+#: ../line_following.rst:118
+msgid "The gap between two lines: more than 125mm, which is the width of the"
+msgstr ""
+"2本の線の間隔：モジュール全体の幅である125mm以上で、2本の線を同時に検出した"
+
+#: ../line_following.rst:117
+msgid ""
+"whole module, to prevent the car from getting confused when detecting two "
+"lines at the same time."
+msgstr "ときに車が混乱することを防ぐ。"
+
+#: ../line_following.rst:125
+msgid "The semidiameter of curves: more than 138mm. When the front wheels"
+msgstr ""
+"曲線の直径：138mm以上。前輪が左または右に45度回転する場合、車が曲がる経路の"
+
+#: ../line_following.rst:121
+msgid ""
+"turn left or right 45 degrees, the semidiameter of the path by which the car "
+"turns is equal to the wheelbase (the distance between the center of the "
+"front wheels and rear wheels). The car won't be able to turn and pass the "
+"curve smoothly if the semidiameter of the curve is too small."
+msgstr ""
+"半径はホイールベース（前輪の中心と後輪の中心間の距離）と等しくなる。カーブの"
+"半径が小さすぎると、車はカーブをスムーズに曲がったり、通過したりことはできな"
+"い。"
+
+#: ../line_following.rst:127
+msgid ""
+"A track sample is shown as below (the original map file can be found under "
+"folder **map** in **github**):"
+msgstr ""
+"追跡のサンプルを以下に示す（元のマップファイルは**github**のフォルダー**マッ"
+"プ**の下にある）："
+
+#: ../line_following.rst:134
+msgid "Code Explanation of line_follower.py"
+msgstr "line_follower.pyのコードの説明"
+
+#: ../line_following.rst:136
+msgid "**Whole Work Flow**"
+msgstr "**ワークフロー全体**"
+
+#: ../line_following.rst:138
+msgid ""
+"Considering the interference of negative environment factors, we need to "
+"calibrate the line follower sensor before actual use."
+msgstr ""
+"マイナスの環境要因の干渉を考慮して、実際に使用する前にラインフォロワーセン"
+"サーを補正しなければならない。"
+
+#: ../line_following.rst:144
+msgid ""
+"Here two main functions including the line follower calibration and line "
+"following are included in the main program."
+msgstr ""
+"ここでは、ラインフォロワー補正とラインフォロイングを含む2つの主要な機能がメイ"
+"ンプログラムに含まれている。"
+
+#: ../line_following.rst:147
+msgid "**Subflow of Line Follower Calibration Function**"
+msgstr "**ラインフォロワー補正機能のサブフロー**"
+
+#: ../line_following.rst:149
+msgid ""
+"When we run the line follower configuration, we will start from white color, "
+"then black color, which is more like the upper limit and lower limit of the "
+"sensor. Then we take the average value of black and white as reference "
+"value: if the detected value is higher than the reference, it should be "
+"white; if the detected is lower than the reference, it should be black. We "
+"will show the five detectors’ status by 5 elements [0,0,0,0,0]."
+msgstr ""
+"ラインフォロア構成を実行するときは、センサーの上限と下限に近い、白色、次に黒"
+"色から始める。それから黒と白の平均値を基準値として使用し、検出された値が基準"
+"よりも高い場合、白でなければならない。検出された値が参照よりも低い場合は、黒"
+"になる。5つの検出器のステータスを5つの要素[0,0,0,0,0]で示す。"
+
+#: ../line_following.rst:160
+msgid "**Subflow of Line Following Function**"
+msgstr "**ライン追跡機能のサブフロー**"
+
+#: ../line_following.rst:165
+msgid ""
+"In the line following function, we set the turning angle of the servo in "
+"different levels according to the detection results of the probes. If the "
+"line in front of the car is detected as a small curve, then the car will "
+"turn a small angle; if it is a big one, the car will turn a large angle. "
+"Thus, here we set four angle-turning constants: a_step, b_step, c_step, and "
+"d_step."
+msgstr ""
+"ラインフォロー機能では、プローブの検出結果に応じてサーボの回転角度を異なるレ"
+"ベルに設定する。車の前の線が小さなカーブとして検出された場合、車は小さな角度"
+"で曲がる。大きいと車は大きい角度で曲がる。したがって、ここでは、a_step、"
+"b_step、c_step、d_stepの4つの角度回転定数を設定する。"
+
+#: ../line_following.rst:175
+msgid ""
+"When the car moves forward originally, the servo is in 90 degrees. To drive "
+"the car to turn left, the servo should be in 90+step degrees; to turn right, "
+"the servo should be in 90-step degrees."
+msgstr ""
+"もともと車が前進するとき、サーボは90度である。車を運転して左折するには、サー"
+"ボを90度以上の角度にしなければならない。右折するには、サーボは90ステップの角"
+"度でなければならない。"
+
+#: ../line_following.rst:179
+msgid ""
+"There is a special case: if the car runs off the track, and all the probes "
+"cannot detect the black lines any more, then it will continue the program "
+"below."
+msgstr ""
+"特別な場合もある：車がコースから外れ、すべてのプローブが黒い線を検出できなく"
+"なった場合、以下のプログラムが続行される。"
+
+#: ../line_following.rst:186
+msgid ""
+"In some case, especially when the car turns in a direction when the semi "
+"diameter of the curve is very small (1), the car may run out of the track "
+"and cannot detect any black line (2). If there is no response program in "
+"such case, the car will be unable to follow the line again. Thus we set the "
+"response program to let the car move backwards in the opposite direction "
+"(3), and then turn back to the original direction until a black line is "
+"detected again and move forward (4)."
+msgstr ""
+"場合によっては、特にカーブの半径が非常に小さい方向(1)に車が曲がる場合、車が軌"
+"道を使い果たして黒い線を検出できない場合がある(2)。このような場合に応答プログ"
+"ラムがないと、車は再び軌道を追うことができなくなる。したがって、車を反対方向"
+"に後退させるように応答プログラムを設定し(3)、次に黒い線が再び検出されるまで元"
+"の方向に戻り、前に進む(4)。"
+
+#: ../line_following.rst:194
+msgid "**Functions Explanation**"
+msgstr "**機能説明**"
+
+#: ../line_following.rst:196
+msgid "The logic of the code is just as shown in the flow chart above."
+msgstr "コードのロジックは、上記のフローチャートに示すとおりである。"
+
+#: ../line_following.rst:198
+msgid ""
+"Three Python modules are used in the code, including the imported "
+"**SunFounder_Line_Follower**, **front_wheels**, and **back_wheels**. They "
+"are the drivers for this kit, respectively for line following , front "
+"wheels, and rear wheels"
+msgstr ""
+"インポートされた**SunFounder_Line_Follower**、**front_wheels**、"
+"**back_wheels**を含む3つのPythonモジュールがコードで使用されている。これらは"
+"このキットのドライバーであり、それぞれラインフォロー、前輪と後輪となってい"
+"る。"
+
+#: ../line_following.rst:203
+msgid ""
+"The related classes have been defined here. When the modules are applied to "
+"use, objects will be created for related classes, and different parts of "
+"hardware will be driven by calling a function by the class object."
+msgstr ""
+"関連クラスはここで定義されている。モジュールを適用して使用すると、関連するク"
+"ラスのオブジェクトが作成され、ハードウェアのさまざまな部分がクラスオブジェク"
+"トによる関数を呼び出すことによって駆動される。"
+
+#: ../line_following.rst:207
+msgid "Similar to the line following module, we create an object named **lf**:"
+msgstr "次のモジュールと同様に、**lf**という名前のオブジェクトを作成する："
+
+#: ../line_following.rst:209
+msgid "**lf = Line_Follower_module.Line_Follower(references=REFERENCES)**"
+msgstr "**lf = Line_Follower_module.Line_Follower(references=REFERENCES)**"
+
+#: ../line_following.rst:211
+msgid ""
+"The parameter is initial, and then we can apply the function by calling a "
+"class object."
+msgstr ""
+"パラメータは初期値であり、クラスオブジェクトを呼び出して関数を適用する。"
+
+#: ../line_following.rst:214
+msgid "**lf.read_digital()**"
+msgstr "**lf.read_digital()**"
+
+#: ../line_following.rst:216
+msgid ""
+"This function is used to read the analog signal of all probes, and convert "
+"it into digital signal. If the signal is larger than the reference, the "
+"corresponding parameter will be 0; if it is lower than the reference, the "
+"parameter will be 1. There are five probes, thus we will get a 5-parameter "
+"list."
+msgstr ""
+"この機能はすべてのプローブのアナログ信号を読み取り、それをデジタル信号に変換"
+"するために使用される。信号が参照よりも大きい場合、対応するパラメーターは0にな"
+"り、基準より低い場合、パラメーターは1になる。プローブは5つあるため、5つのパラ"
+"メーターのリストを取得する。"
+
+#: ../line_following.rst:222
+msgid "**fw.turn(turning_angle)**"
+msgstr "**fw.turn(turning_angle)**"
+
+#: ../line_following.rst:224
+msgid ""
+"The function for front wheels' turning. The main program will call this "
+"function if applying the front wheels for turning. The parameter is the "
+"turning angle."
+msgstr ""
+"前輪回転機能。メインプログラムは前輪を回す場合にこの関数を呼び出す。パラメー"
+"タは回転角度となっている。"
+
+#: ../line_following.rst:228
+msgid "**bw.forward()**"
+msgstr "**bw.forward()**"
+
+#: ../line_following.rst:230
+msgid "**bw.set_speed(forward_speed)**"
+msgstr "**bw.set_speed(forward_speed)**"
+
+#: ../line_following.rst:232
+msgid ""
+"Here we need two functions for rear wheels. One is to control the rotating "
+"direction as forward (for rotating backwards, **bw.backward()**). The second "
+"one is to set the rotating speed; the parameter is the speed value (range "
+"0~100). The bigger the parameter is, the faster the wheel rotates."
+msgstr ""
+"後輪には2つの機能が必要である。1つは回転方向を順方向に制御する（後ろに回転す"
+"るには、**bw.backward()**）。2つ目は回転速度を設定する。パラメータは速度の値"
+"である（範囲0〜100）。パラメータが大きければ大きいほど、ホイールの回転が速く"
+"なる。"

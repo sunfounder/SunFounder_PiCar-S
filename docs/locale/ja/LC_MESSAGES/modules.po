@@ -1,0 +1,416 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, SunFounder
+# This file is distributed under the same license as the SunFounder PiCar-S
+# Kit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder PiCar-S Kit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-20 18:43+0800\n"
+"PO-Revision-Date: 2021-05-28 18:07+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.3\n"
+"Language: ja\n"
+
+#: ../modules.rst:2
+msgid "Modules"
+msgstr "モジュール"
+
+#: ../modules.rst:5
+msgid "Robot HATS"
+msgstr "ロボットHATS"
+
+#: ../modules.rst:10
+msgid ""
+"**Robot HATS** is a specially-designed HAT for a 40-pin Raspberry Pi and "
+"can work with Raspberry Pi 3 model B, 3 model B +, and 4 model B. It "
+"supplies power to the Raspberry Pi from the GPIO ports. Thanks to the "
+"design of the ideal diode based on the rules of HATS, it can supply the "
+"Raspberry Pi via both the USB cable and the DC port thus protecting it "
+"from damaging the TF card caused by batteries running out of power. The "
+"PCF8591 is used as the ADC chip, with I2C communication, and the address "
+"0x48."
+msgstr ""
+"**ロボットHATS**は40ピンRaspberry Piに特別に設計されたHATであり、"
+"Raspberry Pi世代3モデルB、世代3モデルB +、世代4モデルBで動作し、GPIOポー"
+"トからRaspberry Piに電力を供給する。HATSのルールに基づいた理想的なダイ"
+"オードの設計により、USBケーブルとDCポートの両方を介してRaspberry Piに電源"
+"を供給できるため、バッテリーの電力不足によってTFカードが損傷することを防"
+"ぐことができる。PCF8591はI2C通信とアドレス0x48を備えたADCチップとして使用"
+"される。"
+
+#: ../modules.rst:22
+msgid ""
+"**1.** **Digital ports**: 3-wire digital sensor ports, signal voltage: "
+"3.3V, VCC voltage: 3.3V."
+msgstr ""
+"**1.** **デジタルポート**：3線式デジタルセンサーポート、信号電圧：3.3V、"
+"VCC電圧：3.3V。"
+
+#: ../modules.rst:25
+msgid ""
+"**2**. **Analog ports**: 3-wire 4-channel 8-bit ADC sensor port, "
+"reference voltage: 3.3V, VCC voltage: 3.3V."
+msgstr ""
+"**2.** **アナログポート**：3線4チャネル8ビットADCセンサーポート、基準電"
+"圧：3.3V、VCC電圧：3.3V。"
+
+#: ../modules.rst:28
+msgid "**3.** **I2C ports**: 3.3V I2C bus ports"
+msgstr "**3.** **I2Cポート**：3.3V I2Cバスポート"
+
+#: ../modules.rst:30
+msgid "**4**. **5V power output**: 5V power output to PWM driver."
+msgstr "**4.** **5V電源出力**：PWMドライバーへの5V電源出力。"
+
+#: ../modules.rst:32
+msgid ""
+"**5**. **UART port**: 4-wire UART port, 5V VCC, perfectly working with "
+"SunFounder FTDI Serial to USB."
+msgstr ""
+"**5.** **UARTポート**：4線UARTポートと5V VCCはUSBへのSunFounder FTDIシリ"
+"アルと完全に連携する。"
+
+#: ../modules.rst:35
+msgid ""
+"**6**. **Motor control ports**: 5V for motors, direction control of "
+"motors MA and MB and a floating pin NC; working with motor driver module."
+msgstr ""
+"**6.** **モーター制御ポート**：モーター用5V、モーターMAとMBの方向制御、フ"
+"ローティングピンNC、モータードライバーモジュールとの連携。"
+
+#: ../modules.rst:39
+msgid "**7**. **Switch**: power switch"
+msgstr "**7.** **スイッチ**：電源スイッチ"
+
+#: ../modules.rst:41
+msgid ""
+"**8**. **Power indicators**: indicating the voltage – 2 indicators on: "
+">7.9V; 1 indicator on: 7.9V~7.4V; no indicator on: <7.4V. To protect the "
+"batteries, you're recommended to take them out for charge when there is "
+"no indicator on. The power indicators depend on the voltage "
+"measured by the simple comparator circuit; the detected voltage may be "
+"lower than normal depending on loads, so it is just for reference."
+msgstr ""
+"**8.** **電源インジケータ**：電圧を指示する-2つのインジケータが点灯：> "
+"7.9V。1つのインジケーター：7.9V〜7.4V。インジケータ点灯なし：<7.4V。バッ"
+"テリーを保護するために、インジケーターが点灯していない場合は、充電する際"
+"にこれを取り出してください。電源インジケータは単純なコンパレータ回路に"
+"よって測定された電圧に依存する。負荷によっては検出電圧が通常より低下する"
+"場合があるので参考値としてご利用ください。"
+
+#: ../modules.rst:48
+msgid ""
+"**9**. **Power port**: 5.5/2.1mm standard DC port, input voltage: "
+"8.4~7.4V (limited operating voltage: 12V~6V)."
+msgstr ""
+"**9.** **電源ポート**：5.5/2.1mm標準DCポート、入力電圧：8.4〜7.4V（制限さ"
+"れた動作電圧：12V〜6V）。"
+
+#: ../modules.rst:52
+msgid "PCA9865"
+msgstr "PCA9865"
+
+#: ../modules.rst:57
+msgid ""
+"PCA9685 16-channel 12-bit I2C Bus PWM driver. It supports independent "
+"PWM output power and is easy to use 4-wire I2C port for connection in "
+"parallel, distinguished 3-color ports for PWM output."
+msgstr ""
+"PCA9685 16チャネル12ビットI2CバスPWMドライバー。独立したPWM出力電力をサ"
+"ポートし、並列接続用の4線式I2Cポート、PWM出力用の区別された3色ポートをよ"
+"り簡単に利用できる。"
+
+#: ../modules.rst:64
+msgid ""
+"1. **PWM output ports**: 3-color ports, independent power PWM output "
+"port, connect to the servo directly."
+msgstr ""
+"1. **PWM出力ポート**：3色ポート、独立したパワーPWM出力ポート、サーボへの"
+"直接接続。"
+
+#: ../modules.rst:67
+msgid ""
+"2 & 3. **I2C port**: 4-wire I2C port, can be used in parallel. "
+"Compatible with 3.3V/5.5V"
+msgstr ""
+"2 & 3. **I2Cポート**：4線式I2Cポートは並列で使用できる。3.3V/5.5Vに対応"
+
+#: ../modules.rst:70
+msgid "**PWM power input**: 12V max."
+msgstr "**PWM電源入力**：最大12V。"
+
+#: ../modules.rst:72
+msgid "**LED**: power indicator for the chip and for the PWM power input."
+msgstr "**LED**：チップとPWM電源入力用電源インジケータ。"
+
+#: ../modules.rst:75
+msgid "Motor Driver Module"
+msgstr "モータードライバーモジュール"
+
+#: ../modules.rst:77
+msgid ""
+"The Motor Driver module is a low heat generation one and small packaged "
+"motor drive."
+msgstr ""
+"モータードライバーモジュールは低発熱の小型パッケージモータードライブであ"
+"る。"
+
+#: ../modules.rst:83
+msgid ""
+"**1. Power and motor control port**: includes pins for supplying the "
+"chip and the motors and controlling the motors' direction"
+msgstr ""
+"**1.電源とモーター制御ポート**：チップとモーターに電力を供給し、モーター"
+"の方向を制御するためのピンが含まれている。"
+
+#: ../modules.rst:86
+msgid ""
+"**2. PWM input for the motors**: PWM signal input for adjusting the "
+"speed of the two motors"
+msgstr ""
+"**2.モーターのPWM入力**：2つのモーターの速度を調整するためのPWM信号入力。"
+
+#: ../modules.rst:89
+msgid "**3. Motor output port**: output port for two motors"
+msgstr "**3.モーター出力ポート**：2つのモーターの出力ポート"
+
+#: ../modules.rst:92
+msgid "Line Follower Module"
+msgstr "ラインフォロワーモジュール"
+
+#: ../modules.rst:100
+msgid ""
+"The TCRT5000 infrared photoelectric switch adopts a high transmit power "
+"infrared photodiode and a highly sensitive phototransistor. It works by "
+"applying the principle of objects' reflecting IR light – the light is "
+"emitted, then reflected, and sensed by the synchronous circuit. Then it "
+"determines whether there exists an object or not by the light intensity. "
+"It can easily identify black and white lines."
+msgstr ""
+"TCRT5000赤外線光電スイッチは高送信電力赤外線フォトダイオードと高感度フォ"
+"トトランジスタを採用している。これは、オブジェクトのIR反射光の原理を適用"
+"することによって機能する。光は放射され、次に反射され、同期回路によって感"
+"知される。そして、光の強弱によって物体の有無を判断する。白黒の線を簡単に"
+"識別できる。"
+
+#: ../modules.rst:107
+msgid ""
+"In other words, the different conduction levels of the phototransistor "
+"when it passes over black and white lines can generate different output "
+"voltages. Therefore, all we need to do is to collect data by the AD "
+"converter on the Atmega328 and then send the data to the master control "
+"board via I2C communication."
+msgstr ""
+"言い換えると、フォトトランジスタが黒と白のラインを通過するときの異なる伝"
+"導レベルにより、異なる出力電圧が生成される可能性がある。したがって、必要"
+"なのは、Atmega328のADコンバーターによってデータを収集し、I2C通信を介して"
+"マスターコントロールボードにデータを送信することだけである。"
+
+#: ../modules.rst:113
+msgid ""
+"This module is an infrared tracking sensor one that uses 5 TRT5000 "
+"sensors. The blue LED of TRT5000 is the emission tube and after "
+"electrified it emits infrared light invisible to human eye. The black "
+"part of the sensor is for receiving; the resistance of the resistor "
+"inside changes with the infrared light received."
+msgstr ""
+"このモジュールは5つのTRT5000センサーを使用する赤外線追跡センサーである。"
+"TRT5000の青色LEDは発光管であり、通電すると人間の目には見えない赤外光を発"
+"する。センサーの黒い部分は受信に使用される。内部の抵抗器の抵抗値は、受信"
+"した赤外線によって変化する。"
+
+#: ../modules.rst:120
+msgid "Light Follower Module"
+msgstr "ライトフォロワーモジュール"
+
+#: ../modules.rst:128
+msgid ""
+"Phototransistor, also known as photodiode, is a device that converts "
+"light to current. Currents are generated when photons are absorbed in "
+"the P-N junction. When a reverse voltage is applied, the reverse current "
+"in the device will change with the light luminance. The stronger the "
+"light is, the larger the reverse current will be. Most phototransistors "
+"work this way."
+msgstr ""
+"フォトトランジスターはフォトダイオードとも呼ばれ、光を電流に変換するデバ"
+"イスである。フォトンがPNジャンクションで吸収されると、電流が生成される。"
+"逆電圧が印加されると、デバイスの逆電流は光の輝度とともに変化する。光が強"
+"いほど、逆電流が大きくなる。ほとんどのフォトトランジスタはこのように動作"
+"する。"
+
+#: ../modules.rst:135
+msgid ""
+"The ADC chip on the HATS can receive 8-bit analog signals and convert "
+"them into integers, and transfer the signals to the Raspberry Pi. The "
+"Raspberry Pi will analyze the data to determine the direction of the "
+"brightest area (the light source), and further control the steering and "
+"movement of the four wheels to approach the light source."
+msgstr ""
+"HATSのADCチップは8ビットのアナログ信号を受信して整数に変換し、信号を"
+"Raspberry Piに転送する。Raspberry Piはデータを分析して、最も明るい領域"
+"（光源）の方向を決定し、4つの車輪のステアリングと動きを制御して光源に近づ"
+"ける。"
+
+#: ../modules.rst:141
+msgid ""
+"You may need a light focused flashlight in this experiment. At least, "
+"the spot size of the torch should not be too big to reach all the 3 "
+"phototransistors on the module at the same time. Well, you can also "
+"shine the flashlight closer to the car to get a small spot size."
+msgstr ""
+"この実験では、光に焦点を当てた懐中電灯が必用する。少なくとも、モジュール"
+"の3つのフォトトランジスタに同時に到達するために、トーチのスポットサイズは"
+"大きすぎてはならない。まあ、あなたは小さなスポットサイズを得るために車の"
+"近くに懐中電灯を照らすこともできる。"
+
+#: ../modules.rst:147
+msgid "Ultrasonic Obstacle Avoidance Module"
+msgstr "超音波障害物回避モジュール"
+
+#: ../modules.rst:157
+msgid ""
+"The module contains an HC-SR04 ultrasonic distance sensor to detect the "
+"distance to an obstacle ahead. It is commonly used for robots to avoid "
+"obstacles. With the two holes, it can be easily mounted to the robot. A "
+"four foot anti-backwards cable is included to make the wiring tighter "
+"and easier."
+msgstr ""
+"モジュールには、前方の障害物までの距離を検出する超音波距離センサHC-SR04が"
+"搭載されています。 ロボットが障害物を避けるためによく使われています。 2つ"
+"の穴があるので、ロボットに簡単に取り付けることができます。 4ピンの逆戻り"
+"防止ケーブルが付属しているので、よりタイトで簡単に配線ができます。"
+
+#: ../modules.rst:164
+msgid ""
+"The HC-SR04 ultrasonic distance sensor provides non-contact measurement "
+"from 2cm to 400cm with a range accuracy of 3mm. each HC-SR04 module "
+"includes an ultrasonic transmitter, a receiver and a control circuit, so "
+"we have to be careful with the Trig and Echo pin connections when using "
+"the HC-SR04 module. When we attach it to the picar-s, it measures the "
+"distance and detects if there is an obstacle ahead."
+msgstr ""
+"HC-SR04超音波距離センサは、2cmから400cmまでの距離を3mmの範囲精度で非接触"
+"で測定することができます。HC-SR04モジュールは、それぞれ超音波送信機、受信"
+"機、制御回路が含まれているため、HC-SR04モジュールを使用する際には、Trig端"
+"子とEcho端子の接続に注意する必要があります。 PiCar-Sに装着すると、距離を"
+"計測し、前方に障害物があるかどうかを検知します。"
+
+#: ../modules.rst:166
+msgid "**Principle**"
+msgstr "**原理**"
+
+#: ../modules.rst:168
+msgid ""
+"Supply a short 10μS pulse to the Trig to start the ranging, and then the "
+"module will send out an 8 cycle burst of ultrasound at 40 kHz and raise "
+"its echo back. The echo is a distance object that is pulse width and the "
+"range in proportion. You can calculate the :math:`\\text{Range}` through "
+"the :math:`\\text{Time Interval}` between sending trigger signal and "
+"receiving echo signal."
+msgstr ""
+"Trigに10usの短いパルスを供給してレンジングを開始し、モジュールは40 kHzで8"
+"サイクルの超音波バーストを送信し、Echoにエコーを上げる。エコーはパルス幅"
+"と距離に比例した距離オブジェクトである。トリガー信号を送信してからエコー"
+"信号を受信するまでの間に、Time Intervalを通じてRangeを計算できる。"
+
+#: ../modules.rst:175
+msgid "Formula:"
+msgstr "式："
+
+#: ../modules.rst:177
+msgid ""
+"Range(m) = \\frac{Time Interval \\times 340_{m/s}}{2}\n"
+"\n"
+msgstr ""
+"Range(m) = \\frac{Time Interval \\times 340_{m/s}}{2}\n"
+"\n"
+
+#: ../modules.rst:179 ../modules.rst:183
+msgid "Or:"
+msgstr "または："
+
+#: ../modules.rst:181
+msgid ""
+"\\text{Range}\\left( \\text{cm} \\right) = \\frac{\\text{Time Interval}}"
+"{58}\n"
+"\n"
+msgstr ""
+"\\text{Range}\\left( \\text{cm} \\right) = \\frac{\\text{Time Interval}}"
+"{58}\n"
+"\n"
+
+#: ../modules.rst:185
+msgid ""
+"\\text{Range}(inchs) = \\frac{\\text{Time Interval}}{148}\n"
+"\n"
+msgstr ""
+"\\text{Range}(inchs) = \\frac{\\text{Time Interval}}{148}\n"
+"\n"
+
+#: ../modules.rst:187
+msgid ""
+"We suggest to use over 60ms measurement cycle, so as to prevent trigger "
+"signal to the echo."
+msgstr ""
+"エコーへのトリガー信号を防ぐために、60ms以上の測定サイクルを使用してくだ"
+"さい。"
+
+#: ../modules.rst:191
+msgid "SunFounder SF006C Servo"
+msgstr "SunFounder SF006Cサーボ"
+
+#: ../modules.rst:196
+msgid ""
+"The SunFounder SF0180 Servo is a 180-degree three-wire digital servo. It "
+"utilizes PWM signal of 60Hz and has no physical limit – only control by "
+"internal software to 180 degrees at most."
+msgstr ""
+"SunFounder SF0180サーボは180度の3線式デジタルサーボである。60HzのPWM信号"
+"を利用し、物理制限はない。最大180度までの内部ソフトウェアのみによって制御"
+"される。"
+
+#: ../modules.rst:200
+msgid "Electrical Specifications:"
+msgstr "電気仕様："
+
+#: ../modules.rst:207
+msgid "DC Gear Motor"
+msgstr "DCギアモーター"
+
+#: ../modules.rst:212
+msgid ""
+"It's a DC motor with a speed reducing gear train. See the parameters "
+"below:"
+msgstr ""
+"これは減速機付きのDCモーターである。以下のパラメーターを参照してくださ"
+"い："
+
+#: ../modules.rst:219
+msgid "Copyright Notice"
+msgstr "著作権表示"
+
+#: ../modules.rst:221
+msgid ""
+"All contents including but not limited to texts, images, and code in "
+"this manual are owned by the SunFounder Company. You should only use it "
+"for personal study, investigation, enjoyment, or other non-commercial or "
+"nonprofit purposes, under the related regulations and copyrights laws, "
+"without infringing the legal rights of the author and relevant right "
+"holders. For any individual or organization that uses these for "
+"commercial profit without permission, the Company reserves the right to "
+"take legal action."
+msgstr ""
+"このマニュアルのテキスト、画像とコードを含むがこれらに限定されないすべて"
+"の内容は、SunFounder Companyが所有している。関連する規制と著作権法に基づ"
+"き、著者と関連する権利所有者の法的権利を侵害することなく、個人的な研究、"
+"調査、享楽、またはその他の非営利目的でのみ使用してください。許可なく営利"
+"目的でこれを使用する個人または組織については、会社は法的措置を取る権利を"
+"留保する。"

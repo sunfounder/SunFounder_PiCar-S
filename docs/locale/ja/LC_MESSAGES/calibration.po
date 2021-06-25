@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, SunFounder
+# This file is distributed under the same license as the SunFounder PiCar-S
+# Kit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder PiCar-S Kit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-20 18:43+0800\n"
+"PO-Revision-Date: 2021-05-28 16:08+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.3\n"
+
+#: ../calibration.rst:2
+msgid "Calibration"
+msgstr "補正"
+
+#: ../calibration.rst:5
+msgid "Calibrate the Servo"
+msgstr "サーボを補正する"
+
+#: ../calibration.rst:7
+msgid ""
+"Remember the commands to adjust the servo to 90 degrees previously? Now, "
+"let’s talk about the other two commands."
+msgstr ""
+"以前にサーボを90度に調整するコマンドを覚えているか？今回、他の2つのコマン"
+"ドについて説明する。"
+
+#: ../calibration.rst:10
+msgid ""
+"The second command **front-wheel-test** is used to test whether the "
+"front wheels can turn flexibly after assembly. When you run this "
+"command, it will drive them to turn left and right."
+msgstr ""
+"2番目のコマンド**front-wheel-test**は、組み立て後に前輪が柔軟に回転できる"
+"かどうかをテストするために使用される。このコマンドを実行すると、左右に駆"
+"動する。"
+
+#: ../calibration.rst:21
+msgid ""
+"You may find the direction of the front wheels is not facing exactly "
+"front when they are in the straight status. If there is an obvious "
+"deviation from the middle line of the front chassis, reassemble the "
+"servo and run **servo-install** again; if it is just a little deviation "
+"(like about 0~15 degrees), it can be adjusted by software."
+msgstr ""
+"前輪がまっすぐな状態では、前輪の方向が正確に前を向いていない場合がある。"
+"フロントシャーシの真ん中の線から明らかなずれがある場合は、サーボを組み立"
+"て直して、もう一度**servo-instal**を実行する。ほんの少しのずれ（約0〜15度"
+"のような）であるならば、ソフトウェアによって調整することができる。"
+
+#: ../calibration.rst:27
+msgid "Get into the folder **SunFounder_PiCar/picar:**"
+msgstr "**SunFounder_PiCar/pica**フォルダーを開く："
+
+#: ../calibration.rst:40
+msgid ""
+"Open the **config** file under the folder with an editor. You can see a "
+"few parameters. The value of **turning_offset** is used to adjust the "
+"front wheels. Its value is **0** by default. If you want to make the "
+"front wheels **turn right a bit**, just modify it to a **larger numbe**"
+"\\ r; to make it more **towards the left**, you can set it **smaller** "
+"(it can even be a negative number)."
+msgstr ""
+"エディターでフォルダーの**config**ファイルを開く。いくつかのパラメーター"
+"が表示される。**turning_offset**の値は、前輪を調整するために使用される。"
+"デフォルトではその値は0となっている。前輪を**少し右に回したい**場合は、**"
+"大きな値**に変更してください。**左寄りにする**には、**小さい値**に設定す"
+"る（負の数に設定できる）。"
+
+#: ../calibration.rst:47
+msgid ""
+"But **DO NOT** over-configure the wheels (recommended a value between "
+"-30 and 30), or the servo may be stuck and broken."
+msgstr ""
+"ただし、ホイールを過度に構成**しない**でください（-30〜30の推奨値）。そう"
+"しないと、サーボが動かなくなったり壊れたりする恐れがある。"
+
+#: ../calibration.rst:50
+msgid ""
+"After changing the value of turning_offset, press **Ctrl** + **O** to "
+"save the changes, and press **Ctrl** + **X** to exit. Run the command "
+"**picar servo-install** to check the front wheel’s status."
+msgstr ""
+"Turning_offsetの値を変更した後、**Ctrl+O**を押して変更を保存し、**Ctrl"
+"+X**を押して終了する。**picar servo-install**コマンドを実行して、前輪のス"
+"テータスを確認する。"
+
+#: ../calibration.rst:58
+msgid ""
+"If the front wheels is still not facing the exact front, you may need to "
+"edit the file **config** for a couple of times. The front wheels may "
+"need to be adjusted about 3 to 5 times usually. We can move on to "
+"calibration of the rear wheels when the front wheels are done."
+msgstr ""
+"そして前輪が正面を向いていない場合は、ファイル**config**を数回編集する必"
+"要がある。通常3〜5回程度調整する必要がある。前輪の補正が完了したら、後輪"
+"の補正に進む。"
+
+#: ../calibration.rst:64
+msgid "Calibrate the Motors"
+msgstr "モーターを補正する"
+
+#: ../calibration.rst:66
+msgid ""
+"Since the wiring of the two DC motors is random, the VCC and GND of a "
+"motor may be connected to the wheel reversely, causing the wheel to spin "
+"forward when it should do backward as configured in the code. Thus we "
+"can use the third command which will drive the rear wheels to "
+"simultaneously speed up and slow down alternately."
+msgstr ""
+"2つのDCモーターの配線はランダムであるため、モーターのVCCとGNDがホイールに"
+"逆に接続され、コードで構成されているように車輪が逆方向に回転すべきとき"
+"に、正面に回転してしまう場合がある。したがって、後輪を交互に加速と減速を"
+"同時に行う3番目のコマンドを使用できる。"
+
+#: ../calibration.rst:79
+msgid ""
+"Check whether both the two rear wheels rotate direction is the same as "
+"the screen. Note that the two wheels are driven by the two motors "
+"separately. It may happen that one rotates forward, while the other does "
+"backwards. If so, we need to adjust one or both two wheels which rotate "
+"reversely under that command."
+msgstr ""
+"後輪の回転方向が画面と同じかどうかを確認してください。2つの車輪は2つの"
+"モーターによって別々に駆動されることに注意してください。一つが前方に回転"
+"し、もう一つが後方に回転する場合がある。その場合は、そのコマンドで逆回転"
+"する1つまたは両方のホイールを調整する必要がある。"
+
+#: ../calibration.rst:96
+msgid ""
+"**forward_A** and **forward_B** are to change the default spinning "
+"direction of the two motors. The value can only be **0** or **1**, which "
+"represents clockwise and counterclockwise rotation. By default, it's "
+"**0** for both parameters. Thus if a wheel spins reversely, you only "
+"need to change the corresponding parameter for the wheel to **1**."
+msgstr ""
+"**forward_A**と**forward_B**は2つのモーターのデフォルトの回転方向を変更す"
+"る。値は**0**または**1**のみで、時計回りと反時計回りの回転を表す。デフォ"
+"ルトでは、両方のパラメーターで**0**となっている。したがって、車輪が逆回転"
+"する場合は、ホイールの対応するパラメーターを**1**に変更するだけである。"
+
+#: ../calibration.rst:102
+msgid ""
+"Press **Ctrl** + **O** to save the changes, and press **Ctrl** + **X** "
+"to exit."
+msgstr "**Ctrl+O**を押して変更を保存し、**Ctrl+X**を押して終了する。"
+
+#: ../calibration.rst:105
+msgid ""
+"Run the command **picar rear-wheel-test** again to check whether the "
+"rear wheels are rotating in accordance with the command."
+msgstr ""
+"コマンド**picar Rear-wheel-test**を再度実行して、コマンドに従って後輪が回"
+"転しているかどうかを確認する。"
+
+#: ../calibration.rst:112
+msgid "Copy *config* to the directory *example* under *PiCar-S*."
+msgstr ""
+"**config**を**PiCar-S**の下のディレクトリの**example**にコピーする。"
