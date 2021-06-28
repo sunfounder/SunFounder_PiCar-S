@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: SunFounder PiCar-S Kit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-20 18:43+0800\n"
-"PO-Revision-Date: 2021-06-08 19:51+0800\n"
+"PO-Revision-Date: 2021-06-25 16:47+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../arming_the_car.rst:2
 msgid "Arming the Car!"
-msgstr "車の装備！"
+msgstr "車を装備する！"
 
 #: ../arming_the_car.rst:4
 msgid ""
@@ -63,4 +63,4 @@ msgid ""
 "Transformer**!"
 msgstr ""
 "以下の対応するモジュールの説明の配線に従って、希望のセンサーモジュールを"
-"組み立てる。**トランスフォーマーを**楽しんでください！"
+"組み立てる。**トランスフォーマー**を楽しんでください！"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: SunFounder PiCar-S Kit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-20 18:43+0800\n"
-"PO-Revision-Date: 2021-05-28 16:08+0800\n"
+"PO-Revision-Date: 2021-06-25 16:46+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "X-Generator: Poedit 2.4.3\n"
+"Language: ja\n"
 
 #: ../calibration.rst:2
 msgid "Calibration"
@@ -59,7 +60,7 @@ msgstr ""
 
 #: ../calibration.rst:27
 msgid "Get into the folder **SunFounder_PiCar/picar:**"
-msgstr "**SunFounder_PiCar/pica**フォルダーを開く："
+msgstr "**SunFounder_PiCar/picar**フォルダーを開く："
 
 #: ../calibration.rst:40
 msgid ""
@@ -72,16 +73,16 @@ msgid ""
 msgstr ""
 "エディターでフォルダーの**config**ファイルを開く。いくつかのパラメーター"
 "が表示される。**turning_offset**の値は、前輪を調整するために使用される。"
-"デフォルトではその値は0となっている。前輪を**少し右に回したい**場合は、**"
-"大きな値**に変更してください。**左寄りにする**には、**小さい値**に設定す"
-"る（負の数に設定できる）。"
+"デフォルトではその値は**0**となっている。前輪を**少し右に回したい**場合"
+"は、**大きな値**に変更してください。**左寄りにする**には、**小さい値**に"
+"設定する（負の数に設定できる）。"
 
 #: ../calibration.rst:47
 msgid ""
 "But **DO NOT** over-configure the wheels (recommended a value between "
 "-30 and 30), or the servo may be stuck and broken."
 msgstr ""
-"ただし、ホイールを過度に構成**しない**でください（-30〜30の推奨値）。そう"
+"ただし、ホイールを過度に構成**DO NOT**でください（-30〜30の推奨値）。そう"
 "しないと、サーボが動かなくなったり壊れたりする恐れがある。"
 
 #: ../calibration.rst:50

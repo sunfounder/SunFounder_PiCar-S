@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: SunFounder PiCar-S Kit\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-20 18:43+0800\n"
-"PO-Revision-Date: 2021-06-08 20:40+0800\n"
+"PO-Revision-Date: 2021-06-25 16:51+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../index.rst:2
 msgid "SunFounder PiCar-S Smart Car Kit for Raspberry Pi"
-msgstr "ラズベリー パイ向けてSunFounder社製PiCar-Sスマートカーキット"
+msgstr "SunFounder PiCar-S Raspberry Pi スマートカーキット"
 
 #: ../index.rst:5
 msgid "About the PiCar-S"
@@ -59,13 +59,13 @@ msgid ""
 "free to send Email and we will update to our online tutorials as soon as "
 "possible, any suggestions are welcomed."
 msgstr ""
-"あなたが我々が持っていないもう一つのプロジェクトを学びたいならば、メール"
-"を送って、我々が我々のオンラインチュートリアルをできるだけ早く更新すると"
-"感じてください、どんな提案も歓迎されます。"
+"製品の関するご意見、またはマニュアルにない新しいプロジェクトを学習したい"
+"場合は、遠慮なくこちらまでご連絡くだだい。できるだけ早めにマニュアルに更"
+"新します。"
 
 #: ../index.rst:21
 msgid "Here is the Email: cs@sunfounder.com."
-msgstr "電子メール：cs@sunfounder.com。"
+msgstr "サポートメールアドレスはこちらまで：cs@sunfounder.com"
 
 #: ../index.rst:39
 msgid "Copyright Notice"
