@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, sunfounder
+# This file is distributed under the same license as the SunFounder_PiCar-S package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder_PiCar-S \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-29 10:44+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../modules.rst:2
+msgid "Modules"
+msgstr ""
+
+#: ../modules.rst:5
+msgid "Robot HATS"
+msgstr ""
+
+#: ../modules.rst:10
+msgid "**Robot HATS** is a specially-designed HAT for a 40-pin Raspberry Pi and can work with Raspberry Pi 3 model B, 3 model B +, and 4 model B. It supplies power to the Raspberry Pi from the GPIO ports. Thanks to the design of the ideal diode based on the rules of HATS, it can supply the Raspberry Pi via both the USB cable and the DC port thus protecting it from damaging the TF card caused by batteries running out of power. The PCF8591 is used as the ADC chip, with I2C communication, and the address 0x48."
+msgstr ""
+
+#: ../modules.rst:22
+msgid "**1.** **Digital ports**: 3-wire digital sensor ports, signal voltage: 3.3V, VCC voltage: 3.3V."
+msgstr ""
+
+#: ../modules.rst:25
+msgid "**2**. **Analog ports**: 3-wire 4-channel 8-bit ADC sensor port, reference voltage: 3.3V, VCC voltage: 3.3V."
+msgstr ""
+
+#: ../modules.rst:28
+msgid "**3.** **I2C ports**: 3.3V I2C bus ports"
+msgstr ""
+
+#: ../modules.rst:30
+msgid "**4**. **5V power output**: 5V power output to PWM driver."
+msgstr ""
+
+#: ../modules.rst:32
+msgid "**5**. **UART port**: 4-wire UART port, 5V VCC, perfectly working with SunFounder FTDI Serial to USB."
+msgstr ""
+
+#: ../modules.rst:35
+msgid "**6**. **Motor control ports**: 5V for motors, direction control of motors MA and MB and a floating pin NC; working with motor driver module."
+msgstr ""
+
+#: ../modules.rst:39
+msgid "**7**. **Switch**: power switch"
+msgstr ""
+
+#: ../modules.rst:41
+msgid "**8**. **Power indicators**: indicating the voltage – 2 indicators on: >7.9V; 1 indicator on: 7.9V~7.4V; no indicator on: <7.4V. To protect the batteries, you're recommended to take them out for charge when there is no indicator on. The power indicators depend on the voltage measured by the simple comparator circuit; the detected voltage may be lower than normal depending on loads, so it is just for reference."
+msgstr ""
+
+#: ../modules.rst:48
+msgid "**9**. **Power port**: 5.5/2.1mm standard DC port, input voltage: 8.4~7.4V (limited operating voltage: 12V~6V)."
+msgstr ""
+
+#: ../modules.rst:52
+msgid "PCA9865"
+msgstr ""
+
+#: ../modules.rst:57
+msgid "PCA9685 16-channel 12-bit I2C Bus PWM driver. It supports independent PWM output power and is easy to use 4-wire I2C port for connection in parallel, distinguished 3-color ports for PWM output."
+msgstr ""
+
+#: ../modules.rst:64
+msgid "1. **PWM output ports**: 3-color ports, independent power PWM output port, connect to the servo directly."
+msgstr ""
+
+#: ../modules.rst:67
+msgid "2 & 3. **I2C port**: 4-wire I2C port, can be used in parallel. Compatible with 3.3V/5.5V"
+msgstr ""
+
+#: ../modules.rst:70
+msgid "**PWM power input**: 12V max."
+msgstr ""
+
+#: ../modules.rst:72
+msgid "**LED**: power indicator for the chip and for the PWM power input."
+msgstr ""
+
+#: ../modules.rst:75
+msgid "Motor Driver Module"
+msgstr ""
+
+#: ../modules.rst:77
+msgid "The Motor Driver module is a low heat generation one and small packaged motor drive."
+msgstr ""
+
+#: ../modules.rst:83
+msgid "**1. Power and motor control port**: includes pins for supplying the chip and the motors and controlling the motors' direction"
+msgstr ""
+
+#: ../modules.rst:86
+msgid "**2. PWM input for the motors**: PWM signal input for adjusting the speed of the two motors"
+msgstr ""
+
+#: ../modules.rst:89
+msgid "**3. Motor output port**: output port for two motors"
+msgstr ""
+
+#: ../modules.rst:92
+msgid "Line Follower Module"
+msgstr ""
+
+#: ../modules.rst:100
+msgid "The TCRT5000 infrared photoelectric switch adopts a high transmit power infrared photodiode and a highly sensitive phototransistor. It works by applying the principle of objects' reflecting IR light – the light is emitted, then reflected, and sensed by the synchronous circuit. Then it determines whether there exists an object or not by the light intensity. It can easily identify black and white lines."
+msgstr ""
+
+#: ../modules.rst:107
+msgid "In other words, the different conduction levels of the phototransistor when it passes over black and white lines can generate different output voltages. Therefore, all we need to do is to collect data by the AD converter on the Atmega328 and then send the data to the master control board via I2C communication."
+msgstr ""
+
+#: ../modules.rst:113
+msgid "This module is an infrared tracking sensor one that uses 5 TRT5000 sensors. The blue LED of TRT5000 is the emission tube and after electrified it emits infrared light invisible to human eye. The black part of the sensor is for receiving; the resistance of the resistor inside changes with the infrared light received."
+msgstr ""
+
+#: ../modules.rst:120
+msgid "Light Follower Module"
+msgstr ""
+
+#: ../modules.rst:128
+msgid "Phototransistor, also known as photodiode, is a device that converts light to current. Currents are generated when photons are absorbed in the P-N junction. When a reverse voltage is applied, the reverse current in the device will change with the light luminance. The stronger the light is, the larger the reverse current will be. Most phototransistors work this way."
+msgstr ""
+
+#: ../modules.rst:135
+msgid "The ADC chip on the HATS can receive 8-bit analog signals and convert them into integers, and transfer the signals to the Raspberry Pi. The Raspberry Pi will analyze the data to determine the direction of the brightest area (the light source), and further control the steering and movement of the four wheels to approach the light source."
+msgstr ""
+
+#: ../modules.rst:141
+msgid "You may need a light focused flashlight in this experiment. At least, the spot size of the torch should not be too big to reach all the 3 phototransistors on the module at the same time. Well, you can also shine the flashlight closer to the car to get a small spot size."
+msgstr ""
+
+#: ../modules.rst:147
+msgid "Ultrasonic Obstacle Avoidance Module"
+msgstr ""
+
+#: ../modules.rst:157
+msgid "The module contains an HC-SR04 ultrasonic distance sensor to detect the distance to an obstacle ahead. It is commonly used for robots to avoid obstacles. With the two holes, it can be easily mounted to the robot. A four foot anti-backwards cable is included to make the wiring tighter and easier."
+msgstr ""
+
+#: ../modules.rst:164
+msgid "The HC-SR04 ultrasonic distance sensor provides non-contact measurement from 2cm to 400cm with a range accuracy of 3mm. each HC-SR04 module includes an ultrasonic transmitter, a receiver and a control circuit, so we have to be careful with the Trig and Echo pin connections when using the HC-SR04 module. When we attach it to the picar-s, it measures the distance and detects if there is an obstacle ahead."
+msgstr ""
+
+#: ../modules.rst:166
+msgid "**Principle**"
+msgstr ""
+
+#: ../modules.rst:168
+msgid "Supply a short 10μS pulse to the Trig to start the ranging, and then the module will send out an 8 cycle burst of ultrasound at 40 kHz and raise its echo back. The echo is a distance object that is pulse width and the range in proportion. You can calculate the :math:`\\text{Range}` through the :math:`\\text{Time Interval}` between sending trigger signal and receiving echo signal."
+msgstr ""
+
+#: ../modules.rst:175
+msgid "Formula:"
+msgstr ""
+
+#: ../modules.rst:177
+msgid "Range(m) = \\frac{Time Interval \\times 340_{m/s}}{2}\n"
+"\n"
+""
+msgstr ""
+
+#: ../modules.rst:179
+#: ../modules.rst:183
+msgid "Or:"
+msgstr ""
+
+#: ../modules.rst:181
+msgid "\\text{Range}\\left( \\text{cm} \\right) = \\frac{\\text{Time Interval}}{58}\n"
+"\n"
+""
+msgstr ""
+
+#: ../modules.rst:185
+msgid "\\text{Range}(inchs) = \\frac{\\text{Time Interval}}{148}\n"
+"\n"
+""
+msgstr ""
+
+#: ../modules.rst:187
+msgid "We suggest to use over 60ms measurement cycle, so as to prevent trigger signal to the echo."
+msgstr ""
+
+#: ../modules.rst:191
+msgid "SunFounder SF006C Servo"
+msgstr ""
+
+#: ../modules.rst:196
+msgid "The SunFounder SF0180 Servo is a 180-degree three-wire digital servo. It utilizes PWM signal of 60Hz and has no physical limit – only control by internal software to 180 degrees at most."
+msgstr ""
+
+#: ../modules.rst:200
+msgid "Electrical Specifications:"
+msgstr ""
+
+#: ../modules.rst:207
+msgid "DC Gear Motor"
+msgstr ""
+
+#: ../modules.rst:212
+msgid "It's a DC motor with a speed reducing gear train. See the parameters below:"
+msgstr ""
+
+#: ../modules.rst:219
+msgid "Copyright Notice"
+msgstr ""
+
+#: ../modules.rst:221
+msgid "All contents including but not limited to texts, images, and code in this manual are owned by the SunFounder Company. You should only use it for personal study, investigation, enjoyment, or other non-commercial or nonprofit purposes, under the related regulations and copyrights laws, without infringing the legal rights of the author and relevant right holders. For any individual or organization that uses these for commercial profit without permission, the Company reserves the right to take legal action."
+msgstr ""

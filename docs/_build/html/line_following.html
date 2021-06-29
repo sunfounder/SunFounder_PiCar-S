@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Line Following &mdash; SunFounder_PiCar-S  ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://ezblock.cc/readDocFile/topHead.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+        <script src="https://ezblock.cc/readDocFile/topHead.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="Combination" href="combination.html" />
+    <link rel="prev" title="Light Following" href="light_following.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SunFounder_PiCar-S
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="components_list.html">Components List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building_the_car.html">Building the Car</a></li>
+<li class="toctree-l1"><a class="reference internal" href="circuits_building.html">Circuits Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="get_started_with_raspberry_pi.html">Get Started with Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="servo_configuration.html">Servo Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calibration.html">Calibration</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="arming_the_car.html">Arming the Car!</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="obstacle_avoidance.html">Obstacle Avoidance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="light_following.html">Light Following</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Line Following</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-it-works">How it works</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#procedures">Procedures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-make-a-track-for-line-following">How to make a track for line following</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code-explanation-of-line-follower-py">Code Explanation of line_follower.py</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="combination.html">Combination</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SunFounder_PiCar-S</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="arming_the_car.html">Arming the Car!</a> &raquo;</li>
+        
+      <li>Line Following</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/line_following.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="line-following">
+<h1>Line Following<a class="headerlink" href="#line-following" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="how-it-works">
+<h2>How it works<a class="headerlink" href="#how-it-works" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>The line follower detects lines in the surrounding environment, and
+transfers the data to the processor. The processor analyzes the data,
+and sends a command to control the movement of front wheels and rear
+wheels.</p>
+</div>
+<div class="section" id="procedures">
+<h2>Procedures<a class="headerlink" href="#procedures" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><strong>Step 1 Assembly</strong></p>
+<p>Connect the light follower to the Sensor Connector with <strong>M3*10 screws</strong>
+and <strong>M3 nuts</strong>, and then assemble them to the car with two <strong>M3*10
+screws</strong> and two <strong>M3 nuts</strong>. You're suggested to hold the nuts
+underneath with your fingers.</p>
+<img alt="_images/image238.png" src="_images/image238.png" />
+<p><strong>Step 2 Wiring</strong></p>
+<p>Connect the light follower to the Robot HATS with a 5-pin anti-reverse
+cable as shown below.</p>
+<img alt="_images/image125.png" src="_images/image125.png" />
+<p><strong>Step 3 Test</strong></p>
+<p>Get into the directory example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">SunFounder_PiCar</span><span class="o">-</span><span class="n">S</span><span class="o">/</span><span class="n">example</span>
+</pre></div>
+</div>
+<p>Check whether any i2c device is recognized or not via i2c-tools</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">i2cdetect</span> <span class="o">-</span><span class="n">y</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<img alt="_images/image126.png" src="_images/image126.png" />
+<p>We can see 11 is the line follower’s i2c address. If it is not shown, it
+proves your wiring is not correct and the i2c communication with
+Raspberry Pi fails too. You need to check the wiring before the next
+step.</p>
+<p>Run the test code.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">test_line_module</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<img alt="_images/image127.png" src="_images/image127.png" />
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>For the better working of line following module, we should
+adjust its sensitivity. The steps are as follows:</p>
+<p>Place the module on the white surface, read the value ; place it on
+balck surface, and read value.</p>
+<p>Calculate the difference, rotate potentiometer on the line following
+module toward the clockwise and anticlockwise till the diffence reaches
+up to the maximum. Now the debugging is finished.</p>
+</div>
+<p><strong>Step 4 Starts Running!</strong></p>
+<p>Run the line follower code</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">line_follower</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>A prompt of calibration will be printed on the screen when the program
+starts to run. We will calibrate the module on a white surface first:
+place all the five probes of the line follower above a white board. The
+prompt of completed calibration will be printed on the screen a few
+seconds later. Then let’s move on to calibration on black line. Also the
+prompt of starting is printed on the screen, and then place all the
+probes above the black lines. And the prompt of calibration completed
+will be printed on the screen a few seconds later.</p>
+<p>When the module calibration is all completed, we can run the car then.
+Place the PiCar-S with probes above the black line on the white board,
+and then it will go forward following the line itself.</p>
+</div>
+<div class="section" id="how-to-make-a-track-for-line-following">
+<h2>How to make a track for line following<a class="headerlink" href="#how-to-make-a-track-for-line-following" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>To make a track for the car to follow a black line, you need to prepare
+the following materials:</p>
+<p>A large sheet of paper, a roll of black tape (as black lines), a hard
+card board (the size depending on the size of the track) or a flat
+surface like the floor or desk.</p>
+<p>1. Spread the paper out smoothly on the hard board, and paste on the
+board or flat surface.</p>
+<ol class="arabic simple" start="2">
+<li><p>Paste the tape on the paper.</p></li>
+</ol>
+<p>Rules for making:</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Width of the black line: about 18-30mm, nearly the distance between</dt><dd><p>two probes, no more than the minimum distance of two nonadjacent
+probes</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>The gap between two lines: more than 125mm, which is the width of the</dt><dd><p>whole module, to prevent the car from getting confused when
+detecting two lines at the same time.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>The semidiameter of curves: more than 138mm. When the front wheels</dt><dd><p>turn left or right 45 degrees, the semidiameter of the path by
+which the car turns is equal to the wheelbase (the distance
+between the center of the front wheels and rear wheels). The car
+won't be able to turn and pass the curve smoothly if the
+semidiameter of the curve is too small.</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p>A track sample is shown as below (the original map file can be found
+under folder <strong>map</strong> in <strong>github</strong>):</p>
+<img alt="_images/image128.png" src="_images/image128.png" />
+</div>
+<div class="section" id="code-explanation-of-line-follower-py">
+<h2>Code Explanation of line_follower.py<a class="headerlink" href="#code-explanation-of-line-follower-py" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><strong>Whole Work Flow</strong></p>
+<p>Considering the interference of negative environment factors, we need to
+calibrate the line follower sensor before actual use.</p>
+<img alt="_images/image246.png" src="_images/image246.png" />
+<p>Here two main functions including the line follower calibration and line
+following are included in the main program.</p>
+<p><strong>Subflow of Line Follower Calibration Function</strong></p>
+<p>When we run the line follower configuration, we will start from white
+color, then black color, which is more like the upper limit and lower
+limit of the sensor. Then we take the average value of black and white
+as reference value: if the detected value is higher than the reference,
+it should be white; if the detected is lower than the reference, it
+should be black. We will show the five detectors’ status by 5 elements
+[0,0,0,0,0].</p>
+<img alt="_images/image247.png" src="_images/image247.png" />
+<p><strong>Subflow of Line Following Function</strong></p>
+<img alt="_images/image248.png" src="_images/image248.png" />
+<p>In the line following function, we set the turning angle of the servo in
+different levels according to the detection results of the probes. If
+the line in front of the car is detected as a small curve, then the car
+will turn a small angle; if it is a big one, the car will turn a large
+angle. Thus, here we set four angle-turning constants: a_step, b_step,
+c_step, and d_step.</p>
+<img alt="_images/image249.png" src="_images/image249.png" />
+<p>When the car moves forward originally, the servo is in 90 degrees. To
+drive the car to turn left, the servo should be in 90+step degrees; to
+turn right, the servo should be in 90-step degrees.</p>
+<p>There is a special case: if the car runs off the track, and all the
+probes cannot detect the black lines any more, then it will continue the
+program below.</p>
+<img alt="_images/image250.png" src="_images/image250.png" />
+<p>In some case, especially when the car turns in a direction when the semi
+diameter of the curve is very small (1), the car may run out of the
+track and cannot detect any black line (2). If there is no response
+program in such case, the car will be unable to follow the line again.
+Thus we set the response program to let the car move backwards in the
+opposite direction (3), and then turn back to the original direction
+until a black line is detected again and move forward (4).</p>
+<p><strong>Functions Explanation</strong></p>
+<p>The logic of the code is just as shown in the flow chart above.</p>
+<p>Three Python modules are used in the code, including the imported
+<strong>SunFounder_Line_Follower</strong>, <strong>front_wheels</strong>, and <strong>back_wheels</strong>.
+They are the drivers for this kit, respectively for line following ,
+front wheels, and rear wheels</p>
+<p>The related classes have been defined here. When the modules are applied
+to use, objects will be created for related classes, and different parts
+of hardware will be driven by calling a function by the class object.</p>
+<p>Similar to the line following module, we create an object named <strong>lf</strong>:</p>
+<p><strong>lf = Line_Follower_module.Line_Follower(references=REFERENCES)</strong></p>
+<p>The parameter is initial, and then we can apply the function by calling
+a class object.</p>
+<p><strong>lf.read_digital()</strong></p>
+<p>This function is used to read the analog signal of all probes, and
+convert it into digital signal. If the signal is larger than the
+reference, the corresponding parameter will be 0; if it is lower than
+the reference, the parameter will be 1. There are five probes, thus we
+will get a 5-parameter list.</p>
+<p><strong>fw.turn(turning_angle)</strong></p>
+<p>The function for front wheels' turning. The main program will call this
+function if applying the front wheels for turning. The parameter is the
+turning angle.</p>
+<p><strong>bw.forward()</strong></p>
+<p><strong>bw.set_speed(forward_speed)</strong></p>
+<p>Here we need two functions for rear wheels. One is to control the
+rotating direction as forward (for rotating backwards,
+<strong>bw.backward()</strong>). The second one is to set the rotating speed; the
+parameter is the speed value (range 0~100). The bigger the parameter is,
+the faster the wheel rotates.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="combination.html" class="btn btn-neutral float-right" title="Combination" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="light_following.html" class="btn btn-neutral float-left" title="Light Following" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, sunfounder.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
