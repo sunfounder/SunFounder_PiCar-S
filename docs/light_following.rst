@@ -49,10 +49,18 @@ The wiring is shown as below:
 
 Let’s test the light follower first.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     cd ~/SunFounder_PiCar-S/example/
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     python3 test_light_module.py
@@ -78,6 +86,18 @@ under the same light luminance. The best status is as follows:
 **Step 4. Get on the road!**
 
 
+.. raw:: html
+
+    <run></run>
+ 
+.. code-block::
+
+    git submodule update --init
+
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     python3 light_follower.py
@@ -102,12 +122,13 @@ Code Explanation for light_follower.py
 
 **Whole Work Flow**
 
-1. Light-sensitive sensors need to be calibrated before actual use
-   because of complex light conditions in the environment. It gathers
-   the information of the ambient light luminance. The car can follow
-   light only when the light source is brighter than the surroundings.
+Light-sensitive sensors need to be calibrated before actual use 
+because of complex light conditions in the environment. It gathers 
+the information of the ambient light luminance. The car can follow 
+light only when the light source is brighter than the surroundings.
 
 .. image:: media/image241.png
+    :width: 800
 
 
 Here write two main functions/modules including light following
@@ -139,6 +160,7 @@ detect in a circle.
 **Subflow of Light Following Function**
 
 .. image:: media/image242.png
+    :width: 800
 
 
 The light follower includes three phototransistors, thus its status list
@@ -165,7 +187,8 @@ light is at the central left side (status [1,1,0]), we should apply a
 small-angle turning; if the light is at the edge of the left side
 (status [1,0,0]), we should apply a large-angle turning.
 
-**Functions Explanation**
+Functions Explanation
+-------------------------
 
 To understand the code, take the software subflows above for reference.
 

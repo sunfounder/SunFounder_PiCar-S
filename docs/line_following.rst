@@ -33,12 +33,20 @@ cable as shown below.
 
 Get into the directory example:
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     cd ~/SunFounder_PiCar-S/example
 
 Check whether any i2c device is recognized or not via i2c-tools
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     sudo i2cdetect -y 1
@@ -53,6 +61,10 @@ step.
 
 Run the test code.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     python3 test_line_module.py
@@ -75,6 +87,10 @@ Run the test code.
 
 Run the line follower code
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     python3 line_follower.py
@@ -160,6 +176,7 @@ should be black. We will show the five detectors’ status by 5 elements
 **Subflow of Line Following Function**
 
 .. image:: media/image248.png
+    :width: 800
 
 
 In the line following function, we set the turning angle of the servo in
@@ -191,7 +208,8 @@ Thus we set the response program to let the car move backwards in the
 opposite direction (3), and then turn back to the original direction
 until a black line is detected again and move forward (4).
 
-**Functions Explanation**
+Functions Explanation
+----------------------------
 
 The logic of the code is just as shown in the flow chart above.
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SunFounder PiCar-S Kit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 09:54+0800\n"
+"POT-Creation-Date: 2021-08-17 09:42+0800\n"
 "PO-Revision-Date: 2021-06-25 16:34+0800\n"
 "Last-Translator: \n"
 "Language: pi\n"
@@ -33,10 +33,10 @@ msgstr "この章では、まずラズベリーパイの起動方法を学びま
 msgid ""
 "You can check the complete tutorial on the official website of the "
 "Raspberry Pi: https://projects.raspberrypi.org/en/projects/raspberry-pi-"
-"setting-up"
+"setting-up."
 msgstr ""
 "完全なチュートリアルは、ラズベリーパイの公式サイト（https://projects.raspberrypi.org/en/projects"
-"/raspberry-pi-setting-up）で確認できます"
+"/raspberry-pi-setting-up）で確認できます。"
 
 #: ../get_started_with_raspberry_pi.rst:13
 msgid ""
@@ -177,10 +177,10 @@ msgid ""
 "<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements>`__"
 " for the country in which you are using your Raspberry Pi, please refer "
 "to the following link: "
-"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements"
+"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements."
 msgstr ""
 "**wifi country** は、ラズベリーパイを使用している国の`ISO/IEC alpha2 code "
-"<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements>`__の2文字のコードを設定してください、以下のリンクを参照してください：https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements"
+"<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements>`__の2文字のコードを設定してください、以下のリンクを参照してください：https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements。"
 
 #: ../get_started_with_raspberry_pi.rst:101
 msgid "**Step 7**"
@@ -315,13 +315,15 @@ msgstr "**Applications**->\\ **Utilities** に入り、 **Terminal** を見つ�
 
 #: ../get_started_with_raspberry_pi.rst:186
 msgid ""
-"Type in **ssh pi@ip_address** . “pi”is your username and “ip_address” is "
-"your IP address. For example:"
-msgstr "**ssh pi @ ip_address** を入力する。「pi」はユーザー名で、「ip_address」はIP アドレスである。例えば："
+"Type in **ssh pi@ip_address** . \\\"pi\\\" is your username and "
+"\\\"ip_address\\\" is your IP address. For example:"
+msgstr ""
+"**ssh pi@ip_address** と入力します。 \\\"pi\\\" はユーザー名、\\\"ip_address\\\" "
+"はIPアドレスです。 例えば："
 
 #: ../get_started_with_raspberry_pi.rst:196
-msgid "Input”yes”."
-msgstr "「yes」を入力する"
+msgid "Input \\\"yes\\\"."
+msgstr "\\\"yes\\\" を入力します。"
 
 #: ../get_started_with_raspberry_pi.rst:203
 msgid "Input the passcode and the default password is **raspberry**."
@@ -332,6 +334,9 @@ msgid ""
 "We now get the Raspberry Pi connected and are ready to go to the next "
 "step."
 msgstr "これで、Raspberry Piが接続され、次のステップに進む準備ができた。"
+
+msgid "IMG_277"
+msgstr ""
 
 #: ../get_started_with_raspberry_pi.rst:220
 msgid ""
@@ -347,10 +352,10 @@ msgstr "Windowsユーザーの場合"
 #: ../get_started_with_raspberry_pi.rst:228
 msgid ""
 "If you're a Windows user, you can use SSH with the application of some "
-"software. Here, we recommend **PuTTY**\\ (You can download from Google)."
+"software. Here, we recommend **PuTTY** (You can download from Google)."
 msgstr ""
-"Windowsユーザーの場合、いくつかのソフトウェアのアプリケーションでSSHを使用できる。ここでは、 **PuTTY** "
-"を推薦する（Googleからダウンロードできる）。"
+"Windowsユーザーの場合、いくつかのソフトウェアのアプリケーションでSSHを使用できます。 ここでは、**PuTTY** "
+"をお勧めします（Googleからダウンロードできます）。"
 
 #: ../get_started_with_raspberry_pi.rst:233
 msgid ""
@@ -362,6 +367,9 @@ msgstr ""
 "IP address)** の下のテキストボックスにRPiのIPアドレスを入力し、 **Port** に **22** "
 "（デフォルトでは22）を入力する。"
 
+msgid "IMG_278"
+msgstr ""
+
 #: ../get_started_with_raspberry_pi.rst:244
 msgid ""
 "Click **Open**. Note that when you first log in to the Raspberry Pi with "
@@ -372,9 +380,9 @@ msgstr ""
 
 #: ../get_started_with_raspberry_pi.rst:249
 msgid ""
-"When the PuTTY window prompts “\\ **login as:”**, type in “\\ **pi”**\\ "
-"(the user name of the RPi), and **password: “**\\ raspberry” (the default"
-" one, if you haven't changed it)."
+"When the PuTTY window prompts \\\"**login as:**\\\", type in "
+"\\\"**pi**\\\" (the user name of the RPi), and **password:** "
+"\\\"raspberry\\\" (the default one, if you haven't changed it)."
 msgstr ""
 "PuTTYウィンドウに「**login "
 "as：**」と表示されたら、「**pi**」（RPiのユーザー名）とパスワード「**raspberry**」（変更していない場合はデフォルトのパスワードである）を入力する。"
@@ -385,9 +393,9 @@ msgid ""
 "next steps."
 msgstr "ここで、Raspberry Piを接続し、次の手順を実行する。"
 
-#~ msgid "IMG_277"
+#~ msgid " IMG_277"
 #~ msgstr "IMG_277"
 
-#~ msgid "IMG_278"
+#~ msgid " IMG_278"
 #~ msgstr "IMG_278"
 

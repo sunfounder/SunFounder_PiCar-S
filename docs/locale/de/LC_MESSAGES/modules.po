@@ -4,27 +4,28 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SunFounder_PiCar-S \n"
+"Project-Id-Version: SunFounder_PiCar-S\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 10:44+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-08-17 10:46+0800\n"
+"PO-Revision-Date: 2021-08-17 11:59+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"X-Generator: Poedit 3.0\n"
 
 #: ../modules.rst:2
 msgid "Modules"
-msgstr ""
+msgstr "Module"
 
 #: ../modules.rst:5
 msgid "Robot HATS"
-msgstr ""
+msgstr "Roboter-HÜTE"
 
 #: ../modules.rst:10
 msgid ""
@@ -37,119 +38,158 @@ msgid ""
 "PCF8591 is used as the ADC chip, with I2C communication, and the address "
 "0x48."
 msgstr ""
+"**Robot HATS** ist ein speziell entwickelter HAT für einen 40-poligen "
+"Raspberry Pi und kann mit Raspberry Pi 3 Modell B, 3 Modell B + und 4 "
+"Modell B arbeiten. Er versorgt den Raspberry Pi über die GPIO-Ports mit "
+"Strom . Dank des Designs der idealen Diode nach den Regeln von HATS kann "
+"sie den Raspberry Pi sowohl über das USB-Kabel als auch über den DC-"
+"Anschluss versorgen und schützt ihn so vor einer Beschädigung der TF-Karte "
+"durch leere Batterien. Als ADC-Chip wird der PCF8591 mit I2C-Kommunikation "
+"und der Adresse 0x48 verwendet."
 
 #: ../modules.rst:22
 msgid ""
 "**1.** **Digital ports**: 3-wire digital sensor ports, signal voltage: "
 "3.3V, VCC voltage: 3.3V."
 msgstr ""
+"**1.** **Digitale Anschlüsse**: 3-Draht-Digitalsensoranschlüsse, "
+"Signalspannung: 3,3V, VCC-Spannung: 3,3V."
 
 #: ../modules.rst:25
 msgid ""
-"**2**. **Analog ports**: 3-wire 4-channel 8-bit ADC sensor port, "
-"reference voltage: 3.3V, VCC voltage: 3.3V."
+"**2**. **Analog ports**: 3-wire 4-channel 8-bit ADC sensor port, reference "
+"voltage: 3.3V, VCC voltage: 3.3V."
 msgstr ""
+"**2**. **Analoge Anschlüsse**: 3-Draht-4-Kanal-8-Bit-ADC-Sensoranschluss, "
+"Referenzspannung: 3,3 V, VCC-Spannung: 3,3 V."
 
 #: ../modules.rst:28
 msgid "**3.** **I2C ports**: 3.3V I2C bus ports"
-msgstr ""
+msgstr "**3.** **I2C-Ports**: 3,3-V-I2C-Bus-Ports"
 
 #: ../modules.rst:30
 msgid "**4**. **5V power output**: 5V power output to PWM driver."
-msgstr ""
+msgstr "**4**. **5V Stromausgang**: 5V Stromausgang zum PWM-Treiber."
 
 #: ../modules.rst:32
 msgid ""
 "**5**. **UART port**: 4-wire UART port, 5V VCC, perfectly working with "
 "SunFounder FTDI Serial to USB."
 msgstr ""
+"**5**. **UART-Port**: 4-Draht-UART-Port, 5V VCC, funktioniert perfekt mit "
+"SunFounder FTDI Serial to USB."
 
 #: ../modules.rst:35
 msgid ""
-"**6**. **Motor control ports**: 5V for motors, direction control of "
-"motors MA and MB and a floating pin NC; working with motor driver module."
+"**6**. **Motor control ports**: 5V for motors, direction control of motors "
+"MA and MB and a floating pin NC; working with motor driver module."
 msgstr ""
+"**6**. **Motorsteueranschlüsse**: 5V für Motoren, Richtungssteuerung der "
+"Motoren MA und MB und ein potentialfreier Pin NC; Arbeiten mit "
+"Motortreibermodul."
 
 #: ../modules.rst:39
 msgid "**7**. **Switch**: power switch"
-msgstr ""
+msgstr "**7**. **Schalter**: Netzschalter"
 
 #: ../modules.rst:41
 msgid ""
 "**8**. **Power indicators**: indicating the voltage – 2 indicators on: "
 ">7.9V; 1 indicator on: 7.9V~7.4V; no indicator on: <7.4V. To protect the "
-"batteries, you're recommended to take them out for charge when there is "
-"no indicator on. The power indicators depend on the voltage measured by "
-"the simple comparator circuit; the detected voltage may be lower than "
-"normal depending on loads, so it is just for reference."
+"batteries, you're recommended to take them out for charge when there is no "
+"indicator on. The power indicators depend on the voltage "
+"measured by the simple comparator circuit; the detected voltage may be "
+"lower than normal depending on loads, so it is just for reference."
 msgstr ""
+"**8**. **Stromanzeigen**: Anzeige der Spannung – 2 Anzeigen an: >7,9V; 1 "
+"Anzeige an: 7,9V~7,4V; keine Anzeige an: <7,4V. Um die Batterien zu "
+"schützen, wird empfohlen, sie zum Laden herauszunehmen, wenn keine Anzeige "
+"leuchtet. Die Leistungsanzeigen hängen von der Spannung ab, die von der "
+"einfachen Komparatorschaltung gemessen wird; Die erkannte Spannung kann je "
+"nach Last niedriger als normal sein, daher dient sie nur als Referenz."
 
 #: ../modules.rst:48
 msgid ""
-"**9**. **Power port**: 5.5/2.1mm standard DC port, input voltage: "
-"8.4~7.4V (limited operating voltage: 12V~6V)."
+"**9**. **Power port**: 5.5/2.1mm standard DC port, input voltage: 8.4~7.4V "
+"(limited operating voltage: 12V~6V)."
 msgstr ""
+"**9**. **Stromanschluss**: 5,5/2,1 mm Standard-DC-Anschluss, "
+"Eingangsspannung: 8,4 bis 7,4 V (begrenzte Betriebsspannung: 12 V bis 6 V)."
 
 #: ../modules.rst:52
 msgid "PCA9865"
-msgstr ""
+msgstr "PCA9865"
 
 #: ../modules.rst:57
 msgid ""
-"PCA9685 16-channel 12-bit I2C Bus PWM driver. It supports independent PWM"
-" output power and is easy to use 4-wire I2C port for connection in "
+"PCA9685 16-channel 12-bit I2C Bus PWM driver. It supports independent PWM "
+"output power and is easy to use 4-wire I2C port for connection in "
 "parallel, distinguished 3-color ports for PWM output."
 msgstr ""
+"PCA9685 16-Kanal-12-Bit-I2C-Bus-PWM-Treiber. Es unterstützt eine "
+"unabhängige PWM-Ausgangsleistung und ist ein einfach zu verwendender 4-"
+"Draht-I2C-Port für den Parallelanschluss, ausgezeichnete 3-Farben-Ports "
+"für den PWM-Ausgang."
 
 #: ../modules.rst:64
 msgid ""
-"1. **PWM output ports**: 3-color ports, independent power PWM output "
-"port, connect to the servo directly."
+"**1. PWM output ports**: 3-color ports, independent power PWM output port, "
+"connect to the servo directly."
 msgstr ""
+"**1. PWM-Ausgangsports**: 3-Farb-Ports, unabhängiger PWM-Ausgangsport, "
+"direkt an das Servo anschließen."
 
 #: ../modules.rst:67
 msgid ""
-"2 & 3. **I2C port**: 4-wire I2C port, can be used in parallel. Compatible"
-" with 3.3V/5.5V"
+"**2&3. I2C port**: 4-wire I2C port, can be used in parallel. Compatible "
+"with 3.3V/5.5V"
 msgstr ""
+"**2&3. I2C-Port**: 4-Draht-I2C-Port, kann parallel verwendet werden. "
+"Kompatibel mit 3.3V/5.5V"
 
 #: ../modules.rst:70
-msgid "**PWM power input**: 12V max."
-msgstr ""
+msgid "**3. PWM power input**: 12V max."
+msgstr "**3. PWM-Stromeingang**: 12V max."
 
 #: ../modules.rst:72
-msgid "**LED**: power indicator for the chip and for the PWM power input."
-msgstr ""
+msgid "**4. LED**: power indicator for the chip and for the PWM power input."
+msgstr "**4. LED**: Stromanzeige für den Chip und für den PWM-Stromeingang."
 
 #: ../modules.rst:75
 msgid "Motor Driver Module"
-msgstr ""
+msgstr "Motortreibermodul"
 
 #: ../modules.rst:77
 msgid ""
 "The Motor Driver module is a low heat generation one and small packaged "
 "motor drive."
 msgstr ""
+"Das Motortreibermodul ist ein Motorantrieb mit geringer Wärmeentwicklung "
+"und einem kleinen Gehäuse."
 
 #: ../modules.rst:83
 msgid ""
-"**1. Power and motor control port**: includes pins for supplying the chip"
-" and the motors and controlling the motors' direction"
+"**1. Power and motor control port**: includes pins for supplying the chip "
+"and the motors and controlling the motors' direction"
 msgstr ""
+"**1. Strom- und Motorsteuerungsanschluss**: enthält Pins zur Versorgung "
+"des Chips und der Motoren und zur Steuerung der Motorrichtung"
 
 #: ../modules.rst:86
 msgid ""
-"**2. PWM input for the motors**: PWM signal input for adjusting the speed"
-" of the two motors"
+"**2. PWM input for the motors**: PWM signal input for adjusting the speed "
+"of the two motors"
 msgstr ""
+"**2. PWM-Eingang für die Motoren**: PWM-Signaleingang zum Einstellen der "
+"Drehzahl der beiden Motoren"
 
 #: ../modules.rst:89
 msgid "**3. Motor output port**: output port for two motors"
-msgstr ""
+msgstr "**3. Motorausgangsanschluss**: Ausgangsanschluss für zwei Motoren"
 
 #: ../modules.rst:92
 msgid "Line Follower Module"
-msgstr ""
+msgstr "Linienfolgermodul"
 
 #: ../modules.rst:100
 msgid ""
@@ -160,6 +200,12 @@ msgid ""
 "determines whether there exists an object or not by the light intensity. "
 "It can easily identify black and white lines."
 msgstr ""
+"Der Infrarot-Lichtschranke TCRT5000 verwendet eine Infrarot-Fotodiode mit "
+"hoher Sendeleistung und einen hochempfindlichen Fototransistor. Es "
+"funktioniert nach dem Prinzip der Reflexion von IR-Licht von Objekten – "
+"das Licht wird emittiert, dann reflektiert und von der Synchronschaltung "
+"erfasst. Dann bestimmt es anhand der Lichtintensität, ob ein Objekt "
+"existiert oder nicht. Es kann leicht schwarze und weiße Linien erkennen."
 
 #: ../modules.rst:107
 msgid ""
@@ -169,59 +215,92 @@ msgid ""
 "converter on the Atmega328 and then send the data to the master control "
 "board via I2C communication."
 msgstr ""
+"Mit anderen Worten können die unterschiedlichen Leitungspegel des "
+"Fototransistors beim Überfahren von schwarzen und weißen Leitungen "
+"unterschiedliche Ausgangsspannungen erzeugen. Daher müssen wir nur Daten "
+"vom AD-Wandler des Atmega328 sammeln und die Daten dann über die I2C-"
+"Kommunikation an die Master-Steuerplatine senden."
 
 #: ../modules.rst:113
 msgid ""
 "This module is an infrared tracking sensor one that uses 5 TRT5000 "
 "sensors. The blue LED of TRT5000 is the emission tube and after "
-"electrified it emits infrared light invisible to human eye. The black "
-"part of the sensor is for receiving; the resistance of the resistor "
-"inside changes with the infrared light received."
+"electrified it emits infrared light invisible to human eye. The black part "
+"of the sensor is for receiving; the resistance of the resistor inside "
+"changes with the infrared light received."
 msgstr ""
+"Dieses Modul ist ein Infrarot-Tracking-Sensor, der 5 TRT5000-Sensoren "
+"verwendet. Die blaue LED des TRT5000 ist die Emissionsröhre und sendet "
+"nach der Elektrifizierung für das menschliche Auge unsichtbares "
+"Infrarotlicht aus. Der schwarze Teil des Sensors dient zum Empfangen; der "
+"Widerstand des Widerstands im Inneren ändert sich mit dem empfangenen "
+"Infrarotlicht."
 
 #: ../modules.rst:120
 msgid "Light Follower Module"
-msgstr ""
+msgstr "Lichtfolgermodul"
 
 #: ../modules.rst:128
 msgid ""
-"Phototransistor, also known as photodiode, is a device that converts "
-"light to current. Currents are generated when photons are absorbed in the"
-" P-N junction. When a reverse voltage is applied, the reverse current in "
-"the device will change with the light luminance. The stronger the light "
-"is, the larger the reverse current will be. Most phototransistors work "
-"this way."
+"Phototransistor, also known as photodiode, is a device that converts light "
+"to current. Currents are generated when photons are absorbed in the P-N "
+"junction. When a reverse voltage is applied, the reverse current in the "
+"device will change with the light luminance. The stronger the light is, "
+"the larger the reverse current will be. Most phototransistors work this "
+"way."
 msgstr ""
+"Fototransistor, auch bekannt als Fotodiode, ist ein Gerät, das Licht in "
+"Strom umwandelt. Ströme werden erzeugt, wenn Photonen im P-N-Übergang "
+"absorbiert werden. Beim Anlegen einer Sperrspannung ändert sich der "
+"Sperrstrom im Gerät mit der Leuchtdichte des Lichts. Je stärker das Licht "
+"ist, desto größer ist der Rückstrom. Die meisten Fototransistoren arbeiten "
+"auf diese Weise."
 
 #: ../modules.rst:135
 msgid ""
-"The ADC chip on the HATS can receive 8-bit analog signals and convert "
-"them into integers, and transfer the signals to the Raspberry Pi. The "
-"Raspberry Pi will analyze the data to determine the direction of the "
-"brightest area (the light source), and further control the steering and "
-"movement of the four wheels to approach the light source."
+"The ADC chip on the HATS can receive 8-bit analog signals and convert them "
+"into integers, and transfer the signals to the Raspberry Pi. The Raspberry "
+"Pi will analyze the data to determine the direction of the brightest area "
+"(the light source), and further control the steering and movement of the "
+"four wheels to approach the light source."
 msgstr ""
+"Der ADC-Chip auf dem HATS kann 8-Bit-Analogsignale empfangen und in "
+"Ganzzahlen umwandeln und die Signale an den Raspberry Pi übertragen. Der "
+"Raspberry Pi analysiert die Daten, um die Richtung des hellsten Bereichs "
+"(der Lichtquelle) zu bestimmen und steuert ferner die Lenkung und Bewegung "
+"der vier Räder, um sich der Lichtquelle zu nähern."
 
 #: ../modules.rst:141
 msgid ""
-"You may need a light focused flashlight in this experiment. At least, the"
-" spot size of the torch should not be too big to reach all the 3 "
-"phototransistors on the module at the same time. Well, you can also shine"
-" the flashlight closer to the car to get a small spot size."
+"You may need a light focused flashlight in this experiment. At least, the "
+"spot size of the torch should not be too big to reach all the 3 "
+"phototransistors on the module at the same time. Well, you can also shine "
+"the flashlight closer to the car to get a small spot size."
 msgstr ""
+"Möglicherweise benötigen Sie für dieses Experiment eine lichtfokussierte "
+"Taschenlampe. Zumindest sollte die Spotgröße der Taschenlampe nicht zu "
+"groß sein, um alle 3 Fototransistoren auf dem Modul gleichzeitig zu "
+"erreichen. Nun, Sie können die Taschenlampe auch näher an das Auto "
+"richten, um eine kleine Spotgröße zu erhalten."
 
 #: ../modules.rst:147
 msgid "Ultrasonic Obstacle Avoidance Module"
-msgstr ""
+msgstr "Ultraschall-Hindernisvermeidungsmodul"
 
 #: ../modules.rst:157
 msgid ""
 "The module contains an HC-SR04 ultrasonic distance sensor to detect the "
 "distance to an obstacle ahead. It is commonly used for robots to avoid "
 "obstacles. With the two holes, it can be easily mounted to the robot. A "
-"four foot anti-backwards cable is included to make the wiring tighter and"
-" easier."
+"four foot anti-backwards cable is included to make the wiring tighter and "
+"easier."
 msgstr ""
+"Das Modul enthält einen Ultraschall-Abstandssensor HC-SR04 zur Erkennung "
+"des Abstands zu einem vorausliegenden Hindernis. Es wird häufig für "
+"Roboter verwendet, um Hindernissen auszuweichen. Mit den zwei Löchern kann "
+"es einfach am Roboter montiert werden. Ein vier Fuß langes Anti-Rückwärts-"
+"Kabel ist im Lieferumfang enthalten, um die Verkabelung straffer und "
+"einfacher zu machen."
 
 #: ../modules.rst:164
 msgid ""
@@ -232,10 +311,17 @@ msgid ""
 "the HC-SR04 module. When we attach it to the picar-s, it measures the "
 "distance and detects if there is an obstacle ahead."
 msgstr ""
+"Der Ultraschall-Distanzsensor HC-SR04 ermöglicht eine berührungslose "
+"Messung von 2 cm bis 400 cm mit einer Messgenauigkeit von 3 mm. Jedes HC-"
+"SR04-Modul enthält einen Ultraschallsender, einen Empfänger und eine "
+"Steuerschaltung, daher müssen wir bei der Verwendung des HC-SR04-Moduls "
+"mit den Trig- und Echo-Pin-Anschlüssen vorsichtig sein. Wenn wir es am "
+"picar-s befestigen, misst es die Entfernung und erkennt, ob sich ein "
+"Hindernis vor Ihnen befindet."
 
 #: ../modules.rst:166
 msgid "**Principle**"
-msgstr ""
+msgstr "**Prinzip**"
 
 #: ../modules.rst:168
 msgid ""
@@ -246,43 +332,59 @@ msgid ""
 "the :math:`\\text{Time Interval}` between sending trigger signal and "
 "receiving echo signal."
 msgstr ""
+"Geben Sie dem Trig einen kurzen 10μS-Impuls, um die Entfernungsmessung zu "
+"starten, und dann sendet das Modul einen Ultraschall-Burst mit 8 Zyklen "
+"bei 40 kHz aus und erhöht sein Echo zurück. Das Echo ist ein "
+"Distanzobjekt, das zur Impulsbreite und der Reichweite im Verhältnis "
+"steht. Sie können den :math:`\\\\text{Range}` durch den :math:`\\"
+"\\text{Time Interval}` zwischen dem Senden des Triggersignals und dem "
+"Empfangen des Echosignals berechnen."
 
 #: ../modules.rst:175
 msgid "Formula:"
-msgstr ""
+msgstr "Formel:"
 
 #: ../modules.rst:177
 msgid ""
 "Range(m) = \\frac{Time Interval \\times 340_{m/s}}{2}\n"
 "\n"
 msgstr ""
+"Range(m) = \\frac{Time Interval \\times 340_{m/s}}{2}\n"
+"\n"
 
 #: ../modules.rst:179 ../modules.rst:183
 msgid "Or:"
-msgstr ""
+msgstr "Oder:"
 
 #: ../modules.rst:181
 msgid ""
-"\\text{Range}\\left( \\text{cm} \\right) = \\frac{\\text{Time "
-"Interval}}{58}\n"
+"\\text{Range}\\left( \\text{cm} \\right) = \\frac{\\text{Time Interval}}"
+"{58}\n"
 "\n"
 msgstr ""
+"\\text{Range}\\left( \\text{cm} \\right) = \\frac{\\text{Time Interval}}"
+"{58}\n"
+"\n"
 
 #: ../modules.rst:185
 msgid ""
 "\\text{Range}(inchs) = \\frac{\\text{Time Interval}}{148}\n"
 "\n"
 msgstr ""
+"\\text{Range}(inchs) = \\frac{\\text{Time Interval}}{148}\n"
+"\n"
 
 #: ../modules.rst:187
 msgid ""
 "We suggest to use over 60ms measurement cycle, so as to prevent trigger "
 "signal to the echo."
 msgstr ""
+"Wir empfehlen, einen Messzyklus von über 60 ms zu verwenden, um ein "
+"Triggersignal für das Echo zu verhindern."
 
 #: ../modules.rst:191
 msgid "SunFounder SF006C Servo"
-msgstr ""
+msgstr "SunFounder SF006C Servo"
 
 #: ../modules.rst:196
 msgid ""
@@ -290,34 +392,46 @@ msgid ""
 "utilizes PWM signal of 60Hz and has no physical limit – only control by "
 "internal software to 180 degrees at most."
 msgstr ""
+"Der SunFounder SF0180 Servo ist ein 180-Grad-Dreidraht-Digitalservo. Es "
+"verwendet ein PWM-Signal von 60 Hz und hat keine physikalische Begrenzung "
+"– nur Steuerung durch interne Software bis maximal 180 Grad."
 
 #: ../modules.rst:200
 msgid "Electrical Specifications:"
-msgstr ""
+msgstr "Elektronische Spezifikationen:"
 
 #: ../modules.rst:207
 msgid "DC Gear Motor"
-msgstr ""
+msgstr "DC-Getriebemotor"
 
 #: ../modules.rst:212
 msgid ""
-"It's a DC motor with a speed reducing gear train. See the parameters "
-"below:"
+"It's a DC motor with a speed reducing gear train. See the parameters below:"
 msgstr ""
+"Es ist ein Gleichstrommotor mit einem drehzahlreduzierenden Getriebezug. "
+"Siehe die Parameter unten:"
 
 #: ../modules.rst:219
 msgid "Copyright Notice"
-msgstr ""
+msgstr "Urheberrechtshinweis"
 
 #: ../modules.rst:221
 msgid ""
-"All contents including but not limited to texts, images, and code in this"
-" manual are owned by the SunFounder Company. You should only use it for "
+"All contents including but not limited to texts, images, and code in this "
+"manual are owned by the SunFounder Company. You should only use it for "
 "personal study, investigation, enjoyment, or other non-commercial or "
 "nonprofit purposes, under the related regulations and copyrights laws, "
 "without infringing the legal rights of the author and relevant right "
-"holders. For any individual or organization that uses these for "
-"commercial profit without permission, the Company reserves the right to "
-"take legal action."
+"holders. For any individual or organization that uses these for commercial "
+"profit without permission, the Company reserves the right to take legal "
+"action."
 msgstr ""
-
+"Alle Inhalte, einschließlich, aber nicht beschränkt auf Texte, Bilder und "
+"Code in diesem Handbuch, sind Eigentum der SunFounder Company. Sie sollten "
+"es nur für persönliche Studien, Recherchen, Genuss oder andere nicht-"
+"kommerzielle oder gemeinnützige Zwecke gemäß den entsprechenden "
+"Vorschriften und Urheberrechtsgesetzen verwenden, ohne die gesetzlichen "
+"Rechte des Autors und der entsprechenden Rechteinhaber zu verletzen. Für "
+"Einzelpersonen oder Organisationen, die diese ohne Erlaubnis zu "
+"kommerziellen Zwecken verwenden, behält sich das Unternehmen das Recht "
+"vor, rechtliche Schritte einzuleiten."

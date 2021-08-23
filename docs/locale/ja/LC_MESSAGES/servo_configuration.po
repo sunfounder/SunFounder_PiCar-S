@@ -204,15 +204,3 @@ msgstr "入念に持ち、上下を逆にして、4本の **M3x8ネジ** でス�
 #: ../servo_configuration.rst:158
 msgid "**So now, the whole assembly is DONE! Congratulations!**"
 msgstr "**これで、アセンブリ全体が完了した。おめでとう！**"
-
-#~ msgid ""
-#~ "1. The installation script will install"
-#~ " the required components and configure "
-#~ "for the running environment. Make sure"
-#~ " your Raspberry Pi is connected to"
-#~ " the Internet during the installation, "
-#~ "or it would fail."
-#~ msgstr ""
-#~ "1. インストールスクリプトは、必要な部品をインストールし、動作環境用に構成する。インストール中にRaspberry "
-#~ "Piがインターネットに接続されていることを確認してください。接続しない場合は、失敗する恐れがある。"
-

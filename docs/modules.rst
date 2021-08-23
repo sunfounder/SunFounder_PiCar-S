@@ -61,15 +61,15 @@ parallel, distinguished 3-color ports for PWM output.
 .. image:: media/image138.jpeg
 
 
-1. **PWM output ports**: 3-color ports, independent power PWM output
+**1. PWM output ports**: 3-color ports, independent power PWM output
 port, connect to the servo directly.
 
-2 & 3. **I2C port**: 4-wire I2C port, can be used in parallel.
+**2&3. I2C port**: 4-wire I2C port, can be used in parallel.
 Compatible with 3.3V/5.5V
 
-4. **PWM power input**: 12V max.
+**3. PWM power input**: 12V max.
 
-5. **LED**: power indicator for the chip and for the PWM power input.
+**4. LED**: power indicator for the chip and for the PWM power input.
 
 Motor Driver Module
 -------------------

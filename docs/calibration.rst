@@ -11,6 +11,10 @@ The second command **front-wheel-test** is used to test whether the
 front wheels can turn flexibly after assembly. When you run this
 command, it will drive them to turn left and right.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     picar front-wheel-test
@@ -26,9 +30,17 @@ servo and run **servo-install** again; if it is just a little deviation
 
 Get into the folder **SunFounder_PiCar/picar:**
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     cd /home/pi/SunFounder_PiCar/picar
+
+.. raw:: html
+
+   <run></run>
 
 .. code-block::
 
@@ -51,6 +63,10 @@ After changing the value of turning_offset, press **Ctrl** + **O** to
 save the changes, and press **Ctrl** + **X** to exit. Run the command
 **picar servo-install** to check the front wheel’s status.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     picar servo-install
@@ -69,6 +85,10 @@ forward when it should do backward as configured in the code. Thus we
 can use the third command which will drive the rear wheels to
 simultaneously speed up and slow down alternately.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     picar rear-wheel-test
@@ -82,9 +102,17 @@ separately. It may happen that one rotates forward, while the other does
 backwards. If so, we need to adjust one or both two wheels which rotate
 reversely under that command.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     cd /home/pi/SunFounder_PiCar/picar
+
+.. raw:: html
+
+   <run></run>
 
 .. code-block::
 
@@ -105,12 +133,20 @@ to exit.
 Run the command **picar rear-wheel-test** again to check whether the
 rear wheels are rotating in accordance with the command.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     picar rear-wheel-test
 
 Copy *config* to the directory *example* under *PiCar-S*.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     cp config ~/SunFounder_PiCar-S/example

@@ -4,326 +4,439 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SunFounder_PiCar-S \n"
+"Project-Id-Version: SunFounder_PiCar-S\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 10:44+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-08-17 09:42+0800\n"
+"PO-Revision-Date: 2021-08-17 11:39+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"X-Generator: Poedit 3.0\n"
 
 #: ../light_following.rst:2
 msgid "Light Following"
-msgstr ""
+msgstr "Licht folgt"
 
 #: ../light_following.rst:5
 msgid "How It Works"
-msgstr ""
+msgstr "Wie es funktioniert"
 
 #: ../light_following.rst:7
 msgid ""
 "The light follower module detects light sources in the surroundings, and "
 "transfers the data to the processor. The processor analyzes the data and "
 "finds the direction of the light resource, so it will send a command to "
-"control the movement of the front and rear wheels to approach the "
-"resource."
+"control the movement of the front and rear wheels to approach the resource."
 msgstr ""
+"Das Lichtfolgermodul erkennt Lichtquellen in der Umgebung und überträgt die "
+"Daten an den Prozessor. Der Prozessor analysiert die Daten und findet die "
+"Richtung der Lichtressource, sodass er einen Befehl sendet, um die Bewegung "
+"der Vorder- und Hinterräder zu steuern, um sich der Ressource zu nähern."
 
 #: ../light_following.rst:14
 msgid "Procedures"
-msgstr ""
+msgstr "Verfahren"
 
 #: ../light_following.rst:16
 msgid "**Step 1 Assembly**"
-msgstr ""
+msgstr "**Schritt 1 Montage**"
 
 #: ../light_following.rst:18
 msgid ""
-"Connect the light follower to the Sensor Connector with **M3*10 screws** "
-"and **M3 nuts**, and then assemble them to the car with two **M3*10 "
-"screws** and two **M3 nuts**. You're suggested to hold the nuts "
-"underneath with your fingers."
+"Connect the light follower to the Sensor Connector with **M3*10 screws** and "
+"**M3 nuts**, and then assemble them to the car with two **M3*10 screws** and "
+"two **M3 nuts**. You're suggested to hold the nuts underneath with your "
+"fingers."
 msgstr ""
+"Verbinden Sie den Lichtfolger mit **M3*10-Schrauben** und **M3-Muttern** mit "
+"dem Sensoranschluss und montieren Sie sie dann mit zwei **M3*10-Schrauben** "
+"und zwei **M3-Muttern** am Fahrzeug . Es wird empfohlen, die Nüsse darunter "
+"mit den Fingern zu halten."
 
 #: ../light_following.rst:26
 msgid "**Step 2 Wiring**"
-msgstr ""
+msgstr "**Schritt 2 Verkabelung**"
 
 #: ../light_following.rst:28
 msgid ""
-"Connect the light follower to the Robot HATS with a 5-pin anti-reverse "
-"cable as shown below."
+"Connect the light follower to the Robot HATS with a 5-pin anti-reverse cable "
+"as shown below."
 msgstr ""
+"Verbinden Sie den Lichtfolger wie unten gezeigt mit einem 5-poligen Anti-"
+"Reverse-Kabel mit dem Robot HATS."
 
 #: ../light_following.rst:35
 msgid ""
-"You may wonder why we connect 5V to 3.3. Well, since the working voltage "
-"of the STM8 chip on the light follower is 2.7-5.5V, we can connect it to "
-"3.3V here. **DO NOT** connect 5V to 5V! All the analog ports on the Robot"
-" HATS are led from the PCA8591, which is powerd by 3.3V. Therefore, if "
-"the voltage is between 3.3V-5V, the output value will always be 255, thus"
-" the PCA8591 may be damaged if connected to 5V. Remember to connect to "
-"**3.3V**."
+"You may wonder why we connect 5V to 3.3. Well, since the working voltage of "
+"the STM8 chip on the light follower is 2.7-5.5V, we can connect it to 3.3V "
+"here. **DO NOT** connect 5V to 5V! All the analog ports on the Robot HATS "
+"are led from the PCA8591, which is powerd by 3.3V. Therefore, if the voltage "
+"is between 3.3V-5V, the output value will always be 255, thus the PCA8591 "
+"may be damaged if connected to 5V. Remember to connect to **3.3V**."
 msgstr ""
+"Sie fragen sich vielleicht, warum wir 5V an 3.3 anschließen. Nun, da die "
+"Arbeitsspannung des STM8-Chips auf dem Lichtfolger 2,7-5,5 V beträgt, können "
+"wir ihn hier an 3,3 V anschließen. **NICHT** 5V an 5V anschließen! Alle "
+"analogen Ports des Robot HATS werden vom PCA8591 geführt, der mit 3,3 V "
+"gespeist wird. Wenn die Spannung zwischen 3,3V-5V liegt, beträgt der "
+"Ausgangswert daher immer 255, daher kann der PCA8591 beschädigt werden, wenn "
+"er an 5V angeschlossen wird. Denken Sie daran, an **3.3V** anzuschließen."
 
 #: ../light_following.rst:43
 msgid "The wiring is shown as below:"
-msgstr ""
+msgstr "Die Verdrahtung ist wie folgt dargestellt:"
 
 #: ../light_following.rst:48
 msgid "**Step 3 Test**"
-msgstr ""
+msgstr "**Schritt 3 Test**"
 
 #: ../light_following.rst:50
 msgid "Let’s test the light follower first."
-msgstr ""
+msgstr "Lassen Sie uns zuerst den Lichtfolger testen."
 
-#: ../light_following.rst:63
+#: ../light_following.rst:71
 msgid ""
-"Expose the phototransistors to the light spot of the flashlight. When you"
-" increase the light intensity, more LEDs light up, and the output values "
+"Expose the phototransistors to the light spot of the flashlight. When you "
+"increase the light intensity, more LEDs light up, and the output values "
 "decrease."
 msgstr ""
-
-#: ../light_following.rst:67
-msgid ""
-"Here we can rotate the blue adjustable resistor to change the values "
-"under the same light luminance. The best status is as follows:"
-msgstr ""
-
-#: ../light_following.rst:73
-msgid "When there is only one LED lights up, the output value is 255"
-msgstr ""
+"Setzen Sie die Fototransistoren dem Lichtfleck der Taschenlampe aus. Wenn "
+"Sie die Lichtintensität erhöhen, leuchten mehr LEDs und die Ausgangswerte "
+"sinken."
 
 #: ../light_following.rst:75
 msgid ""
-"When the light is the brightest and all the LED light up, the output "
-"value is about 10-25."
+"Here we can rotate the blue adjustable resistor to change the values under "
+"the same light luminance. The best status is as follows:"
 msgstr ""
+"Hier können wir den blauen einstellbaren Widerstand drehen, um die Werte bei "
+"gleicher Lichthelligkeit zu ändern. Der beste Status ist wie folgt:"
 
-#: ../light_following.rst:78
+#: ../light_following.rst:81
+msgid "When there is only one LED lights up, the output value is 255"
+msgstr "Wenn nur eine LED leuchtet, beträgt der Ausgangswert 255"
+
+#: ../light_following.rst:83
+msgid ""
+"When the light is the brightest and all the LED light up, the output value "
+"is about 10-25."
+msgstr ""
+"Wenn das Licht am hellsten ist und alle LEDs leuchten, beträgt der "
+"Ausgabewert etwa 10-25."
+
+#: ../light_following.rst:86
 msgid "**Step 4. Get on the road!**"
-msgstr ""
+msgstr "**Schritt 4. Mach dich auf den Weg!**"
 
-#: ../light_following.rst:88
+#: ../light_following.rst:100
 msgid ""
-"The car will enter the light following configuration mode when we run the"
-" code above. It will keep turning to the right in a circle to gather the "
-"information of light condition in different directions. So just place the"
-" car in an open field and wait."
+"The car will enter the light following configuration mode when we run the "
+"code above. It will keep turning to the right in a circle to gather the "
+"information of light condition in different directions. So just place the "
+"car in an open field and wait."
 msgstr ""
-
-#: ../light_following.rst:93
-msgid ""
-"When the calibration is done, the car will stop temporarily. Shine a "
-"flashlight on the light follower module, and the car will just follow the"
-" light spot as you moves it."
-msgstr ""
-
-#: ../light_following.rst:101
-msgid "Code Explanation for light_follower.py"
-msgstr ""
-
-#: ../light_following.rst:103
-msgid "**Whole Work Flow**"
-msgstr ""
+"Das Auto wechselt in den Lichtkonfigurationsmodus, wenn wir den obigen Code "
+"ausführen. Es dreht sich weiter im Kreis nach rechts, um Informationen über "
+"die Lichtverhältnisse in verschiedene Richtungen zu sammeln. Also einfach "
+"das Auto auf ein offenes Feld stellen und warten."
 
 #: ../light_following.rst:105
 msgid ""
-"Light-sensitive sensors need to be calibrated before actual use because "
-"of complex light conditions in the environment. It gathers the "
-"information of the ambient light luminance. The car can follow light only"
-" when the light source is brighter than the surroundings."
+"When the calibration is done, the car will stop temporarily. Shine a "
+"flashlight on the light follower module, and the car will just follow the "
+"light spot as you moves it."
 msgstr ""
+"Wenn die Kalibrierung abgeschlossen ist, wird das Auto vorübergehend "
+"anhalten. Leuchten Sie mit einer Taschenlampe auf das Lichtfolgermodul, und "
+"das Auto folgt einfach dem Lichtpunkt, wenn Sie es bewegen."
 
 #: ../light_following.rst:113
-msgid ""
-"Here write two main functions/modules including light following "
-"calibration and light following in the main program."
-msgstr ""
+msgid "Code Explanation for light_follower.py"
+msgstr "Code-Erklärung für light_follower.py"
 
-#: ../light_following.rst:116
+#: ../light_following.rst:115
+msgid "**Whole Work Flow**"
+msgstr "**Gesamter Arbeitsablauf**"
+
+#: ../light_following.rst:117
+msgid ""
+"Light-sensitive sensors need to be calibrated before actual use because of "
+"complex light conditions in the environment. It gathers the information of "
+"the ambient light luminance. The car can follow light only when the light "
+"source is brighter than the surroundings."
+msgstr ""
+"Aufgrund der komplexen Lichtverhältnisse in der Umgebung müssen "
+"lichtempfindliche Sensoren vor dem tatsächlichen Einsatz kalibriert werden. "
+"Es sammelt die Informationen über die Helligkeit des Umgebungslichts. Das "
+"Auto kann dem Licht nur folgen, wenn die Lichtquelle heller ist als die "
+"Umgebung."
+
+#: ../light_following.rst:125
+msgid ""
+"Here write two main functions/modules including light following calibration "
+"and light following in the main program."
+msgstr ""
+"Schreiben Sie hier zwei Hauptfunktionen/Module einschließlich "
+"Lichtnachkalibrierung und Lichtnachführung in das Hauptprogramm."
+
+#: ../light_following.rst:128
 msgid "**Subflow of Light Follower Calibration Function**"
-msgstr ""
+msgstr "**Unterfluss der Lichtfolger-Kalibrierungsfunktion**"
 
-#: ../light_following.rst:118
+#: ../light_following.rst:130
 msgid ""
-"We need to configure three light-sensitive components separately, so we "
-"set three lists to store the values in A0, A1, and A2 collected for "
-"multiple times. Then pick out the minimum values, which are the output "
-"analog values in the brightest conditions."
+"We need to configure three light-sensitive components separately, so we set "
+"three lists to store the values in A0, A1, and A2 collected for multiple "
+"times. Then pick out the minimum values, which are the output analog values "
+"in the brightest conditions."
 msgstr ""
-
-#: ../light_following.rst:123
-msgid ""
-"Since the light source we use is much brighter than the ambient light, we"
-" should take the output values in the brightest conditions as reference."
-msgstr ""
-
-#: ../light_following.rst:127
-msgid ""
-"Besides, we should set a threshold value - when the gap between the "
-"collected value of the light source and that of the environment is beyond"
-" the threshold, trigger the value switching to 0 or 1. Here we use "
-"[0,0,0] to represent the three photoresistors’ status when they are not "
-"triggered. \"0\" will become \"1\" when the value detected of the "
-"corresponding photoresistor is higher than the threshold. Thus we can set"
-" the related action of the car according to the three-element list."
-msgstr ""
+"Wir müssen drei lichtempfindliche Komponenten separat konfigurieren, also "
+"legen wir drei Listen fest, um die Werte in A0, A1 und A2 zu speichern, die "
+"mehrmals gesammelt wurden. Wählen Sie dann die Minimalwerte aus, die die "
+"ausgegebenen Analogwerte bei den hellsten Bedingungen sind."
 
 #: ../light_following.rst:135
 msgid ""
-"If there is light detected, the car will move and follow it; if there is "
-"no light detected, the car will stop temporarily and keep turning to "
-"detect in a circle."
+"Since the light source we use is much brighter than the ambient light, we "
+"should take the output values in the brightest conditions as reference."
 msgstr ""
+"Da die von uns verwendete Lichtquelle viel heller ist als das "
+"Umgebungslicht, sollten wir die Ausgangswerte bei den hellsten Bedingungen "
+"als Referenz nehmen."
 
 #: ../light_following.rst:139
+msgid ""
+"Besides, we should set a threshold value - when the gap between the "
+"collected value of the light source and that of the environment is beyond "
+"the threshold, trigger the value switching to 0 or 1. Here we use [0,0,0] to "
+"represent the three photoresistors’ status when they are not triggered. "
+"\"0\" will become \"1\" when the value detected of the corresponding "
+"photoresistor is higher than the threshold. Thus we can set the related "
+"action of the car according to the three-element list."
+msgstr ""
+"Außerdem sollten wir einen Schwellenwert festlegen - wenn die Lücke zwischen "
+"dem erfassten Wert der Lichtquelle und dem der Umgebung den Schwellenwert "
+"überschreitet, lösen Sie die Wertumschaltung auf 0 oder 1 aus. Hier "
+"verwenden wir [0,0,0] bis stellen den Status der drei Fotowiderstände dar, "
+"wenn sie nicht ausgelöst werden. Aus \"0\" wird \"1\", wenn der erfasste "
+"Wert des entsprechenden Fotowiderstands höher als der Schwellenwert ist. "
+"Somit können wir die zugehörige Aktion des Autos gemäß der Drei-Elemente-"
+"Liste festlegen."
+
+#: ../light_following.rst:147
+msgid ""
+"If there is light detected, the car will move and follow it; if there is no "
+"light detected, the car will stop temporarily and keep turning to detect in "
+"a circle."
+msgstr ""
+"Wenn Licht erkannt wird, bewegt sich das Auto und folgt ihm; Wenn kein Licht "
+"erkannt wird, hält das Auto vorübergehend an und dreht sich weiter, um im "
+"Kreis zu erkennen."
+
+#: ../light_following.rst:151
 msgid "**Subflow of Light Following Function**"
-msgstr ""
+msgstr "**Subflow of Light-Following-Funktion**"
 
-#: ../light_following.rst:144
+#: ../light_following.rst:156
 msgid ""
-"The light follower includes three phototransistors, thus its status list "
-"is composed of three elements which represent 8 statuses (based on "
-"permutation and combination). And here we need to set related responses "
-"to these statuses."
+"The light follower includes three phototransistors, thus its status list is "
+"composed of three elements which represent 8 statuses (based on permutation "
+"and combination). And here we need to set related responses to these "
+"statuses."
 msgstr ""
+"Der Lichtfolger enthält drei Fototransistoren, daher besteht seine "
+"Statusliste aus drei Elementen, die 8 Status repräsentieren (basierend auf "
+"Permutation und Kombination). Und hier müssen wir entsprechende Antworten "
+"auf diese Status festlegen."
 
-#: ../light_following.rst:149
+#: ../light_following.rst:161
 msgid ""
-"The three elements show the status of the three probes: 1 represents "
-"light detected, and 0, for none. For example, [1,0,0] shows that light is"
-" detected only by the left probe, meaning th light source is at the left "
-"of the car, thus setting the car’s response action as turning left; "
-"[1,1,0] means that light is detected on the left and central probes, thus"
-" its response action should be set turning left too; and set it as "
-"turning right the same way according to the corresponding status. When "
-"there is no light detected, the status is [0,0,0], so we set the response"
-" action to stop and return to the standby mode."
+"The three elements show the status of the three probes: 1 represents light "
+"detected, and 0, for none. For example, [1,0,0] shows that light is detected "
+"only by the left probe, meaning th light source is at the left of the car, "
+"thus setting the car’s response action as turning left; [1,1,0] means that "
+"light is detected on the left and central probes, thus its response action "
+"should be set turning left too; and set it as turning right the same way "
+"according to the corresponding status. When there is no light detected, the "
+"status is [0,0,0], so we set the response action to stop and return to the "
+"standby mode."
 msgstr ""
+"Die drei Elemente zeigen den Status der drei Sonden: 1 steht für Licht "
+"erkannt und 0 für keine. [1,0,0] zeigt beispielsweise, dass Licht nur von "
+"der linken Sonde erfasst wird, was bedeutet, dass sich die Lichtquelle links "
+"vom Auto befindet, wodurch die Reaktion des Autos auf Linksabbiegen "
+"eingestellt wird; [1,1,0] bedeutet, dass Licht an der linken und mittleren "
+"Sonde erkannt wird, daher sollte ihre Reaktion auch linksdrehend eingestellt "
+"werden; und stellen Sie es entsprechend dem entsprechenden Status auf die "
+"gleiche Weise als rechts abbiegend ein. Wenn kein Licht erkannt wird, ist "
+"der Status [0,0,0], also setzen wir die Reaktionsaktion auf Stopp und kehren "
+"in den Standby-Modus zurück."
 
-#: ../light_following.rst:162
+#: ../light_following.rst:174
 msgid ""
-"Here, we need to set another variable – the steering angle – to "
-"distinguish between the large-angle and small-angle turning. If the light"
-" is at the central left side (status [1,1,0]), we should apply a small-"
-"angle turning; if the light is at the edge of the left side (status "
-"[1,0,0]), we should apply a large-angle turning."
+"Here, we need to set another variable – the steering angle – to distinguish "
+"between the large-angle and small-angle turning. If the light is at the "
+"central left side (status [1,1,0]), we should apply a small-angle turning; "
+"if the light is at the edge of the left side (status [1,0,0]), we should "
+"apply a large-angle turning."
 msgstr ""
-
-#: ../light_following.rst:168
-msgid "**Functions Explanation**"
-msgstr ""
-
-#: ../light_following.rst:170
-msgid "To understand the code, take the software subflows above for reference."
-msgstr ""
-
-#: ../light_following.rst:172
-msgid ""
-"Three Python modules are used in the code including the imported "
-"**light_follower_module**, **front_wheels**, and **back_wheel** "
-"previously. They are drivers for this kit, respectively for light "
-"following, front wheels and rear wheels."
-msgstr ""
-
-#: ../light_following.rst:177
-msgid ""
-"The related classes have been defined here. When the modules are applied "
-"to use, objects will be created for related classes, and different parts "
-"of hardware will be driven by calling a function by the class object."
-msgstr ""
+"Hier müssen wir eine weitere Variable – den Lenkwinkel – einstellen, um "
+"zwischen dem Großwinkel- und Kleinwinkel-Drehen zu unterscheiden. Befindet "
+"sich das Licht auf der mittleren linken Seite (Status [1,1,0]), sollten wir "
+"eine kleine Winkeldrehung anwenden; befindet sich das Licht am Rand der "
+"linken Seite (Status [1,0,0]), sollten wir eine große Winkeldrehung anwenden."
 
 #: ../light_following.rst:181
+msgid "Functions Explanation"
+msgstr "Funktionen Erklärung"
+
+#: ../light_following.rst:183
+msgid "To understand the code, take the software subflows above for reference."
+msgstr ""
+"Um den Code zu verstehen, verwenden Sie die obigen Software-Unterabläufe als "
+"Referenz."
+
+#: ../light_following.rst:185
+msgid ""
+"Three Python modules are used in the code including the imported "
+"**light_follower_module**, **front_wheels**, and **back_wheel** previously. "
+"They are drivers for this kit, respectively for light following, front "
+"wheels and rear wheels."
+msgstr ""
+"Im Code werden drei Python-Module verwendet, darunter die zuvor importierten "
+"**light_follower_module**, **front_wheels** und **back_wheel**. Sie sind "
+"Treiber für diesen Bausatz, bzw. für Lichtfolge, Vorderräder und Hinterräder."
+
+#: ../light_following.rst:190
+msgid ""
+"The related classes have been defined here. When the modules are applied to "
+"use, objects will be created for related classes, and different parts of "
+"hardware will be driven by calling a function by the class object."
+msgstr ""
+"Die zugehörigen Klassen wurden hier definiert. Wenn die Module zur "
+"Verwendung angewendet werden, werden Objekte für verwandte Klassen erstellt, "
+"und verschiedene Teile der Hardware werden durch Aufrufen einer Funktion "
+"durch das Klassenobjekt gesteuert."
+
+#: ../light_following.rst:194
 msgid ""
 "For example, for the light following module, we create an object named "
 "**lf**:"
 msgstr ""
+"Für das folgende Lichtmodul erstellen wir beispielsweise ein Objekt namens "
+"**lf**:"
 
-#: ../light_following.rst:184
+#: ../light_following.rst:197
 msgid "**lf = Light_Follower.Light_Follower()**"
-msgstr ""
+msgstr "**lf = Light_Follower.Light_Follower()**"
 
-#: ../light_following.rst:186
+#: ../light_following.rst:199
 msgid "Then we can call the function by a class object."
-msgstr ""
+msgstr "Dann können wir die Funktion von einem Klassenobjekt aufrufen."
 
-#: ../light_following.rst:188
+#: ../light_following.rst:201
 msgid "**A0 = lf.read_analog()[0]**"
-msgstr ""
+msgstr "**A0 = lf.read_analog()[0]**"
 
-#: ../light_following.rst:190
+#: ../light_following.rst:203
 msgid ""
 "This function **read_analog()** will return a list with three elements, "
-"which stores the detected analog values of three probes. Here we use **A0"
-" = lf.read_analog()[0]**, **A1 = lf.read_analog()[1]**, and **A2 = "
-"lf.read_analog()[2]** to store three elements of returned value "
-"separately into the variables A0-A2."
+"which stores the detected analog values of three probes. Here we use **A0 = "
+"lf.read_analog()[0]**, **A1 = lf.read_analog()[1]**, and **A2 = lf."
+"read_analog()[2]** to store three elements of returned value separately into "
+"the variables A0-A2."
 msgstr ""
-
-#: ../light_following.rst:196
-msgid ""
-"A **for()** loop is used here cycling 10 times, that is the car will "
-"acquire the analog values ten times when the car drives in a circle under"
-" the calibration mode. The minimum values will be taken as reference "
-"here. If you need more samples, just increase the times of the loop."
-msgstr ""
-
-#: ../light_following.rst:202
-msgid ""
-"Store the detected values to a list in each loop by the "
-"**env0_list.append(A0)** function. When the loop ends, the built-in list "
-"function **reference[0] = min(env0_list)** in Python will pick out the "
-"minimum in the list."
-msgstr ""
-
-#: ../light_following.rst:207
-msgid "**lt_status_now = lf.read_flashlight()**"
-msgstr ""
+"Diese Funktion **read_analog()** gibt eine Liste mit drei Elementen zurück, "
+"die die erfassten Analogwerte von drei Sonden speichert. Hier verwenden wir "
+"**A0 = lf.read_analog()[0]**, **A1 = lf.read_analog()[1]** und **A2 = lf."
+"read_analog()[2]** zum Speichern drei Elemente des zurückgegebenen Werts "
+"getrennt in die Variablen A0-A2."
 
 #: ../light_following.rst:209
 msgid ""
+"A **for()** loop is used here cycling 10 times, that is the car will acquire "
+"the analog values ten times when the car drives in a circle under the "
+"calibration mode. The minimum values will be taken as reference here. If you "
+"need more samples, just increase the times of the loop."
+msgstr ""
+"Eine **for()**-Schleife wird hier 10 Mal durchlaufen, d. h. das Auto erfasst "
+"die analogen Werte zehn Mal, wenn das Auto im Kalibrierungsmodus im Kreis "
+"fährt. Die Mindestwerte werden hier als Referenz genommen. Wenn Sie mehr "
+"Samples benötigen, erhöhen Sie einfach die Zeiten des Loops."
+
+#: ../light_following.rst:215
+msgid ""
+"Store the detected values to a list in each loop by the **env0_list."
+"append(A0)** function. When the loop ends, the built-in list function "
+"**reference[0] = min(env0_list)** in Python will pick out the minimum in the "
+"list."
+msgstr ""
+"Speichern Sie die erkannten Werte in jeder Schleife mit der Funktion "
+"**env0_list.append(A0)** in einer Liste. Wenn die Schleife endet, wählt die "
+"eingebaute Listenfunktion **reference[0] = min(env0_list)** in Python das "
+"Minimum in der Liste aus."
+
+#: ../light_following.rst:220
+msgid "**lt_status_now = lf.read_flashlight()**"
+msgstr "**lt_status_now = lf.read_flashlight()**"
+
+#: ../light_following.rst:222
+msgid ""
 "This is to read the status of the module, which will return a 3-element "
 "list. This function is used to solve the possible problem caused by "
-"brightness-adjustable flashlights. They blink repeatedly due to "
-"brightness change by PWM method, so we add this function to the driver "
-"library to prevent the car from moving and stopping repeatedly when the "
-"light source lights up and goes out quickly or changes luminance by "
-"ON/OFF ratio."
+"brightness-adjustable flashlights. They blink repeatedly due to brightness "
+"change by PWM method, so we add this function to the driver library to "
+"prevent the car from moving and stopping repeatedly when the light source "
+"lights up and goes out quickly or changes luminance by ON/OFF ratio."
 msgstr ""
+"Dies dient zum Lesen des Status des Moduls, das eine 3-Elemente-Liste "
+"zurückgibt. Diese Funktion wird verwendet, um das mögliche Problem zu lösen, "
+"das durch helligkeitsregulierbare Taschenlampen verursacht wird. Sie blinken "
+"wiederholt aufgrund der Helligkeitsänderung durch die PWM-Methode. Daher "
+"fügen wir diese Funktion der Treiberbibliothek hinzu, um zu verhindern, dass "
+"sich das Auto wiederholt bewegt und stoppt, wenn die Lichtquelle aufleuchtet "
+"und schnell erlischt oder die Leuchtdichte durch das EIN/AUS-Verhältnis "
+"ändert."
 
-#: ../light_following.rst:217
+#: ../light_following.rst:230
 msgid "**fw.turn(turning_angle)**"
-msgstr ""
+msgstr "**fw.turn(turning_angle)**"
 
-#: ../light_following.rst:219
+#: ../light_following.rst:232
 msgid ""
-"Function for front wheels steering. The main program will call this "
-"function if the front wheels are applied for steering. The parameter is "
-"the turning angle."
+"Function for front wheels steering. The main program will call this function "
+"if the front wheels are applied for steering. The parameter is the turning "
+"angle."
 msgstr ""
+"Funktion für die Vorderradlenkung. Das Hauptprogramm ruft diese Funktion "
+"auf, wenn die Vorderräder zum Lenken verwendet werden. Der Parameter ist der "
+"Drehwinkel."
 
-#: ../light_following.rst:223
+#: ../light_following.rst:236
 msgid "**bw.forward()**"
-msgstr ""
+msgstr "**bw.vorwärts()**"
 
-#: ../light_following.rst:225
+#: ../light_following.rst:238
 msgid "**bw.set_speed(forward_speed)**"
-msgstr ""
+msgstr "**bw.set_speed(forward_speed)**"
 
-#: ../light_following.rst:227
+#: ../light_following.rst:240
 msgid ""
-"Here we need two functions for rear wheels. The first function is to "
-"control the rotating direction as forward (the function for backwards is "
-"**bw.backward()**). The second one is to set the rotating speed of the "
-"wheels; the parameter is the speed value (range: 0-100). The bigger the "
-"parameter is, the faster the wheel rotates."
+"Here we need two functions for rear wheels. The first function is to control "
+"the rotating direction as forward (the function for backwards is **bw."
+"backward()**). The second one is to set the rotating speed of the wheels; "
+"the parameter is the speed value (range: 0-100). The bigger the parameter "
+"is, the faster the wheel rotates."
 msgstr ""
-
+"Hier benötigen wir zwei Funktionen für Hinterräder. Die erste Funktion "
+"besteht darin, die Drehrichtung vorwärts zu steuern (die Funktion für "
+"rückwärts ist **bw.backward()**). Die zweite Möglichkeit besteht darin, die "
+"Drehgeschwindigkeit der Räder einzustellen; der Parameter ist der "
+"Geschwindigkeitswert (Bereich: 0-100). Je größer der Parameter ist, desto "
+"schneller dreht sich das Rad."

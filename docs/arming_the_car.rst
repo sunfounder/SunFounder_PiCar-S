@@ -22,7 +22,6 @@ Transformer**!
 
 
 .. image:: media/image232.png
-   
 
 .. toctree::
    :maxdepth: 2

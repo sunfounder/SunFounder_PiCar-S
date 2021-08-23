@@ -4,48 +4,51 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SunFounder_PiCar-S \n"
+"Project-Id-Version: SunFounder_PiCar-S\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 10:44+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-08-17 11:13+0800\n"
+"PO-Revision-Date: 2021-08-17 11:14+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"X-Generator: Poedit 3.0\n"
 
 #: ../circuits_building.rst:2
 msgid "Circuits Building"
-msgstr ""
+msgstr "Schaltungen Gebäude"
 
 #: ../circuits_building.rst:5
 msgid "Connect the Power"
-msgstr ""
+msgstr "Verbinden Sie die Stromversorgung"
 
-#: ../circuits_building.rst:13
+#: ../circuits_building.rst:12
 msgid "Connect the Modules"
-msgstr ""
+msgstr "Verbinden Sie die Stromversorgung"
 
-#: ../circuits_building.rst:21
+#: ../circuits_building.rst:19
 msgid "Connect the Servo"
-msgstr ""
+msgstr "Kalibrieren Sie den Servo"
 
-#: ../circuits_building.rst:29
+#: ../circuits_building.rst:26
 msgid "Connect the Motor"
-msgstr ""
+msgstr "Verbinden Sie die Stromversorgung"
 
-#: ../circuits_building.rst:36
+#: ../circuits_building.rst:32
 msgid "The complete connection is shown as follows."
-msgstr ""
+msgstr "Die vollständige Verbindung wird wie folgt dargestellt."
 
-#: ../circuits_building.rst:43
+#: ../circuits_building.rst:38
 msgid ""
 "So now the circuit boards are all installed onto the car and the wiring "
 "is done. But still you're not ready to adjust the servo yet. First you "
 "need to complete some software installation."
 msgstr ""
-
+"Jetzt sind also alle Platinen am Auto montiert und die Verkabelung ist "
+"fertig. Aber Sie sind noch nicht bereit, das Servo einzustellen. Zuerst "
+"müssen Sie einige Softwareinstallationen abschließen."

@@ -22,12 +22,20 @@ module on the car first.
 Log into the Raspberry Pi on your computer via ssh, and get into the
 directory
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     cd ~/SunFounder_PiCar-S/example
 
 Run the code.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     python3 light_with_obsavoidance.py

@@ -8,15 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SunFounder PiCar-S Kit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-20 18:43+0800\n"
+"POT-Creation-Date: 2021-08-17 09:42+0800\n"
 "PO-Revision-Date: 2021-05-28 18:15+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"X-Generator: Poedit 2.4.3\n"
 
 #: ../obstacle_avoidance.rst:2
 msgid "Obstacle Avoidance"
@@ -28,14 +27,14 @@ msgstr "動作原理"
 
 #: ../obstacle_avoidance.rst:7
 msgid ""
-"The ultrasonic obstacle avoidance module detects and transfers the collected "
-"data to Raspberry Pi that can calculate the distance from the obstacle. The Pi "
-"will send a command to adjust the front wheels and rear wheels direction and "
-"rotation to control the PiCar-S walk away from the obstacle if there is one."
+"The ultrasonic obstacle avoidance module detects and transfers the "
+"collected data to Raspberry Pi that can calculate the distance from the "
+"obstacle. The Pi will send a command to adjust the front wheels and rear "
+"wheels direction and rotation to control the PiCar-S walk away from the "
+"obstacle if there is one."
 msgstr ""
-"超音波障害物回避モジュールは収集したデータを検出して、障害物からの距離を計算で"
-"きるRaspberry Piに転送する。Piは前輪と後輪の方向と回転を調整するコマンドを送信"
-"して、障害物がある場合は障害物から離れてPiCar-Sを制御する。"
+"超音波障害物回避モジュールは収集したデータを検出して、障害物からの距離を計算できるRaspberry "
+"Piに転送する。Piは前輪と後輪の方向と回転を調整するコマンドを送信して、障害物がある場合は障害物から離れてPiCar-Sを制御する。"
 
 #: ../obstacle_avoidance.rst:14
 msgid "Procedures"
@@ -47,15 +46,14 @@ msgstr "**ステップ1 組み立て**"
 
 #: ../obstacle_avoidance.rst:19
 msgid ""
-"① Connect the ultrasonic module to the ultrasonic connector with M1.4*8 screws "
-"and M1.4 nuts."
-msgstr ""
-"①超音波モジュールと超音波コネクタを M1.4*8 本のネジと M1.4 本のナットで接続しま"
-"す。"
+"① Connect the ultrasonic module to the ultrasonic connector with M1.4*8 "
+"screws and M1.4 nuts."
+msgstr "①超音波モジュールと超音波コネクタを M1.4*8 本のネジと M1.4 本のナットで接続します。"
 
 #: ../obstacle_avoidance.rst:22
 msgid ""
-"② Then connect them to the ultrasonic support with M3*10 screws and M3 nuts."
+"② Then connect them to the ultrasonic support with M3*10 screws and M3 "
+"nuts."
 msgstr "②次に、超音波サポートに M3*10 本のネジと M3 ナットで接続します。"
 
 #: ../obstacle_avoidance.rst:25
@@ -64,8 +62,8 @@ msgstr "③最後に、M3*10 本のネジと M3 ナットでアッパープレ�
 
 #: ../obstacle_avoidance.rst:31
 msgid ""
-"**Reminder: It would be easier to place the nuts into the slots with your "
-"fingers to hold underneath.**"
+"**Reminder: It would be easier to place the nuts into the slots with your"
+" fingers to hold underneath.**"
 msgstr "**注意：指でナットをスロットに入れて下に保持する方が簡単です。**"
 
 #: ../obstacle_avoidance.rst:34
@@ -74,19 +72,15 @@ msgstr "**ステップ2 配線**"
 
 #: ../obstacle_avoidance.rst:36
 msgid ""
-"Connect the ultrasonic obstacle avoidance to Robot HATS with a 4-pin anti-"
-"reverse cable as shown below."
-msgstr ""
-"以下に示すように、4ピンのアンチリバースケーブルで超音波障害物回避装置をロボット"
-"HATSに接続する。"
+"Connect the ultrasonic obstacle avoidance to Robot HATS with a 4-pin "
+"anti-reverse cable as shown below."
+msgstr "以下に示すように、4ピンのアンチリバースケーブルで超音波障害物回避装置をロボットHATSに接続する。"
 
 #: ../obstacle_avoidance.rst:39
 msgid ""
-"Ultrasonic module can have a 5V or 3.3V power supply. Here, we give it a 3.3V "
-"power supply."
-msgstr ""
-"超音波モジュールは5Vまたは3.3Vの電源を持っていることがある。ここでは、3.3V電源"
-"を与える。"
+"Ultrasonic module can have a 5V or 3.3V power supply. Here, we give it a "
+"3.3V power supply."
+msgstr "超音波モジュールは5Vまたは3.3Vの電源を持っていることがある。ここでは、3.3V電源を与える。"
 
 #: ../obstacle_avoidance.rst:47
 msgid "**Step 3 Test**"
@@ -96,186 +90,162 @@ msgstr "**ステップ3 テスト**"
 msgid "First, test the ultrasonic obstacle avoidance module before applying."
 msgstr "適用する前に、まず超音波障害物回避モジュールをテストする。"
 
-#: ../obstacle_avoidance.rst:63
+#: ../obstacle_avoidance.rst:71
 msgid ""
 "You may find that the distance measurement may be not that accurate. It "
-"doesn’t matter. This 25kHz ultrasonic module is not a commonly used one, but "
-"one has a **horizontal detecting range of about 30~40 degrees**. Thus the "
-"distance measured may be not so accurate, but that small range provides "
-"convenience for obstacle avoidance. Besides, since the Raspberry Pi is not a "
-"real-time operating system, the inaccurate time calculation will affect the "
-"accuracy of distance measurement too. However, this ultrasonic module is "
-"precise enough for obstacle avoidance."
+"doesn’t matter. This 25kHz ultrasonic module is not a commonly used one, "
+"but one has a **horizontal detecting range of about 30~40 degrees**. Thus"
+" the distance measured may be not so accurate, but that small range "
+"provides convenience for obstacle avoidance. Besides, since the Raspberry"
+" Pi is not a real-time operating system, the inaccurate time calculation "
+"will affect the accuracy of distance measurement too. However, this "
+"ultrasonic module is precise enough for obstacle avoidance."
 msgstr ""
-"距離の測定がそれほど正確でない場合がある。大丈夫よ。この25kHzの超音波モジュール"
-"は汎用のものではないが、**約30〜40度の水平検出範囲を持っている**。したがって、"
-"測定された距離はそれほど正確ではないかもしれないが、その狭い範囲は障害物回避に"
-"便利である。さらに、Raspberry Piはリアルタイムのオペレーティングシステムではな"
-"いため、不正確な時間計算は距離測定の精度にも影響する。ただし、この超音波モ"
-"ジュールは障害物を回避することに十分である。"
+"距離の測定がそれほど正確でない場合がある。大丈夫よ。この25kHzの超音波モジュールは汎用のものではないが、**約30〜40度の水平検出範囲を持っている**。したがって、測定された距離はそれほど正確ではないかもしれないが、その狭い範囲は障害物回避に便利である。さらに、Raspberry"
+" "
+"Piはリアルタイムのオペレーティングシステムではないため、不正確な時間計算は距離測定の精度にも影響する。ただし、この超音波モジュールは障害物を回避することに十分である。"
 
-#: ../obstacle_avoidance.rst:73
+#: ../obstacle_avoidance.rst:81
 msgid "**Step 4. Get on the road!**"
 msgstr "**ステップ4 旅に出よう！**"
 
-#: ../obstacle_avoidance.rst:76
+#: ../obstacle_avoidance.rst:84
 msgid ""
-"Now we have a general idea of the ultrasonic module’s effect after the test "
-"above. Let’s run the code of the ultrasonic obstacle avoidance."
-msgstr ""
-"これで、上記のテスト後の超音波モジュールの効果の概要が分かるだろう。超音波障害"
-"物回避のコードを実行してみよう。"
+"Now we have a general idea of the ultrasonic module’s effect after the "
+"test above. Let’s run the code of the ultrasonic obstacle avoidance."
+msgstr "これで、上記のテスト後の超音波モジュールの効果の概要が分かるだろう。超音波障害物回避のコードを実行してみよう。"
 
-#: ../obstacle_avoidance.rst:83
+#: ../obstacle_avoidance.rst:95
 msgid ""
-"The PiCar-S starts running now. Just place the car on the ground. It will "
-"follow the program to turn when it detects an obstacle; if the obstacle is too "
-"close, it will move backwards, and turn left/right. You can also modify the "
-"threshold of obstacle detecting range and that of moving backwards in the code."
-msgstr ""
-"今のところ、PiCar-Sが起動した。車を地面に置くだけである。プログラムに従い、障害"
-"物を検出すると方向を転換する。障害物が近すぎる場合、後方に移動し、左/右に走行す"
-"る。また、コードで障害物検出範囲のしきい値と後方に移動するしきい値を変更するこ"
-"ともできる。"
+"The PiCar-S starts running now. Just place the car on the ground. It will"
+" follow the program to turn when it detects an obstacle; if the obstacle "
+"is too close, it will move backwards, and turn left/right. You can also "
+"modify the threshold of obstacle detecting range and that of moving "
+"backwards in the code."
+msgstr "今のところ、PiCar-Sが起動した。車を地面に置くだけである。プログラムに従い、障害物を検出すると方向を転換する。障害物が近すぎる場合、後方に移動し、左/右に走行する。また、コードで障害物検出範囲のしきい値と後方に移動するしきい値を変更することもできる。"
 
-#: ../obstacle_avoidance.rst:94
+#: ../obstacle_avoidance.rst:106
 msgid "Code Explanation for ultra_sonic_avoid.py"
 msgstr "ultra_sonic_avoid.pyのコードの説明"
 
-#: ../obstacle_avoidance.rst:96
+#: ../obstacle_avoidance.rst:108
 msgid "**Whole Work Flow**"
 msgstr "**ワークフロー全体**"
 
-#: ../obstacle_avoidance.rst:101
+#: ../obstacle_avoidance.rst:113
 msgid ""
-"The ultrasonic module returns a digital value, i.e., High or Low level, and "
-"the interval time between two levels returned can be converted to the distance "
-"to the obstacle. Thus, we call the time module in Python for timing here. The "
-"formula to calculate the distance is written in the ultrasonic module’s "
-"driver. The main program just calls the corresponding program to get the "
-"distance value."
-msgstr ""
-"超音波モジュールはデジタル値、つまり高レベルまたは低レベルを返し、返された2つの"
-"レベル間の間隔時間を障害物までの距離に変換できる。したがって、ここではタイミン"
-"グを求めるためにPythonでtimeモジュールを呼び出す。距離を計算する式は、超音波モ"
-"ジュールのドライバーに書き込まれる。メインプログラムは、対応するプログラムを呼"
-"び出して距離値を取得するだけである。"
+"The ultrasonic module returns a digital value, i.e., High or Low level, "
+"and the interval time between two levels returned can be converted to the"
+" distance to the obstacle. Thus, we call the time module in Python for "
+"timing here. The formula to calculate the distance is written in the "
+"ultrasonic module’s driver. The main program just calls the corresponding"
+" program to get the distance value."
+msgstr "超音波モジュールはデジタル値、つまり高レベルまたは低レベルを返し、返された2つのレベル間の間隔時間を障害物までの距離に変換できる。したがって、ここではタイミングを求めるためにPythonでtimeモジュールを呼び出す。距離を計算する式は、超音波モジュールのドライバーに書き込まれる。メインプログラムは、対応するプログラムを呼び出して距離値を取得するだけである。"
 
-#: ../obstacle_avoidance.rst:108
+#: ../obstacle_avoidance.rst:120
 msgid "**Subflow of the Obstacle Avoidance Function**"
 msgstr "**障害物回避機能のサブフロー**"
 
-#: ../obstacle_avoidance.rst:113
-msgid ""
-"When the car starts, it will detect obstacles and measure the distance in "
-"cycle, make judgement, and take actions. Here are three cases: when the "
-"distance to the obstacle is equals to the threshold, the car will turn "
-"directions; when the distance is less than the threshold, the car will move "
-"backwards before turning direction; when the distance is more than the "
-"threshold, it will keep moving forwards."
-msgstr ""
-"車が始動すると、障害物を検出して周期的に距離を測定したり、判断を下したり、行動"
-"を起こす。ここは三つのケースがある：障害物までの距離がしきい値と等しい場合、車"
-"は方向を変える。距離がしきい値を下回る場合、車は方向を変える前に後退する。距離"
-"がしきい値を超えると、続けて前進する。"
-
-#: ../obstacle_avoidance.rst:123
-msgid "**Functions Explanation**"
-msgstr "**機能説明**"
-
 #: ../obstacle_avoidance.rst:125
+msgid ""
+"When the car starts, it will detect obstacles and measure the distance in"
+" cycle, make judgement, and take actions. Here are three cases: when the "
+"distance to the obstacle is equals to the threshold, the car will turn "
+"directions; when the distance is less than the threshold, the car will "
+"move backwards before turning direction; when the distance is more than "
+"the threshold, it will keep moving forwards."
+msgstr "車が始動すると、障害物を検出して周期的に距離を測定したり、判断を下したり、行動を起こす。ここは三つのケースがある：障害物までの距離がしきい値と等しい場合、車は方向を変える。距離がしきい値を下回る場合、車は方向を変える前に後退する。距離がしきい値を超えると、続けて前進する。"
+
+#: ../obstacle_avoidance.rst:136
+msgid "Functions Explanation"
+msgstr "機能説明"
+
+#: ../obstacle_avoidance.rst:138
 msgid "**ua = Ultra_Sonic.UltraSonic_Avoidance(17)**"
 msgstr "**ua = Ultra_Sonic.UltraSonic_Avoidance(17)**"
 
-#: ../obstacle_avoidance.rst:127
+#: ../obstacle_avoidance.rst:140
 msgid ""
-"Create an object **ua** of a *UltraSonic_Avoidance* class in the Ultra_Sonic "
-"module. The number in the round bracket is the initial parameter, which "
-"represents the pin number the SIG of the module is connected to. Since the BCM "
-"naming method is applied, the corresponding pin on the Raspberry Pi is #17."
+"Create an object **ua** of a *UltraSonic_Avoidance* class in the "
+"Ultra_Sonic module. The number in the round bracket is the initial "
+"parameter, which represents the pin number the SIG of the module is "
+"connected to. Since the BCM naming method is applied, the corresponding "
+"pin on the Raspberry Pi is #17."
 msgstr ""
-"Ultra_SonicモジュールでUltraSonic_Avoidanceクラスのオブジェクト**ua**を作成す"
-"る。丸括弧内の数字は、モジュールのSIGが接続されているピン番号を表す初期パラメー"
-"ターである。BCM命名方法が適用されているため、Raspberry Piの対応するピンは＃17で"
-"ある。"
+"Ultra_SonicモジュールでUltraSonic_Avoidanceクラスのオブジェクト **ua** を作成する。丸括弧内の数字は、モジュールのSIGが接続されているピン番号を表す初期パラメーターである。BCM命名方法が適用されているため、Raspberry"
+" Piの対応するピンは＃17である。"
 
-#: ../obstacle_avoidance.rst:133
+#: ../obstacle_avoidance.rst:146
 msgid ""
 "**back_distance** and **turn_distance**, two constants are to set the "
 "thresholds of the ranging distance."
-msgstr ""
-"**back_distance**と**turn_distance**の2つの定数は測距距離のしきい値を設定するた"
-"めのものである。"
+msgstr "**back_distance** と **turn_distance** の2つの定数は測距距離のしきい値を設定するためのものである。"
 
-#: ../obstacle_avoidance.rst:136
+#: ../obstacle_avoidance.rst:149
 msgid "**while()** loop"
 msgstr "**while()** loop"
 
-#: ../obstacle_avoidance.rst:138
+#: ../obstacle_avoidance.rst:151
 msgid ""
-"When the detected distance is less than the **back_distance**, the car will "
-"move backwards; when it is between **back_distance** and **turn_distance**, "
-"the car will turn a direction (you can set the turning angle in the "
-"aforementioned parameter **turning_angle** and the angle can be a positive or "
-"negative number, for turning left or turning right respectively; **NOTE** that "
-"the number of the turning angle should be **-90 to 90** considering the "
-"servo’s max rotation degrees, or the servo may be burnt.); when the detected "
-"distance is greater than the **turn_distance**, the car will keep moving "
-"forward."
-msgstr ""
-"検出された距離が**back_distance**より小さい場合、車は後方に移動する。距離は"
-"**back_distance**と**turn_distance**の間にある場合、車は方向を変える（前述のパ"
-"ラメータ**turning_angle**で回転角度を設定でき、角度は正または負の数で、それぞれ"
-"左または右に曲がることができる。サーボの最大回転角度を考慮すると、回転角度は"
-"**-90〜90度**であることを**注意**してください。そうしないと、サーボが焼ける恐れ"
-"がある。）検出された距離が**turn_distance**より大きい場合、車は続けて前進する。"
-
-#: ../obstacle_avoidance.rst:148
-msgid ""
-"**bw.backward()**, making the rear wheels rotate backwards; **bw.forward()**, "
-"making the rear wheels spin forward. These two functions in the rear wheel "
-"driving module back_wheels are to set the wheel’s rotating direction."
-msgstr ""
-"**bw.backward()**、後輪を後方に回転させる。** bw.forward()**、後輪を前方に回転"
-"させる。後輪駆動モジュールback_wheelsのこれら2つの機能は車輪の回転方向を設定す"
-"るために使用される。"
-
-#: ../obstacle_avoidance.rst:153
-msgid ""
-"**bw.set_speed(speed)**, function in the back_wheels, to set the wheel's "
-"rotating speed. The larger the number (within the range 0-100) is, the faster "
-"the wheel rotates."
-msgstr ""
-"**bw.set_speed(speed) **、back_wheelsの関数で、ホイールの回転速度を設定する。数"
-"値が大きければ大きいほど（0〜100の範囲内）、ホイールの回転が速くなる。"
-
-#: ../obstacle_avoidance.rst:157
-msgid ""
-"**fw.turn(angle)**, function in the back_wheels, to set the turning angle. The "
-"angle is 90 when the car moves straight forwards; reduce the number to turn "
-"left, and increase it to turn right."
-msgstr ""
-"**fw.turn(angle) **、back_wheelsの関数で、回転角度を設定する。車が直進するとき"
-"の角度は90度で、左折するには数値を減らし、右折するには数値を増やす。"
+"When the detected distance is less than the **back_distance**, the car "
+"will move backwards; when it is between **back_distance** and "
+"**turn_distance**, the car will turn a direction (you can set the turning"
+" angle in the aforementioned parameter **turning_angle** and the angle "
+"can be a positive or negative number, for turning left or turning right "
+"respectively; **NOTE** that the number of the turning angle should be "
+"**-90 to 90** considering the servo’s max rotation degrees, or the servo "
+"may be burnt.); when the detected distance is greater than the "
+"**turn_distance**, the car will keep moving forward."
+msgstr "検出された距離が **back_distance** より小さい場合、車は後方に移動する。"
+"距離は **back_distance** と **turn_distance** の間にある場合、車は方向を変える"
+"（前述のパラメータ **turning_angle** で回転角度を設定でき、角度は正または負の数で、それぞれ左または右に曲がることができる。"
+"サーボの最大回転角度を考慮すると、回転角度は **-90〜90度** であることを **注意** してください。そうしないと、"
+"サーボが焼ける恐れがある。）検出された距離が **turn_distance** より大きい場合、車は続けて前進する。"
 
 #: ../obstacle_avoidance.rst:161
 msgid ""
-"**fw.turn_straight()**, making the front wheels return to the angle of moving "
-"straight forwards."
+"**bw.backward()**, making the rear wheels rotate backwards; "
+"**bw.forward()**, making the rear wheels spin forward. These two "
+"functions in the rear wheel driving module back_wheels are to set the "
+"wheel’s rotating direction."
+msgstr ""
+"**bw.backward()**、後輪を後方に回転させる。**bw.forward()**、後輪を前方に回転させる。後輪駆動モジュールback_wheelsのこれら2つの機能は車輪の回転方向を設定するために使用される。"
+
+#: ../obstacle_avoidance.rst:166
+msgid ""
+"**bw.set_speed(speed)**, function in the back_wheels, to set the wheel's "
+"rotating speed. The larger the number (within the range 0-100) is, the "
+"faster the wheel rotates."
+msgstr ""
+"**bw.set_speed(speed)**、back_wheelsの関数で、ホイールの回転速度を設定します。"
+"数値が大きいほど（0〜100の範囲内）、ホイールの回転が速くなります。"
+
+#: ../obstacle_avoidance.rst:170
+msgid ""
+"**fw.turn(angle)**, function in the back_wheels, to set the turning "
+"angle. The angle is 90 when the car moves straight forwards; reduce the "
+"number to turn left, and increase it to turn right."
+msgstr ""
+"**fw.turn(angle)**、back_wheelsの関数で、回転角度を設定します。 車がまっすぐ進むときの角度は90度です。 "
+"数を減らして左に曲がり、数を増やして右に曲がります。"
+
+#: ../obstacle_avoidance.rst:174
+msgid ""
+"**fw.turn_straight()**, making the front wheels return to the angle of "
+"moving straight forwards."
 msgstr "**fw.turn_straight()**、前輪を直進する角度に戻す。"
 
-#: ../obstacle_avoidance.rst:164
+#: ../obstacle_avoidance.rst:177
 msgid "**More:**"
 msgstr "**詳細：**"
 
-#: ../obstacle_avoidance.rst:166
+#: ../obstacle_avoidance.rst:179
 msgid "**back_distance** and **turn_distance**"
-msgstr "**back_distance**と**turn_distance**"
+msgstr "**back_distance** と **turn_distance**"
 
-#: ../obstacle_avoidance.rst:168
+#: ../obstacle_avoidance.rst:181
 msgid ""
 "Try to modify the constants to make the car back off and turn away in a "
 "desired distance and angle as you like during the obstacle avoidance."
-msgstr ""
-"定数を変更して、車をオフに戻し、障害物回避中に希望の距離と角度で離れるようにし"
-"てください。"
+msgstr "定数を変更して、車をオフに戻し、障害物回避中に希望の距離と角度で離れるようにしてください。"
+

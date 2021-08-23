@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SunFounder PiCar-S Kit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 10:44+0800\n"
+"POT-Creation-Date: 2021-08-17 11:13+0800\n"
 "PO-Revision-Date: 2021-05-28 16:10+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -25,41 +25,26 @@ msgstr "回路構築"
 msgid "Connect the Power"
 msgstr "電源を接続する"
 
-#: ../circuits_building.rst:13
+#: ../circuits_building.rst:12
 msgid "Connect the Modules"
 msgstr "モジュールを接続する"
 
-#: ../circuits_building.rst:21
+#: ../circuits_building.rst:19
 msgid "Connect the Servo"
 msgstr "サーボを接続する"
 
-#: ../circuits_building.rst:29
+#: ../circuits_building.rst:26
 msgid "Connect the Motor"
 msgstr "モーターを接続する"
 
-#: ../circuits_building.rst:36
+#: ../circuits_building.rst:32
 msgid "The complete connection is shown as follows."
 msgstr "完全な接続は次のように表示される。"
 
-#: ../circuits_building.rst:43
+#: ../circuits_building.rst:38
 msgid ""
 "So now the circuit boards are all installed onto the car and the wiring "
 "is done. But still you're not ready to adjust the servo yet. First you "
 "need to complete some software installation."
 msgstr "これで、回路基板がすべて車に取り付けられ、配線が完了した。しかし、それでもまだサーボを調整する準備ができていない。まず、いくつかのソフトウェアのインストールを完了しなければならない。"
-
-#~ msgid "connect-power_bb"
-#~ msgstr "connect-power_bb"
-
-#~ msgid "connect-modules_bb"
-#~ msgstr "connect-modules_bb"
-
-#~ msgid "connect-servo_bb"
-#~ msgstr "connect-servo_bb"
-
-#~ msgid "connect-motor_bb"
-#~ msgstr "connect-motor_bb"
-
-#~ msgid "circuit_bb"
-#~ msgstr "circuit_bb"
 

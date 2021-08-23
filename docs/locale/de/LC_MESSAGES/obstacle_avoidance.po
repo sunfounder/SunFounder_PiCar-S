@@ -4,233 +4,307 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SunFounder_PiCar-S \n"
+"Project-Id-Version: SunFounder_PiCar-S\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 10:44+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-08-17 09:42+0800\n"
+"PO-Revision-Date: 2021-08-17 13:40+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"X-Generator: Poedit 3.0\n"
 
 #: ../obstacle_avoidance.rst:2
 msgid "Obstacle Avoidance"
-msgstr ""
+msgstr "Hindernisvermeidung"
 
 #: ../obstacle_avoidance.rst:5
 msgid "How it Works"
-msgstr ""
+msgstr "Wie es funktioniert"
 
 #: ../obstacle_avoidance.rst:7
 msgid ""
-"The ultrasonic obstacle avoidance module detects and transfers the "
-"collected data to Raspberry Pi that can calculate the distance from the "
-"obstacle. The Pi will send a command to adjust the front wheels and rear "
-"wheels direction and rotation to control the PiCar-S walk away from the "
-"obstacle if there is one."
+"The ultrasonic obstacle avoidance module detects and transfers the collected "
+"data to Raspberry Pi that can calculate the distance from the obstacle. The Pi "
+"will send a command to adjust the front wheels and rear wheels direction and "
+"rotation to control the PiCar-S walk away from the obstacle if there is one."
 msgstr ""
+"Das Ultraschall-Hindernisvermeidungsmodul erkennt und überträgt die "
+"gesammelten Daten an den Raspberry Pi, der den Abstand zum Hindernis berechnen "
+"kann. Der Pi sendet einen Befehl, um die Richtung und Drehung der Vorder- und "
+"Hinterräder einzustellen, um den PiCar-S vom Hindernis weg zu steuern, falls "
+"eines vorhanden ist."
 
 #: ../obstacle_avoidance.rst:14
 msgid "Procedures"
-msgstr ""
+msgstr "Verfahren"
 
 #: ../obstacle_avoidance.rst:16
 msgid "**Step 1 Assembly**"
-msgstr ""
+msgstr "**Schritt 1 Montage**"
 
 #: ../obstacle_avoidance.rst:19
 msgid ""
-"① Connect the ultrasonic module to the ultrasonic connector with M1.4*8 "
-"screws and M1.4 nuts."
+"① Connect the ultrasonic module to the ultrasonic connector with M1.4*8 screws "
+"and M1.4 nuts."
 msgstr ""
+"① Ultraschallmodul mit M1.4*8 Schrauben und M1.4 Muttern an den "
+"Ultraschallstecker anschließen."
 
 #: ../obstacle_avoidance.rst:22
 msgid ""
-"② Then connect them to the ultrasonic support with M3*10 screws and M3 "
-"nuts."
+"② Then connect them to the ultrasonic support with M3*10 screws and M3 nuts."
 msgstr ""
+"② Anschließend mit M3*10-Schrauben und M3-Muttern mit dem Ultraschallträger "
+"verbinden."
 
 #: ../obstacle_avoidance.rst:25
 msgid "③ Finally,assemble them to the Upper Plate with M3*10 screws and M3 nuts."
 msgstr ""
+"③ Schließlich montieren Sie sie mit M3*10 Schrauben und M3-Muttern an der "
+"oberen Platte."
 
 #: ../obstacle_avoidance.rst:31
 msgid ""
-"**Reminder: It would be easier to place the nuts into the slots with your"
-" fingers to hold underneath.**"
+"**Reminder: It would be easier to place the nuts into the slots with your "
+"fingers to hold underneath.**"
 msgstr ""
+"**Erinnerung: Es wäre einfacher, die Muttern mit den Fingern in die Schlitze "
+"zu legen, um sie darunter zu halten.**"
 
 #: ../obstacle_avoidance.rst:34
 msgid "**Step 2 Wiring**"
-msgstr ""
+msgstr "**Schritt 2 Verkabelung**"
 
 #: ../obstacle_avoidance.rst:36
 msgid ""
-"Connect the ultrasonic obstacle avoidance to Robot HATS with a 4-pin "
-"anti-reverse cable as shown below."
+"Connect the ultrasonic obstacle avoidance to Robot HATS with a 4-pin anti-"
+"reverse cable as shown below."
 msgstr ""
+"Verbinden Sie die Ultraschall-Hindernisvermeidung wie unten gezeigt mit einem "
+"4-poligen Anti-Reverse-Kabel mit dem Robot HATS."
 
 #: ../obstacle_avoidance.rst:39
 msgid ""
-"Ultrasonic module can have a 5V or 3.3V power supply. Here, we give it a "
-"3.3V power supply."
+"Ultrasonic module can have a 5V or 3.3V power supply. Here, we give it a 3.3V "
+"power supply."
 msgstr ""
+"Ultraschallmodul kann eine 5V oder 3,3V Stromversorgung haben. Hier geben wir "
+"ihm ein 3,3V Netzteil."
 
 #: ../obstacle_avoidance.rst:47
 msgid "**Step 3 Test**"
-msgstr ""
+msgstr "**Schritt 3 Test**"
 
 #: ../obstacle_avoidance.rst:50
 msgid "First, test the ultrasonic obstacle avoidance module before applying."
 msgstr ""
+"Testen Sie zuerst das Ultraschall-Hindernisvermeidungsmodul, bevor Sie es "
+"anwenden."
 
-#: ../obstacle_avoidance.rst:63
+#: ../obstacle_avoidance.rst:71
 msgid ""
 "You may find that the distance measurement may be not that accurate. It "
-"doesn’t matter. This 25kHz ultrasonic module is not a commonly used one, "
-"but one has a **horizontal detecting range of about 30~40 degrees**. Thus"
-" the distance measured may be not so accurate, but that small range "
-"provides convenience for obstacle avoidance. Besides, since the Raspberry"
-" Pi is not a real-time operating system, the inaccurate time calculation "
-"will affect the accuracy of distance measurement too. However, this "
-"ultrasonic module is precise enough for obstacle avoidance."
+"doesn’t matter. This 25kHz ultrasonic module is not a commonly used one, but "
+"one has a **horizontal detecting range of about 30~40 degrees**. Thus the "
+"distance measured may be not so accurate, but that small range provides "
+"convenience for obstacle avoidance. Besides, since the Raspberry Pi is not a "
+"real-time operating system, the inaccurate time calculation will affect the "
+"accuracy of distance measurement too. However, this ultrasonic module is "
+"precise enough for obstacle avoidance."
 msgstr ""
+"Sie werden möglicherweise feststellen, dass die Entfernungsmessung nicht so "
+"genau ist. Es spielt keine Rolle. Dieses 25-kHz-Ultraschallmodul ist kein "
+"häufig verwendetes, aber eines hat einen **horizontalen Erfassungsbereich von "
+"etwa 30~40 Grad**. Somit ist die gemessene Entfernung möglicherweise nicht so "
+"genau, aber dieser kleine Bereich bietet eine bequeme Hindernisvermeidung. Da "
+"der Raspberry Pi kein Echtzeit-Betriebssystem ist, wirkt sich die ungenaue "
+"Zeitberechnung auch auf die Genauigkeit der Entfernungsmessung aus. Dieses "
+"Ultraschallmodul ist jedoch präzise genug für die Hindernisvermeidung."
 
-#: ../obstacle_avoidance.rst:73
+#: ../obstacle_avoidance.rst:81
 msgid "**Step 4. Get on the road!**"
-msgstr ""
+msgstr "**Schritt 4. Mach dich auf den Weg!**"
 
-#: ../obstacle_avoidance.rst:76
+#: ../obstacle_avoidance.rst:84
 msgid ""
-"Now we have a general idea of the ultrasonic module’s effect after the "
-"test above. Let’s run the code of the ultrasonic obstacle avoidance."
+"Now we have a general idea of the ultrasonic module’s effect after the test "
+"above. Let’s run the code of the ultrasonic obstacle avoidance."
 msgstr ""
+"Jetzt haben wir nach dem obigen Test eine allgemeine Vorstellung von der "
+"Wirkung des Ultraschallmoduls. Lassen Sie uns den Code der Ultraschall-"
+"Hindernisvermeidung ausführen."
 
-#: ../obstacle_avoidance.rst:83
+#: ../obstacle_avoidance.rst:95
 msgid ""
-"The PiCar-S starts running now. Just place the car on the ground. It will"
-" follow the program to turn when it detects an obstacle; if the obstacle "
-"is too close, it will move backwards, and turn left/right. You can also "
-"modify the threshold of obstacle detecting range and that of moving "
-"backwards in the code."
+"The PiCar-S starts running now. Just place the car on the ground. It will "
+"follow the program to turn when it detects an obstacle; if the obstacle is too "
+"close, it will move backwards, and turn left/right. You can also modify the "
+"threshold of obstacle detecting range and that of moving backwards in the code."
 msgstr ""
+"Der PiCar-S beginnt jetzt zu laufen. Stellen Sie das Auto einfach auf den "
+"Boden. Es folgt dem Programm zum Wenden, wenn es ein Hindernis erkennt; Wenn "
+"das Hindernis zu nahe ist, bewegt es sich rückwärts und dreht sich nach links/"
+"rechts. Sie können auch den Schwellenwert für die Hinderniserkennung und den "
+"für die Rückwärtsbewegung im Code ändern."
 
-#: ../obstacle_avoidance.rst:94
+#: ../obstacle_avoidance.rst:106
 msgid "Code Explanation for ultra_sonic_avoid.py"
-msgstr ""
-
-#: ../obstacle_avoidance.rst:96
-msgid "**Whole Work Flow**"
-msgstr ""
-
-#: ../obstacle_avoidance.rst:101
-msgid ""
-"The ultrasonic module returns a digital value, i.e., High or Low level, "
-"and the interval time between two levels returned can be converted to the"
-" distance to the obstacle. Thus, we call the time module in Python for "
-"timing here. The formula to calculate the distance is written in the "
-"ultrasonic module’s driver. The main program just calls the corresponding"
-" program to get the distance value."
-msgstr ""
+msgstr "Code-Erklärung für ultra_sonic_avoid.py"
 
 #: ../obstacle_avoidance.rst:108
-msgid "**Subflow of the Obstacle Avoidance Function**"
-msgstr ""
+msgid "**Whole Work Flow**"
+msgstr "**Gesamter Arbeitsablauf**"
 
 #: ../obstacle_avoidance.rst:113
 msgid ""
-"When the car starts, it will detect obstacles and measure the distance in"
-" cycle, make judgement, and take actions. Here are three cases: when the "
-"distance to the obstacle is equals to the threshold, the car will turn "
-"directions; when the distance is less than the threshold, the car will "
-"move backwards before turning direction; when the distance is more than "
-"the threshold, it will keep moving forwards."
+"The ultrasonic module returns a digital value, i.e., High or Low level, and "
+"the interval time between two levels returned can be converted to the distance "
+"to the obstacle. Thus, we call the time module in Python for timing here. The "
+"formula to calculate the distance is written in the ultrasonic module’s "
+"driver. The main program just calls the corresponding program to get the "
+"distance value."
 msgstr ""
+"Das Ultraschallmodul gibt einen digitalen Wert zurück, d. h. High- oder Low-"
+"Pegel, und die Intervallzeit zwischen zwei zurückgegebenen Pegeln kann in die "
+"Entfernung zum Hindernis umgerechnet werden. Daher rufen wir hier das "
+"Zeitmodul in Python für das Timing auf. Die Formel zur Berechnung des Abstands "
+"ist in den Treiber des Ultraschallmoduls geschrieben. Das Hauptprogramm ruft "
+"einfach das entsprechende Programm auf, um den Distanzwert zu erhalten."
 
-#: ../obstacle_avoidance.rst:123
-msgid "**Functions Explanation**"
-msgstr ""
+#: ../obstacle_avoidance.rst:120
+msgid "**Subflow of the Obstacle Avoidance Function**"
+msgstr "**Teilablauf der Hindernisvermeidungsfunktion**"
 
 #: ../obstacle_avoidance.rst:125
-msgid "**ua = Ultra_Sonic.UltraSonic_Avoidance(17)**"
-msgstr ""
-
-#: ../obstacle_avoidance.rst:127
 msgid ""
-"Create an object **ua** of a *UltraSonic_Avoidance* class in the "
-"Ultra_Sonic module. The number in the round bracket is the initial "
-"parameter, which represents the pin number the SIG of the module is "
-"connected to. Since the BCM naming method is applied, the corresponding "
-"pin on the Raspberry Pi is #17."
+"When the car starts, it will detect obstacles and measure the distance in "
+"cycle, make judgement, and take actions. Here are three cases: when the "
+"distance to the obstacle is equals to the threshold, the car will turn "
+"directions; when the distance is less than the threshold, the car will move "
+"backwards before turning direction; when the distance is more than the "
+"threshold, it will keep moving forwards."
 msgstr ""
+"Wenn das Auto startet, erkennt es Hindernisse und misst die Distanz im Zyklus, "
+"trifft eine Beurteilung und ergreift Maßnahmen. Hier sind drei Fälle: Wenn der "
+"Abstand zum Hindernis gleich der Schwelle ist, wendet das Auto die Richtungen; "
+"wenn der Abstand kleiner als der Schwellenwert ist, bewegt sich das Auto "
+"rückwärts, bevor es in die Richtung abbiegt; Wenn die Entfernung den "
+"Schwellenwert überschreitet, bewegt es sich weiter vorwärts."
 
-#: ../obstacle_avoidance.rst:133
+#: ../obstacle_avoidance.rst:136
+msgid "Functions Explanation"
+msgstr "Funktionen Erklärung"
+
+#: ../obstacle_avoidance.rst:138
+msgid "**ua = Ultra_Sonic.UltraSonic_Avoidance(17)**"
+msgstr "**ua = Ultra_Sonic.UltraSonic_Avoidance(17)**"
+
+#: ../obstacle_avoidance.rst:140
+msgid ""
+"Create an object **ua** of a *UltraSonic_Avoidance* class in the Ultra_Sonic "
+"module. The number in the round bracket is the initial parameter, which "
+"represents the pin number the SIG of the module is connected to. Since the BCM "
+"naming method is applied, the corresponding pin on the Raspberry Pi is #17."
+msgstr ""
+"Erstellen Sie ein Objekt **ua** einer Klasse *UltraSonic_Avoidance* im "
+"Ultra_Sonic-Modul. Die Zahl in der runden Klammer ist der Anfangsparameter, "
+"der die Pinnummer darstellt, mit der das SIG des Moduls verbunden ist. Da die "
+"BCM-Benennungsmethode angewendet wird, ist der entsprechende Pin auf dem "
+"Raspberry Pi #17."
+
+#: ../obstacle_avoidance.rst:146
 msgid ""
 "**back_distance** and **turn_distance**, two constants are to set the "
 "thresholds of the ranging distance."
 msgstr ""
+"**back_distance** und **turn_distance**, zwei Konstanten dienen zum Einstellen "
+"der Schwellenwerte der Entfernungsmessung."
 
-#: ../obstacle_avoidance.rst:136
+#: ../obstacle_avoidance.rst:149
 msgid "**while()** loop"
-msgstr ""
+msgstr "**while()** Schleife"
 
-#: ../obstacle_avoidance.rst:138
+#: ../obstacle_avoidance.rst:151
 msgid ""
-"When the detected distance is less than the **back_distance**, the car "
-"will move backwards; when it is between **back_distance** and "
-"**turn_distance**, the car will turn a direction (you can set the turning"
-" angle in the aforementioned parameter **turning_angle** and the angle "
-"can be a positive or negative number, for turning left or turning right "
-"respectively; **NOTE** that the number of the turning angle should be "
-"**-90 to 90** considering the servo’s max rotation degrees, or the servo "
-"may be burnt.); when the detected distance is greater than the "
-"**turn_distance**, the car will keep moving forward."
+"When the detected distance is less than the **back_distance**, the car will "
+"move backwards; when it is between **back_distance** and **turn_distance**, "
+"the car will turn a direction (you can set the turning angle in the "
+"aforementioned parameter **turning_angle** and the angle can be a positive or "
+"negative number, for turning left or turning right respectively; **NOTE** that "
+"the number of the turning angle should be **-90 to 90** considering the "
+"servo’s max rotation degrees, or the servo may be burnt.); when the detected "
+"distance is greater than the **turn_distance**, the car will keep moving "
+"forward."
 msgstr ""
-
-#: ../obstacle_avoidance.rst:148
-msgid ""
-"**bw.backward()**, making the rear wheels rotate backwards; "
-"**bw.forward()**, making the rear wheels spin forward. These two "
-"functions in the rear wheel driving module back_wheels are to set the "
-"wheel’s rotating direction."
-msgstr ""
-
-#: ../obstacle_avoidance.rst:153
-msgid ""
-"**bw.set_speed(speed)**, function in the back_wheels, to set the wheel's "
-"rotating speed. The larger the number (within the range 0-100) is, the "
-"faster the wheel rotates."
-msgstr ""
-
-#: ../obstacle_avoidance.rst:157
-msgid ""
-"**fw.turn(angle)**, function in the back_wheels, to set the turning "
-"angle. The angle is 90 when the car moves straight forwards; reduce the "
-"number to turn left, and increase it to turn right."
-msgstr ""
+"Wenn die erkannte Distanz kleiner als die **back_distance** ist, bewegt sich "
+"das Auto rückwärts; wenn es zwischen **back_distance** und **turn_distance** "
+"liegt, wendet das Auto eine Richtung (Sie können den Wendewinkel im oben "
+"genannten Parameter **turning_angle** einstellen und der Winkel kann eine "
+"positive oder negative Zahl sein, für nach links bzw. nach rechts drehen "
+"**HINWEIS**, dass die Anzahl der Drehwinkel **-90 bis 90** unter "
+"Berücksichtigung der maximalen Rotationsgrade des Servos betragen sollte, da "
+"sonst das Servo verbrannt werden kann.); Wenn die erkannte Distanz größer als "
+"die **turn_distance** ist, fährt das Auto weiter."
 
 #: ../obstacle_avoidance.rst:161
 msgid ""
-"**fw.turn_straight()**, making the front wheels return to the angle of "
-"moving straight forwards."
+"**bw.backward()**, making the rear wheels rotate backwards; **bw.forward()**, "
+"making the rear wheels spin forward. These two functions in the rear wheel "
+"driving module back_wheels are to set the wheel’s rotating direction."
 msgstr ""
-
-#: ../obstacle_avoidance.rst:164
-msgid "**More:**"
-msgstr ""
+"**bw.backward()**, wodurch sich die Hinterräder rückwärts drehen; **bw."
+"forward()**, wodurch sich die Hinterräder vorwärts drehen. Diese beiden "
+"Funktionen im Hinterradantriebsmodul back_wheels dienen dazu, die Drehrichtung "
+"des Rades einzustellen."
 
 #: ../obstacle_avoidance.rst:166
-msgid "**back_distance** and **turn_distance**"
+msgid ""
+"**bw.set_speed(speed)**, function in the back_wheels, to set the wheel's "
+"rotating speed. The larger the number (within the range 0-100) is, the faster "
+"the wheel rotates."
 msgstr ""
+"**bw.backward()**, sich die Hinterräder rückwärts drehen; **bw.forward()**, "
+"sich die Hinterräder vorwärts drehen. Diese beiden Funktionen im "
+"Hinterradantriebsmodul dienen dazu, die Drehrichtung des Rades einzustellen."
 
-#: ../obstacle_avoidance.rst:168
+#: ../obstacle_avoidance.rst:170
+msgid ""
+"**fw.turn(angle)**, function in the back_wheels, to set the turning angle. The "
+"angle is 90 when the car moves straight forwards; reduce the number to turn "
+"left, and increase it to turn right."
+msgstr ""
+"**fw.turn(angle)**, Funktion in den back_wheels, um den Drehwinkel "
+"einzustellen. Der Winkel beträgt 90, wenn das Auto geradeaus fährt; Verringern "
+"Sie die Zahl, um nach links abzubiegen, und erhöhen Sie sie, um nach rechts "
+"abzubiegen."
+
+#: ../obstacle_avoidance.rst:174
+msgid ""
+"**fw.turn_straight()**, making the front wheels return to the angle of moving "
+"straight forwards."
+msgstr ""
+"**fw.turn_straight()**, wodurch die Vorderräder in den Winkel zurückkehren, in "
+"dem sie sich geradeaus bewegen."
+
+#: ../obstacle_avoidance.rst:177
+msgid "**More:**"
+msgstr "**Mehr:**"
+
+#: ../obstacle_avoidance.rst:179
+msgid "**back_distance** and **turn_distance**"
+msgstr "**back_distance** und **turn_distance**"
+
+#: ../obstacle_avoidance.rst:181
 msgid ""
 "Try to modify the constants to make the car back off and turn away in a "
 "desired distance and angle as you like during the obstacle avoidance."
 msgstr ""
-
+"Versuchen Sie, die Konstanten so zu ändern, dass das Auto während der "
+"Hindernisvermeidung nach Belieben zurückfährt und in einem gewünschten Abstand "
+"und Winkel abbiegt."

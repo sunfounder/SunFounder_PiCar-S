@@ -34,6 +34,7 @@ Here is the Email: cs@sunfounder.com.
    calibration
    arming_the_car
    appendix
+   thank-robot
 
 Copyright Notice
 ------------------

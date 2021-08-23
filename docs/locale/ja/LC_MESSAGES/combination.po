@@ -91,50 +91,50 @@ msgid ""
 msgstr ""
 "車のライトフォローと障害物回避はセンサーモジュールに依存するため、2つのセンサー"
 "のステータスを個別に読み取る2つの関数を設定し、それらの関数から返されるフラグに"
-"値を割り当てる：**state_light()**と**state_sonic()**。"
+"値を割り当てる：**state_light()** と **state_sonic()**。"
 
 #: ../combination.rst:48
 msgid "In the function **state_sonic()**, the return value is **avoid_flag**."
-msgstr "関数**state_sonic()**は、戻り値は**avoid_flag**である。"
+msgstr "関数 **state_sonic()** は、戻り値は **avoid_flag** である。"
 
 #: ../combination.rst:50
 msgid "If the car is **close to** an obstacle, it will return **avoid_flag =2**;"
-msgstr "車が障害物に**接近している**場合は、**avoid_flag=2**を返す；"
+msgstr "車が障害物に **接近している** 場合は、**avoid_flag=2** を返す；"
 
 #: ../combination.rst:52
 msgid "if it is **too close to** the obstacle, it will return **avoid_flag =1**;"
-msgstr "障害物に**近すぎる**場合は、**avoid_flag = 1**を返す；"
+msgstr "障害物に **近すぎる** 場合は、**avoid_flag = 1** を返す；"
 
 #: ../combination.rst:54
 msgid ""
 "if ahead **no obstacle** is detected near, it will return **avoid_flag =0**."
-msgstr "前方に障害物が**検出されない**場合は、**avoid_flag = 0**を返す。"
+msgstr "前方に障害物が **検出されない** 場合は、**avoid_flag = 0** を返す。"
 
 #: ../combination.rst:56
 msgid "In the function **state_light()**, the return value is **light_flag**."
-msgstr "関数**state_light()**では、戻り値は**light_flag**である。"
-
+msgstr "関数 **state_light()** では、戻り値は **light_flag** である。"
+ 
 #: ../combination.rst:58
 msgid ""
 "If the light spot is **in front of** the car, it will return **light_flag = "
 "0**;"
-msgstr "ライトスポットが車の**前にある**場合、**light_flag = 0**を返す；"
+msgstr "ライトスポットが車の **前にある** 場合、**light_flag = 0** を返す；"
 
 #: ../combination.rst:60
 msgid "if the spot is **at the right side**, it will return **light_flag = 1**;"
-msgstr "スポットが**右側にある**場合、**light_flag = 1**を返す；"
+msgstr "スポットが **右側にある** 場合、**light_flag = 1** を返す；"
 
 #: ../combination.rst:62
 msgid "if the spot is **at the left side**, it will return **light_flag = 2**;"
-msgstr "スポットが**左側にある**場合、**light_flag = 2**を返す；"
+msgstr "スポットが **左側にある** 場合、**light_flag = 2** を返す；"
 
 #: ../combination.rst:64
 msgid "if the spot is **at the back**, it will return **light_flag = 3**;"
-msgstr "スポットが**後ろにある**場合、**light_flag = 3**を返す；"
+msgstr "スポットが **後ろにある** 場合、**light_flag = 3** を返す；"
 
 #: ../combination.rst:66
 msgid "if **no light spot** is detected, it will return **light_flag = 4**."
-msgstr "**光点が検出されない**場合、**light_flag = 4**を返す。"
+msgstr "**光点が検出されない** 場合、**light_flag = 4** を返す。"
 
 #: ../combination.rst:68
 msgid ""
@@ -142,5 +142,5 @@ msgid ""
 "**avoid_flag** and **light_flag**, and the **avoid_flag** is superior in "
 "priority."
 msgstr ""
-"メインプログラム**main() **は、*8avoid_flag**と**light_flag**に従って対応するプ"
-"ログラムを実行し、**avoid_flag**は優先順位となっている。"
+"メインプログラム **main()** は、**8avoid_flag** と **light_flag** に従って対応するプ"
+"ログラムを実行し、**avoid_flag** は優先順位となっている。"

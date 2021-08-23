@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SunFounder PiCar-S Kit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 10:44+0800\n"
+"POT-Creation-Date: 2021-08-17 09:42+0800\n"
 "PO-Revision-Date: 2021-06-25 15:29+0800\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -26,6 +26,10 @@ msgstr "部品一覧"
 #: ../components_list.rst:5
 msgid "Structure Plates"
 msgstr "構造プレート"
+
+
+msgid "图片101"
+msgstr "图片101"
 
 #: ../components_list.rst:12
 msgid "Upper Plate x 1"
@@ -70,6 +74,10 @@ msgstr "センサーコネクターx1"
 #: ../components_list.rst:33
 msgid "SunFounder SF006C Servo x 1"
 msgstr "SunFounder SF006Cサーボx1"
+
+
+msgid "舵机图"
+msgstr "舵机图"
 
 #: ../components_list.rst:40
 msgid "Servo x 1"
@@ -144,10 +152,4 @@ msgid ""
 "3. In order to keep the car working for a long time, use large-capacity "
 "batteries as much as possible."
 msgstr "長時間使用するために、可能な限り最大電力のバッテリーを使用してください。"
-
-#~ msgid "图片101"
-#~ msgstr "图片101"
-
-#~ msgid "舵机图"
-#~ msgstr "舵机图"
 

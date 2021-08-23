@@ -7,7 +7,7 @@ terminal.
 
 .. note::
      You can check the complete tutorial on the official website of the Raspberry Pi:
-     https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up
+     https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up.
 
 .. note::
     If your Raspberry Pi is set up, you can skip the part and go into the next chapter.
@@ -93,7 +93,7 @@ Then scroll down to complete the wifi configuration and click **SAVE**.
     code <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements>`__ for
     the country in which you are using your Raspberry Pi, please refer to
     the following link:
-    https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements
+    https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements.
 
 .. image:: media/image79.png
 
@@ -183,7 +183,7 @@ it.
 
 **Step 2**
 
-Type in **ssh pi@ip_address** . “pi”is your username and “ip_address” is
+Type in **ssh pi@ip_address** . \"pi\" is your username and \"ip_address\" is
 your IP address. 
 For example:
 
@@ -193,7 +193,7 @@ For example:
 
 **Step 3**
 
-Input”yes”.
+Input \"yes\".
 
 .. image:: media/image226.png
 
@@ -226,7 +226,7 @@ For Windows Users
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you're a Windows user, you can use SSH with the application of some
-software. Here, we recommend **PuTTY**\ (You can download from Google).
+software. Here, we recommend **PuTTY** (You can download from Google).
 
 **Step 1**
 
@@ -246,8 +246,8 @@ the IP address, there prompts a security reminder. Just click **Yes**.
 
 **Step 3**
 
-When the PuTTY window prompts “\ **login as:”**, type in
-“\ **pi”**\ (the user name of the RPi), and **password: “**\ raspberry”
+When the PuTTY window prompts \"**login as:**\", type in
+\"**pi**\" (the user name of the RPi), and **password:** \"raspberry\"
 (the default one, if you haven't changed it).
 
 .. image:: media/image228.png

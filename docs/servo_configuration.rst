@@ -15,9 +15,14 @@ Get Source Code
 You can find the source code in our Github repositories. Download the
 source code by *git clone*:
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
-    git clone --recursive https://github.com/sunfounder/SunFounder_PiCar-S -b V3.0
+    cd /home/pi/
+    git clone https://github.com/sunfounder/SunFounder_PiCar-S.git -b V3.0
 
 .. note::
     Please pay attention to your typing – if you get the prompt of
@@ -25,18 +30,17 @@ source code by *git clone*:
     unluckily you did so, press Ctrl + C to exit and try again.
 
 
-Check by the **ls** command, then you can see the code directory
-*SunFounder_PiCar-S*:
-
-.. image:: media/image89.png
-
-
 Go to the Code Directory
 ------------------------
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     cd ~/SunFounder_PiCar-S/
+    ls
 
 Enter the code directory and you can see the installation script:
 
@@ -50,6 +54,10 @@ You can get all the required software and configuration done with the
 installation script. If you want to do step by step instead, refer to
 the operations in **Appendix 1: Installing Manually**.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     sudo ./install_dependencies
@@ -68,6 +76,10 @@ Set the Servo to 90 Degrees
 
 After reboot, type in the command:
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     picar
@@ -81,6 +93,10 @@ The first one **servo-install** is for **servo adjustment**, which is
 used after the front wheels are assembled. The servo will rotate to 90
 degrees after this command is run, so we will use this command here.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     picar servo-install
@@ -92,6 +108,10 @@ degrees after this command is run, so we will use this command here.
     If the "OSError: [Errno 121] Remote I/O error" error message appears,
     open raspi-config:
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     sudo raspi-config

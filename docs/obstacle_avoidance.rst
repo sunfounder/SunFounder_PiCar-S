@@ -49,10 +49,18 @@ Ultrasonic module can have a 5V or 3.3V power supply. Here, we give it a
 
 First, test the ultrasonic obstacle avoidance module before applying.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     cd ~/SunFounder_PiCar-S/example/
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     python3 test_ultrasonic_module.py
@@ -76,6 +84,10 @@ avoidance.
 Now we have a general idea of the ultrasonic module’s effect after the
 test above. Let’s run the code of the ultrasonic obstacle avoidance.
 
+.. raw:: html
+
+    <run></run>
+ 
 .. code-block::
 
     python3 ultra_sonic_avoid.py
@@ -120,7 +132,8 @@ than the threshold, it will keep moving forwards.
 .. image:: media/image235.png
 
 
-**Functions Explanation**
+Functions Explanation
+------------------------
 
 **ua = Ultra_Sonic.UltraSonic_Avoidance(17)**
 
