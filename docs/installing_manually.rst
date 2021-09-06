@@ -19,7 +19,7 @@ Installing Manually
  
 .. code-block::
 
-    sudo apt-get install python-smbus -y
+    sudo pip3 install smbus2
 
 3. Install the PiCar module.
 
