@@ -22,7 +22,7 @@ source code by *git clone*:
 .. code-block::
 
     cd /home/pi/
-    git clone https://github.com/sunfounder/SunFounder_PiCar-S.git -b V3.0
+    git clone --recursive https://github.com/sunfounder/SunFounder_PiCar-S.git -b V3.0
 
 .. note::
     Please pay attention to your typing – if you get the prompt of
