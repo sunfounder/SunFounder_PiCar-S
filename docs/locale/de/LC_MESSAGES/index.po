@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, sunfounder
+# This file is distributed under the same license as the SunFounder_PiCar-S
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder_PiCar-S\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-29 10:44+0800\n"
+"PO-Revision-Date: 2021-08-17 11:33+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"X-Generator: Poedit 3.0\n"
+
+#: ../index.rst:2
+msgid "SunFounder PiCar-S Smart Car Kit for Raspberry Pi"
+msgstr "SunFounder PiCar-S Smart Car Kit für Raspberry Pi"
+
+#: ../index.rst:5
+msgid "About the PiCar-S"
+msgstr "Über das PiCar-S"
+
+#: ../index.rst:7
+msgid ""
+"The **PiCar-S** is a cool smart car that can work with Raspberry Pi 3 "
+"model B, 3 model B+, and 4 model B. Equipped with three sensor modules "
+"including ultrasonic obstacle avoidance, light follower, and line "
+"follower, you can better learn the programming on how to control the car."
+msgstr ""
+"Das **PiCar-S** ist ein cooles intelligentes Auto, das mit Raspberry Pi "
+"3 Modell B, 3 Modell B+ und 4 Modell B arbeiten kann. Ausgestattet mit "
+"drei Sensormodulen, einschließlich Ultraschall-Hindernisvermeidung, "
+"Lichtfolger und Linienfolger, kannst du kann die Programmierung zur "
+"Steuerung des Autos besser lernen."
+
+#: ../index.rst:13
+msgid ""
+"In this manual, we will show you how to build the PiCar-S via "
+"description, illustrations of physical components, in both hardware and "
+"software respects. You will enjoy learning how all this work. You can "
+"view the latest PDF user manual or clone the code by click the link: "
+"https://github.com/sunfounder/SunFounder_PiCar-S/tree/V3.0."
+msgstr ""
+"In diesem Handbuch zeigen wir Ihnen, wie Sie das PiCar-S anhand einer "
+"Beschreibung und Abbildungen der physischen Komponenten sowohl in "
+"Hardware- als auch in Bezug auf Software aufbauen. Sie werden es "
+"genießen zu lernen, wie das alles funktioniert. Sie können das neueste "
+"PDF-Benutzerhandbuch anzeigen oder den Code klonen, indem Sie auf den "
+"Link klicken: https://github.com/sunfounder/SunFounder_PiCar-S/tree/V3.0."
+
+#: ../index.rst:19
+msgid ""
+"If you want to learn another projects which we don’t have, please feel "
+"free to send Email and we will update to our online tutorials as soon as "
+"possible, any suggestions are welcomed."
+msgstr ""
+"Wenn Sie andere Projekte kennenlernen möchten, die wir nicht haben, "
+"senden Sie bitte eine E-Mail und wir werden so schnell wie möglich auf "
+"unsere Online-Tutorials aktualisieren. Vorschläge sind willkommen."
+
+#: ../index.rst:21
+msgid "Here is the Email: cs@sunfounder.com."
+msgstr "Hier ist die E-Mail: cs@sunfounder.com."
+
+#: ../index.rst:39
+msgid "Copyright Notice"
+msgstr "Urheberrechtshinweis"
+
+#: ../index.rst:40
+msgid ""
+"All contents including but not limited to texts, images, and code in "
+"this manual are owned by the SunFounder Company. You should only use it "
+"for personal study,investigation, enjoyment, or other non-commercial or "
+"nonprofit purposes, under therelated regulations and copyrights laws, "
+"without infringing the legal rights of the author and relevant right "
+"holders. For any individual or organization that uses these for "
+"commercial profit without permission, the Company reserves the right to "
+"take legal action."
+msgstr ""
+"Alle Inhalte, einschließlich, aber nicht beschränkt auf Texte, Bilder "
+"und Code in diesem Handbuch, sind Eigentum der SunFounder Company. Sie "
+"sollten es nur für persönliche Studien, Untersuchungen, Unterhaltung "
+"oder andere nicht-kommerzielle oder gemeinnützige Zwecke gemäß den "
+"entsprechenden Vorschriften und Urheberrechtsgesetzen verwenden, ohne "
+"die gesetzlichen Rechte des Autors und der entsprechenden Rechteinhaber "
+"zu verletzen. Für Einzelpersonen oder Organisationen, die diese ohne "
+"Erlaubnis zu kommerziellen Zwecken verwenden, behält sich das "
+"Unternehmen das Recht vor, rechtliche Schritte einzuleiten."

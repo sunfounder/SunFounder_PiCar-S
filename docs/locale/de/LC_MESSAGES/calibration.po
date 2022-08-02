@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, sunfounder
+# This file is distributed under the same license as the SunFounder_PiCar-S
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder_PiCar-S\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-29 10:44+0800\n"
+"PO-Revision-Date: 2021-08-17 11:11+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"X-Generator: Poedit 3.0\n"
+
+#: ../calibration.rst:2
+msgid "Calibration"
+msgstr "Kalibrierung"
+
+#: ../calibration.rst:5
+msgid "Calibrate the Servo"
+msgstr "Kalibrieren Sie den Servo"
+
+#: ../calibration.rst:7
+msgid ""
+"Remember the commands to adjust the servo to 90 degrees previously? Now, "
+"let’s talk about the other two commands."
+msgstr ""
+"Erinnern Sie sich an die Befehle, um das Servo zuvor auf 90 Grad "
+"einzustellen? Kommen wir nun zu den anderen beiden Befehlen."
+
+#: ../calibration.rst:10
+msgid ""
+"The second command **front-wheel-test** is used to test whether the "
+"front wheels can turn flexibly after assembly. When you run this "
+"command, it will drive them to turn left and right."
+msgstr ""
+"Mit dem zweiten Befehl **front-wheel-test** wird getestet, ob sich die "
+"Vorderräder nach der Montage flexibel drehen lassen. Wenn Sie diesen "
+"Befehl ausführen, werden sie dazu gebracht, nach links und rechts "
+"abzubiegen."
+
+#: ../calibration.rst:21
+msgid ""
+"You may find the direction of the front wheels is not facing exactly "
+"front when they are in the straight status. If there is an obvious "
+"deviation from the middle line of the front chassis, reassemble the "
+"servo and run **servo-install** again; if it is just a little deviation "
+"(like about 0~15 degrees), it can be adjusted by software."
+msgstr ""
+"Möglicherweise stellen Sie fest, dass die Richtung der Vorderräder nicht "
+"genau nach vorne zeigt, wenn sie sich im Geradeaus-Zustand befinden. Bei "
+"offensichtlicher Abweichung von der Mittellinie des vorderen Chassis das "
+"Servo wieder zusammenbauen und **servo-install** erneut ausführen; Wenn "
+"es nur eine kleine Abweichung ist (wie etwa 0 ~ 15 Grad), kann sie per "
+"Software angepasst werden."
+
+#: ../calibration.rst:27
+msgid "Get into the folder **SunFounder_PiCar/picar:**"
+msgstr "Gehe in den Ordner **SunFounder_PiCar/picar:**"
+
+#: ../calibration.rst:40
+msgid ""
+"Open the **config** file under the folder with an editor. You can see a "
+"few parameters. The value of **turning_offset** is used to adjust the "
+"front wheels. Its value is **0** by default. If you want to make the "
+"front wheels **turn right a bit**, just modify it to a **larger numbe**"
+"\\ r; to make it more **towards the left**, you can set it **smaller** "
+"(it can even be a negative number)."
+msgstr ""
+"Öffnen Sie die **config**-Datei unter dem Ordner mit einem Editor. Sie "
+"können einige Parameter sehen. Der Wert von **turning_offset** wird "
+"verwendet, um die Vorderräder einzustellen. Der Wert ist standardmäßig "
+"**0**. Wenn Sie möchten, dass die Vorderräder **etwas rechts abbiegen**, "
+"ändern Sie sie einfach in eine **größere Nummer**\\ r; um es **nach "
+"links** weiter zu machen, können Sie es **kleiner** einstellen (es kann "
+"sogar eine negative Zahl sein)."
+
+#: ../calibration.rst:47
+msgid ""
+"But **DO NOT** over-configure the wheels (recommended a value between "
+"-30 and 30), or the servo may be stuck and broken."
+msgstr ""
+"Aber **NICHT** überkonfigurieren Sie die Räder (empfohlener Wert "
+"zwischen -30 und 30), oder das Servo kann stecken bleiben und kaputt "
+"gehen."
+
+#: ../calibration.rst:50
+msgid ""
+"After changing the value of turning_offset, press **Ctrl** + **O** to "
+"save the changes, and press **Ctrl** + **X** to exit. Run the command "
+"**picar servo-install** to check the front wheel’s status."
+msgstr ""
+"Nachdem Sie den Wert von turn_offset geändert haben, drücken Sie "
+"**Strg** + **O**, um die Änderungen zu speichern, und drücken Sie "
+"**Strg** + **X** zum Beenden. Führen Sie den Befehl **picar servo-"
+"install** aus, um den Status des Vorderrads zu überprüfen."
+
+#: ../calibration.rst:58
+msgid ""
+"If the front wheels is still not facing the exact front, you may need to "
+"edit the file **config** for a couple of times. The front wheels may "
+"need to be adjusted about 3 to 5 times usually. We can move on to "
+"calibration of the rear wheels when the front wheels are done."
+msgstr ""
+"Wenn die Vorderräder immer noch nicht genau nach vorne zeigen, müssen "
+"Sie die Datei **config** möglicherweise einige Male bearbeiten. Die "
+"Vorderräder müssen in der Regel etwa 3- bis 5-mal eingestellt werden. "
+"Wir können mit der Kalibrierung der Hinterräder fortfahren, wenn die "
+"Vorderräder fertig sind."
+
+#: ../calibration.rst:64
+msgid "Calibrate the Motors"
+msgstr "Kalibrieren Sie die Motoren"
+
+#: ../calibration.rst:66
+msgid ""
+"Since the wiring of the two DC motors is random, the VCC and GND of a "
+"motor may be connected to the wheel reversely, causing the wheel to spin "
+"forward when it should do backward as configured in the code. Thus we "
+"can use the third command which will drive the rear wheels to "
+"simultaneously speed up and slow down alternately."
+msgstr ""
+"Da die Verdrahtung der beiden Gleichstrommotoren zufällig ist, können "
+"VCC und GND eines Motors umgekehrt mit dem Rad verbunden werden, wodurch "
+"das Rad vorwärts dreht, wenn es wie im Code konfiguriert rückwärts "
+"laufen sollte. So können wir den dritten Befehl verwenden, der die "
+"Hinterräder antreibt, um gleichzeitig abwechselnd zu beschleunigen und "
+"zu verlangsamen."
+
+#: ../calibration.rst:79
+msgid ""
+"Check whether both the two rear wheels rotate direction is the same as "
+"the screen. Note that the two wheels are driven by the two motors "
+"separately. It may happen that one rotates forward, while the other does "
+"backwards. If so, we need to adjust one or both two wheels which rotate "
+"reversely under that command."
+msgstr ""
+"Prüfen Sie, ob die Drehrichtung der beiden Hinterräder mit der des "
+"Bildschirms übereinstimmt. Beachten Sie, dass die beiden Räder von den "
+"beiden Motoren separat angetrieben werden. Es kann vorkommen, dass einer "
+"vorwärts dreht, während der andere rückwärts dreht. Wenn dies der Fall "
+"ist, müssen wir eines oder beide Räder einstellen, die sich unter diesem "
+"Befehl rückwärts drehen."
+
+#: ../calibration.rst:96
+msgid ""
+"**forward_A** and **forward_B** are to change the default spinning "
+"direction of the two motors. The value can only be **0** or **1**, which "
+"represents clockwise and counterclockwise rotation. By default, it's "
+"**0** for both parameters. Thus if a wheel spins reversely, you only "
+"need to change the corresponding parameter for the wheel to **1**."
+msgstr ""
+"**forward_A** und **forward_B** dienen zum Ändern der "
+"Standarddrehrichtung der beiden Motoren. Der Wert kann nur **0** oder "
+"**1** sein, was einer Drehung im und gegen den Uhrzeigersinn entspricht. "
+"Standardmäßig ist es für beide Parameter **0**. Wenn sich also ein Rad "
+"rückwärts dreht, müssen Sie nur den entsprechenden Parameter für das Rad "
+"auf **1** ändern."
+
+#: ../calibration.rst:102
+msgid ""
+"Press **Ctrl** + **O** to save the changes, and press **Ctrl** + **X** "
+"to exit."
+msgstr ""
+"Drücken Sie **Strg** + **O**, um die Änderungen zu speichern, und drücken "
+"Sie **Strg** + **X**, um den Vorgang zu beenden."
+
+#: ../calibration.rst:105
+msgid ""
+"Run the command **picar rear-wheel-test** again to check whether the "
+"rear wheels are rotating in accordance with the command."
+msgstr ""
+"Führen Sie den Befehl **picar heckrad-test** erneut aus, um zu "
+"überprüfen, ob sich die Hinterräder entsprechend dem Befehl drehen."
+
+#: ../calibration.rst:112
+msgid "Copy *config* to the directory *example* under *PiCar-S*."
+msgstr ""
+"Kopieren Sie *config* in das Verzeichnis *example* unter *PiCar-S*."

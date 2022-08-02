@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, sunfounder
+# This file is distributed under the same license as the SunFounder_PiCar-S
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder_PiCar-S\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-17 09:42+0800\n"
+"PO-Revision-Date: 2021-08-17 11:34+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"X-Generator: Poedit 3.0\n"
+
+#: ../installing_manually.rst:2
+msgid "Installing Manually"
+msgstr "Manuell installieren"
+
+#: ../installing_manually.rst:4
+msgid "Update the apt list."
+msgstr "Aktualisieren Sie die apt-Liste."
+
+#: ../installing_manually.rst:14
+msgid "Install python-smbus."
+msgstr "Python-smbus installieren."
+
+#: ../installing_manually.rst:24
+msgid "Install the PiCar module."
+msgstr "Installieren Sie das PiCar-Modul."
+
+#: ../installing_manually.rst:37
+msgid "Enable I2C."
+msgstr "Aktivieren Sie I2C."
+
+#: ../installing_manually.rst:39
+msgid "Edit the file /boot/config.txt"
+msgstr "Bearbeiten Sie die Datei /boot/config.txt"
+
+#: ../installing_manually.rst:49
+msgid ""
+"The \\\"**#**\\\" in front of each line is to comment the following "
+"contents which does not take effect in a sketch. The I2C configuration "
+"part is commented by default too. Add the following code at the end of "
+"the file, or delete the pound mark \\\"#\\\" at the beginning of related "
+"line; either way will do."
+msgstr ""
+"Das \\\"**#**\\\" vor jeder Zeile soll den folgenden Inhalt "
+"kommentieren, der in einer Skizze nicht wirksam wird. Auch der I2C-"
+"Konfigurationsteil wird standardmäßig kommentiert. Fügen Sie den "
+"folgenden Code am Ende der Datei hinzu, oder löschen Sie die Raute \\\"#"
+"\\\" am Anfang der zugehörigen Zeile; so oder so wird es tun."
+
+#: ../installing_manually.rst:63
+msgid "Reboot."
+msgstr "Neustart."

@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, sunfounder
+# This file is distributed under the same license as the SunFounder_PiCar-S
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SunFounder_PiCar-S\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-29 10:44+0800\n"
+"PO-Revision-Date: 2021-08-17 11:09+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"X-Generator: Poedit 3.0\n"
+
+#: ../building_the_car.rst:2
+msgid "Building the Car"
+msgstr "Das Auto bauen"
+
+#: ../building_the_car.rst:4
+msgid ""
+"Extremely excited when opening the box and checking so many components? "
+"Keep your patience and take it easy. Please note that some details in "
+"the following steps need **CAREFUL** observation. You should double-"
+"check your work based on the figures in the manual after finishing each "
+"step. Don’t worry! Kindly reminders will be given in some particular "
+"steps. Just follow the tutorial step by step. Okay, with no further ado, "
+"now let’s start!"
+msgstr ""
+"Extrem aufgeregt beim Öffnen der Box und beim Überprüfen so vieler "
+"Komponenten? Behalten Sie Geduld und lassen Sie es ruhig angehen. Bitte "
+"beachten Sie, dass einige Details in den folgenden Schritten "
+"**SORGFÄLTIG** beachtet werden müssen. Sie sollten Ihre Arbeit anhand "
+"der Zahlen im Handbuch überprüfen, nachdem Sie jeden Schritt "
+"abgeschlossen haben. Keine Sorge! In einigen bestimmten Schritten werden "
+"freundliche Erinnerungen gegeben. Folgen Sie einfach dem Tutorial "
+"Schritt für Schritt. Okay, ohne weitere Umschweife, jetzt fangen wir an!"
+
+#: ../building_the_car.rst:13
+msgid "Front Half Chassis"
+msgstr "Vorderes Halbgehäuse"
+
+#: ../building_the_car.rst:15
+msgid ""
+"Assemble the **Front Half Chassis** with four **M3x25 copper standoffs** "
+"and four **M3 nuts** as shown below:"
+msgstr ""
+"Montieren Sie das **Front Half Chassis** mit vier **M3x25 Kupfer-"
+"Standoffs** und vier **M3-Muttern** wie unten gezeigt:"
+
+#: ../building_the_car.rst:21
+msgid "Front Wheels"
+msgstr "Vorderreifen"
+
+#: ../building_the_car.rst:24
+msgid ""
+"Please pay attention to the direction of Steering Connector before "
+"assembling."
+msgstr ""
+"Bitte achten Sie vor dem Zusammenbau auf die Richtung des "
+"Lenkungssteckers."
+
+#: ../building_the_car.rst:26
+msgid ""
+"Insert an **M4x25 screw** through a **Steering Connector**, 3 **Bearing "
+"Shields**, 3 **Hex Front Wheel Fixing Plates**, and a **front wheel**, "
+"into an **M4 Self-locking Nut** (note the direction) as shown below:"
+msgstr ""
+"Stecken Sie eine **M4x25-Schraube** durch einen **Lenkungsanschluss**, 3 "
+"**Lagerschilde**, 3 **Sechskant-Vorderrad-Befestigungsplatten** und ein "
+"**Vorderrad** in ein **M4 Selbstsichernde Mutter** (Richtung beachten) "
+"wie unten gezeigt:"
+
+#: ../building_the_car.rst:32
+msgid ""
+"You can use the Cross Socket Wrench to secure the **M4 Self-locking "
+"Nut**, then use the screwdriver to tighten the **M4x25 screw.**"
+msgstr ""
+"Sie können den Kreuzschlitzschlüssel verwenden, um die **M4 "
+"selbstsichernde Mutter** zu sichern, und dann den Schraubendreher "
+"verwenden, um die **M4x25 Schraube anzuziehen.**"
+
+#: ../building_the_car.rst:39
+msgid ""
+"The Self-locking Nut should be screwed tight enough. It would be better "
+"to tighten the screw until the wheel and Steering Connector cannot move "
+"first, then loosen the screw a little, so that the Steering Plate can "
+"just move. Thus, the wheel can turn flexibly when the connection would "
+"not be too loose."
+msgstr ""
+"Die selbstsichernde Mutter sollte fest genug angezogen werden. Es ist "
+"besser, die Schraube festzuziehen, bis sich das Rad und der "
+"Lenkungsanschluss nicht bewegen können, und dann die Schraube ein wenig "
+"lösen, damit sich die Lenkungsplatte gerade bewegen kann. Somit kann "
+"sich das Rad flexibel drehen, wenn die Verbindung nicht zu locker wäre."
+
+#: ../building_the_car.rst:45
+msgid ""
+"Assemble the other front wheel in the same way, but bear in mind the "
+"Steering Connector on the wheel should be symmetric with the previous "
+"one:"
+msgstr ""
+"Montieren Sie das andere Vorderrad auf die gleiche Weise, aber denken "
+"Sie daran, dass der Lenkungsanschluss am Rad symmetrisch zum vorherigen "
+"sein sollte:"
+
+#: ../building_the_car.rst:51
+msgid "Now two front wheels have finished assembly."
+msgstr "Jetzt sind zwei Vorderräder fertig montiert."
+
+#: ../building_the_car.rst:55
+msgid "Steering Part"
+msgstr "Lenkungsteil"
+
+#: ../building_the_car.rst:57
+msgid ""
+"Connect the **Steering Linkage** and the **1-arm Rocker Arm** with the "
+"**M1.5x4 Self-tapping Screw**."
+msgstr ""
+"Verbinden Sie das **Lenkgestänge** und den **1-armigen Kipphebel** mit "
+"der **M1,5x4 Blechschraube**."
+
+#: ../building_the_car.rst:61
+msgid ""
+"Insert it into the FIRST hole of the arm (as indicated by the arrow "
+"below) which is the farthest from the gears."
+msgstr ""
+"Stecken Sie es in das ERSTE Loch des Arms (wie durch den Pfeil unten "
+"angezeigt), das am weitesten von den Zahnrädern entfernt ist."
+
+#: ../building_the_car.rst:66
+msgid ""
+"Fasten them as tightly as possible, and then loosen the screw a little "
+"so the Steering Linkage can move flexibly."
+msgstr ""
+"Ziehen Sie sie so fest wie möglich an und lösen Sie dann die Schraube "
+"ein wenig, damit sich das Lenkgestänge flexibel bewegen kann."
+
+#: ../building_the_car.rst:69
+msgid "Upper Plate"
+msgstr "Oberer Teller"
+
+#: ../building_the_car.rst:71
+msgid ""
+"Mount the **M2.5x8 copper standoffs** and **M2.5 nuts** into the **upper "
+"plate** first. Pay attention that the side the protruding prop should "
+"face up."
+msgstr ""
+"Montieren Sie zuerst die **M2,5x8 Kupferabstandshalter** und **M2,5 "
+"Muttern** in die **obere Platte**. Achten Sie darauf, dass die Seite der "
+"hervorstehenden Stütze nach oben zeigt."
+
+#: ../building_the_car.rst:79
+msgid "Battery Holder"
+msgstr "Batteriehalter"
+
+#: ../building_the_car.rst:81
+msgid ""
+"Turn the Upper Plate upside down. Cut the **ribbon** into two halves. "
+"Thread them through the holes on the plate. Pay attention to the "
+"direction and leave one end longer out of the plate for each to remove "
+"the battery easily later."
+msgstr ""
+"Drehen Sie die obere Platte auf den Kopf. Schneiden Sie das **Band** in "
+"zwei Hälften. Fädeln Sie sie durch die Löcher auf der Platte. Achten Sie "
+"auf die Richtung und lassen Sie jeweils ein Ende länger aus der Platte, "
+"um den Akku später leicht entnehmen zu können."
+
+#: ../building_the_car.rst:89
+msgid ""
+"Fasten the battery holder with two **M3x8 countersunk screws** and two "
+"**M3 nuts**: pay attention to the direction of battery holder’s wire."
+msgstr ""
+"Befestigen Sie den Batteriehalter mit zwei **M3x8 Senkschrauben** und "
+"zwei **M3-Muttern**: Achten Sie auf die Kabelrichtung des "
+"Batteriehalters."
+
+#: ../building_the_car.rst:96
+msgid "Rear Wheels (Screws)"
+msgstr "Hinterräder (Schrauben)"
+
+#: ../building_the_car.rst:98
+msgid "Insert four **M3x8 screws** with four **M3x25 copper standoffs**:"
+msgstr ""
+"Setzen Sie vier **M3x8-Schrauben** mit vier **M3x25-"
+"Kupferabstandshaltern** ein:"
+
+#: ../building_the_car.rst:105
+msgid "PCB Assembly"
+msgstr "Leiterplattenmontage"
+
+#: ../building_the_car.rst:107
+msgid ""
+"Assemble the **Raspberry Pi** (TF Card inserted) with eight **M2.5x8 "
+"copper standoffs**, then plug the **Robot HATS** onto it."
+msgstr ""
+"Montieren Sie den **Raspberry Pi** (TF-Karte eingesteckt) mit acht "
+"**M2,5x8 Kupfer-Abstandshaltern** und stecken Sie dann die **Robot "
+"HATS** darauf."
+
+#: ../building_the_car.rst:110
+msgid "Fix the **Robot HATS** with four **M2.5x6** **screws**."
+msgstr ""
+"Befestigen Sie die **Robot HATS** mit vier **M2.5x6** **Schrauben**."
+
+#: ../building_the_car.rst:112
+msgid ""
+"Fix The **PCA9685 PWM Driver**, the **Motor Driver** with eight "
+"**M2.5x12** **screws and M2.5 nuts** into the **down plate**."
+msgstr ""
+"Befestigen Sie den **PCA9685 PWM Driver**, den **Motor Driver** mit acht "
+"**M2.5x12** **Schrauben und M2.5 Muttern** in der **Unterplatte**."
+
+#: ../building_the_car.rst:119
+msgid "Rear Wheels (Driving)"
+msgstr "Hinterräder (Fahren)"
+
+#: ../building_the_car.rst:121
+msgid ""
+"Assemble the two motors to the Back Half Chassis with four **M3x25 "
+"screws** and **M3 nuts**. Pay attention to place the motors with wires "
+"inward, providing convenience for connecting the circuit."
+msgstr ""
+"Montieren Sie die beiden Motoren mit vier **M3x25-Schrauben** und **M3-"
+"Muttern** am Back Half Chassis. Achten Sie darauf, die Motoren mit den "
+"Drähten nach innen zu platzieren, um den Anschluss des Stromkreises zu "
+"erleichtern."
+
+#: ../building_the_car.rst:128
+msgid "Assemble the rear wheels with 4 M3 nuts."
+msgstr "Montieren Sie die Hinterräder mit 4 M3-Muttern."
+
+#: ../building_the_car.rst:133
+msgid ""
+"Align the **rear** **wheels** with the motor shaft, and rotate to insert "
+"them gently."
+msgstr ""
+"Richten Sie die **hinteren** **Räder** mit der Motorwelle aus und drehen "
+"Sie sie, um sie vorsichtig einzusetzen."
